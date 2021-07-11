@@ -15,14 +15,20 @@ function NavBar() {
                     <Link to='/' className='nav-link'>
                         HOME
                     </Link>
-                    <Link to='/' className='nav-link'>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/menu' className='nav-link'>
                         MENU
                     </Link>
-                    <Link to='/' className='nav-link'>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/shop' className='nav-link'>
                         SHOP
                     </Link>
+                </li>
+                <li className='nav-item'>
                     <Link to='/' className='nav-link'>
-                        MORE
+                        MORE <i class="fas fa-caret-down"></i>
                     </Link>
                 </li>
             </ul>

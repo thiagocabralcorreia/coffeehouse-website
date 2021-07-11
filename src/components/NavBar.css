@@ -25,6 +25,10 @@
   height: 60px;
 }
 
+.nav-list {
+  display: flex;
+}
+
 .nav-item {
   display: flex;
 }
@@ -38,4 +42,12 @@
   text-decoration: none;
   padding: 0 1.3rem 0 1.3rem;
   height: 100%;
+}
+
+.nav-link:hover {
+  color: #f2cea2;
+}
+
+.fa-caret-down {
+  padding-left: 10px;
 }

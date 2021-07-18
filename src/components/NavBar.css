@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap");
 
-.nav {
-  height: 78px;
+.navbar {
+  height: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #472d1c;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
 }
 
 .container {
@@ -18,15 +20,21 @@
   width: 100%;
   display: flex;
   margin: 0px auto;
-  padding: 2rem 5rem 2rem 5rem;
 }
 
 .logo {
-  height: 60px;
+  height: 4rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .nav-list {
   display: flex;
+  padding-right: 5rem;
 }
 
 .nav-item {
@@ -36,8 +44,9 @@
 .nav-link {
   font-family: "Roboto Condensed", sans-serif;
   display: flex;
-  font-size: 20px;
-  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #472d1c;
   align-items: center;
   text-decoration: none;
   padding: 0 1.3rem 0 1.3rem;
@@ -45,9 +54,85 @@
 }
 
 .nav-link:hover {
-  color: #f2cea2;
+  color: #a6754b;
 }
 
 .fa-caret-down {
   padding-left: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    right: 5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .line {
+    height: 0.25rem;
+    width: 1.75rem;
+    background-color: #472d1c;
+    transition: all 0.2s ease 0s;
+    border-radius: 1rem;
+  }
+
+  .top {
+    transform: none;
+    margin-bottom: 0.4rem;
+  }
+
+  .active .top {
+    transform: rotate(135deg);
+    margin-bottom: -0.25rem;
+  }
+
+  .active .middle {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  .bottom {
+    transform: none;
+    margin-top: 0.4rem;
+  }
+
+  .active .bottom {
+    transform: rotate(-135deg);
+    margin-top: -0.25rem;
+  }
+
+  .nav-list.active {
+    display: block;
+    position: absolute;
+    background-color: #a6754b;
+    height: 100vw;
+    width: 25rem;
+    right: 0;
+    top: 4.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-link {
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .nav-link:hover {
+    color: #472d1c;
+  }
 }

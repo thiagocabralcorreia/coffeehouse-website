@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 .navbar {
   height: 4.5rem;
@@ -19,13 +19,14 @@
   justify-content: space-between;
   width: 100%;
   display: flex;
-  margin: 0px auto;
 }
 
 .logo {
   height: 4rem;
   padding-left: 5rem;
   padding-right: 2rem;
+  fill: #472d1c;
+  transition: 0.2s;
 }
 
 .menu-icon {
@@ -42,15 +43,16 @@
 }
 
 .nav-link {
-  font-family: "Roboto Condensed", sans-serif;
-  display: flex;
-  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
+  display: flex;
+  font-size: 1rem;
   color: #472d1c;
   align-items: center;
   text-decoration: none;
   padding: 0 1.3rem 0 1.3rem;
   height: 100%;
+  transition: 0.2s;
 }
 
 .nav-link:hover {
@@ -68,68 +70,72 @@
 
   .menu-icon {
     display: block;
-    right: 5rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
+    align-self: center;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5rem;
+    padding: 2rem;
   }
 
   .line {
     height: 0.25rem;
     width: 1.75rem;
     background-color: #472d1c;
-    transition: all 0.2s ease 0s;
+    transition: 0.3s;
     border-radius: 1rem;
   }
 
   .top {
     transform: none;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
   }
 
   .active .top {
-    transform: rotate(135deg);
+    transform: rotate(-135deg);
     margin-bottom: -0.25rem;
   }
 
   .active .middle {
     opacity: 0;
-    transform: translateX(3rem);
   }
 
   .bottom {
     transform: none;
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
   }
 
   .active .bottom {
-    transform: rotate(-135deg);
+    transform: rotate(135deg);
     margin-top: -0.25rem;
   }
 
-  .nav-list.active {
+  .nav-list.mobile {
     display: block;
     position: absolute;
     background-color: #a6754b;
-    height: 100vw;
+    height: 100vh;
     width: 25rem;
     right: 0;
-    top: 4.5rem;
+    top: 4.51rem;
     padding: 2rem 2rem 1rem 2rem;
+    transform: initial;
+    transition: 0.2s;
+    opacity: 1;
+    box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.05);
   }
 
   .nav-list {
     display: none;
+    transform: translateX(-10px);
+    opacity: 0;
   }
 
   .nav-link {
     margin-bottom: 2rem;
     color: #fff;
+    transition: 0.2s;
   }
 
   .nav-link:hover {

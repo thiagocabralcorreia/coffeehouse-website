@@ -1,22 +1,28 @@
-import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
-import logo from '../assets/ch-br-logo.png';
+import {ReactComponent as Logo} from '../assets/ch-logo.svg';
 
 function NavBar() {
     const [ click, setClick ] = useState(false);
+
+    const { pathname } = useLocation()
+    useEffect(() => {
+        setClick(false);
+    }, [pathname])
+
     return (
         <nav className='navbar'>
             <div className='container'>
                 <Link to='/' >
-                    <img src={logo} alt='Coffee House logo' className='logo' />
+                    <Logo className='logo'/>
                 </Link>
                 <div className={click ? 'menu-icon active' : 'menu-icon'} onClick={() => setClick(!click)}>
-                    <div class="line top"></div>
-                    <div class="line middle"></div>
-                    <div class="line bottom"></div>
+                    <div className="line top"></div>
+                    <div className="line middle"></div>
+                    <div className="line bottom"></div>
                 </div>
-                <ul className={click ? 'nav-list active' : 'nav-list'}>
+                <ul className={click ? 'nav-list mobile' : 'nav-list'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-link'>
                             Home

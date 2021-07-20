@@ -1,9 +1,26 @@
 .home-container {
-  margin-top: -78px;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cover-container {
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.cover {
+  top: -4.5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
 }

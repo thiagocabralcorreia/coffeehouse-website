@@ -23,9 +23,9 @@
 
 .logo {
   height: 4rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
   padding-right: 2rem;
-  fill: #472d1c;
+  fill: #493627;
   transition: 0.2s;
 }
 
@@ -35,7 +35,7 @@
 
 .nav-list {
   display: flex;
-  padding-right: 5rem;
+  padding-right: 3rem;
 }
 
 .nav-item {
@@ -47,7 +47,7 @@
   font-weight: bolder;
   display: flex;
   font-size: 1rem;
-  color: #472d1c;
+  color: #493627;
   align-items: center;
   text-decoration: none;
   padding: 0 1.3rem 0 1.3rem;
@@ -56,18 +56,18 @@
 }
 
 .nav-link:hover {
-  color: #a6754b;
+  color: #b99657;
 }
 
 .fa-caret-down {
   padding-left: 10px;
 }
 
-@media screen and (max-width: 750px) {
-  .navbar {
-    position: relative;
-  }
+.overlay {
+  display: none;
+}
 
+@media screen and (max-width: 50rem) {
   .menu-icon {
     display: block;
     align-self: center;
@@ -75,14 +75,14 @@
     justify-content: center;
     color: #fff;
     cursor: pointer;
-    margin-right: 5rem;
+    margin-right: 3rem;
     padding: 2rem;
   }
 
   .line {
     height: 0.25rem;
     width: 1.75rem;
-    background-color: #472d1c;
+    background-color: #493627;
     transition: 0.3s;
     border-radius: 1rem;
   }
@@ -114,7 +114,7 @@
   .nav-list.mobile {
     display: block;
     position: absolute;
-    background-color: #a6754b;
+    background-color: #b99657;
     height: 100vh;
     width: 25rem;
     right: 0;
@@ -124,11 +124,12 @@
     transition: 0.2s;
     opacity: 1;
     box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.05);
+    z-index: 90;
+    overflow: hidden;
   }
 
   .nav-list {
     display: none;
-    transform: translateX(-10px);
     opacity: 0;
   }
 
@@ -139,6 +140,17 @@
   }
 
   .nav-link:hover {
-    color: #472d1c;
+    color: #493627;
+  }
+
+  .overlay.active {
+    display: flex;
+    position: absolute;
+    top: 4.5rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.25;
+    transition: 0.2s;
   }
 }

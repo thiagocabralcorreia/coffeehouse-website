@@ -12,6 +12,7 @@ function NavBar() {
     }, [pathname])
 
     return (
+        <>
         <nav className='navbar'>
             <div className='container'>
                 <Link to='/' >
@@ -40,12 +41,14 @@ function NavBar() {
                     </li>
                     <li className='nav-item'>
                         <Link to='/' className='nav-link'>
-                            More <i class="fas fa-caret-down"></i>
+                            More <i className="fas fa-caret-down"></i>
                         </Link>
                     </li>
                 </ul>
             </div>
+            <div className={click ? 'overlay active' : 'overlay'} onClick={() => setClick(!click)}></div>
         </nav>
+        </>
     )
 }
 

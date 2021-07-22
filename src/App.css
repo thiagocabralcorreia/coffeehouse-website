@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --brown: #8f6d2f;
+  --light-brown: #bc9856;
+  --lighter-brown: #e6d3af;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

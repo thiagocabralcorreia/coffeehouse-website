@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Shop from './pages/Shop';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/menu' exact component={Menu} />
           <Route path='/shop' exact component={Shop} />
         </Switch>
+      <Footer/>
     </BrowserRouter>
   );
 }

@@ -14,7 +14,7 @@ function NavBar() {
     return (
         <>
         <nav className='navbar'>
-            <div className='container'>
+            <div className='navbar-container'>
                 <Link to='/' >
                     <Logo className='logo'/>
                 </Link>

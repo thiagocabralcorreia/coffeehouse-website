@@ -2,18 +2,13 @@
 
 import React from 'react';
 import './Home.css';
-import espresso from '../assets/photos/espresso-machine.jpg';
+import ImageSlider from '../components/ImageSlider.js';
+import { SliderData } from '../components/SliderData';
 
 const Home = () => {
     return (
         <div className='home-container'>
-            <div className='cover-container'>
-                <img
-                    src={espresso}
-                    alt='Espresso machine (photo by Jason Betz on Unsplash)'
-                    className='cover'
-                />
-            </div>
+            <ImageSlider slides={SliderData}/>
         </div>
     )
 }

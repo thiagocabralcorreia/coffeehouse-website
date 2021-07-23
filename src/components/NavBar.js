@@ -19,9 +19,9 @@ function NavBar() {
                     <Logo className='logo'/>
                 </Link>
                 <div className={click ? 'menu-icon active' : 'menu-icon'} onClick={() => setClick(!click)}>
-                    <div className="line top"></div>
-                    <div className="line middle"></div>
-                    <div className="line bottom"></div>
+                    <div className='line top'></div>
+                    <div className='line middle'></div>
+                    <div className='line bottom'></div>
                 </div>
                 <ul className={click ? 'nav-list mobile' : 'nav-list'}>
                     <li className='nav-item'>
@@ -41,7 +41,7 @@ function NavBar() {
                     </li>
                     <li className='nav-item'>
                         <Link to='/' className='nav-link'>
-                            More <i className="fas fa-caret-down"></i>
+                            More <i className='fas fa-caret-down'></i>
                         </Link>
                     </li>
                 </ul>

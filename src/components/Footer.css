@@ -2,6 +2,10 @@
   background-color: var(--brown);
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-conditions {

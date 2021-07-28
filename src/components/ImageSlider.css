@@ -1,62 +1,98 @@
 .slider {
-  top: 4.5rem;
-  width: 95.25%;
-  height: 50%;
+  width: 100%;
   z-index: 1;
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+  opacity: 0.75;
+  transition-duration: 1s linear;
 }
 
 .current.slide {
   opacity: 1;
   transition-duration: 1s;
-  transform: scale(1.1);
-  display: grid;
-  border-radius: 0.2rem;
-
-  height: 300px;
+  width: 100%;
 }
 
 .image {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
+  display: block;
 }
 
-.leftArrowBtn {
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  top: 40%;
-  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.75rem;
   z-index: 50;
-  padding: 6px 12px;
+}
+
+.arrowBtn {
+  height: 2rem;
+  width: 2rem;
   background-color: var(--brown);
-  opacity: 0.75;
+  opacity: 0.5;
   border-radius: 100px;
+  border: none;
   cursor: pointer;
-  user-select: none;
+  transition-duration: 0.5s;
+}
+
+.arrowBtn:hover {
+  opacity: 0.25;
 }
 
 .fa-chevron-left {
   font-size: 1rem;
   color: var(--white);
-}
-
-.rightArrowBtn {
-  position: absolute;
-  top: 40%;
-  right: 0.75rem;
-  z-index: 50;
-  padding: 6px 12px;
-  background-color: var(--brown);
-  opacity: 0.75;
-  border-radius: 100px;
-  cursor: pointer;
-  user-select: none;
+  align-self: center;
+  padding-top: 1px;
+  padding-right: 2px;
 }
 
 .fa-chevron-right {
   font-size: 1rem;
   color: var(--white);
+  align-self: center;
+  padding-top: 1px;
+  padding-left: 2px;
+}
+
+.dots-container {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-dot {
+  background: var(--brown);
+  opacity: 0.25;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 5px;
+  border-radius: 20px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  opacity: 0.5;
+}
+
+.slider-dot:hover {
+  opacity: 0.75;
 }

@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
 
 :root {
   --black: #000000;
   --white: #ffffff;
   --brown: #8f6d2f;
+  --gray: #222;
+  --light-gray: #f2f0eb;
   --light-brown: #bc9856;
   --lighter-brown: #e6d3af;
 }
@@ -12,5 +14,5 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
 }

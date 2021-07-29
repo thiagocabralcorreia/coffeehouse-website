@@ -1,15 +1,15 @@
-import cup1 from '../assets/photos/cup1.png';
-import cup2 from '../assets/photos/cup2.png';
-import cup3 from '../assets/photos/cup3.png';
+import chbanner01 from '../assets/photos/chbanner01.png';
+import chbanner02 from '../assets/photos/chbanner02.png';
+import chbanner03 from '../assets/photos/chbanner03.png';
 
 export const SliderData = [
     {
-        image: cup1
+        image: chbanner01
     },
     {
-        image: cup2
+        image: chbanner02
     },
     {
-        image: cup3
+        image: chbanner03
     },
 ]

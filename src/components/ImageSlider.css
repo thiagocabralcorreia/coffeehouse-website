@@ -43,7 +43,6 @@
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  transition-duration: 0.5s;
 }
 
 .arrowBtn:hover {
@@ -80,8 +79,8 @@
 .slider-dot {
   background: var(--brown);
   opacity: 0.25;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 0.65rem;
+  width: 0.65rem;
   margin: 5px;
   border-radius: 20px;
   position: relative;
@@ -95,4 +94,7 @@
 
 .slider-dot:hover {
   opacity: 0.75;
+}
+
+@media screen and (max-width: 39rem) {
 }

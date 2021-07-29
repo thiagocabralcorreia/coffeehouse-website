@@ -20,10 +20,8 @@ const ImageSlider = ({ slides }) => {
         <div className='slider'>
                 {SliderData.map((slide, index) => {
                     return (
-                        <>
-                            <div className={index === current ? 'current slide' : 'slide'} key={index}>
-                                {index === current && <img src={slide.image} className='image' alt='Coffee'/>}
-                            </div>
+                        <div className={index === current ? 'current slide' : 'slide'} key={index}>
+                            {index === current && <img src={slide.image} className='image' alt='Coffee'/>}
                             <div className='dots-container'>
                                 <button
                                     className={current === 0 ? 'active slider-dot' : 'slider-dot'}
@@ -38,7 +36,7 @@ const ImageSlider = ({ slides }) => {
                                     onClick={() => setCurrent(2)}>
                                 </button>
                             </div>
-                        </>
+                        </div>
                     )
                 })}
             <div className='button-container'>

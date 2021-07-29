@@ -1,3 +1,32 @@
 .home-container {
   margin: 0;
 }
+
+.cards-container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  background-color: var(--light-gray);
+  padding: 3.2rem 4.8rem;
+}
+
+.panel {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  height: 30rem;
+}
+
+.content {
+  background-color: var(--gray);
+  width: 50%;
+  height: 100%;
+  padding-right: 0;
+}
+
+.plant {
+  padding-left: 0;
+  max-height: 100%;
+}

@@ -2,31 +2,145 @@
   margin: 0;
 }
 
+.order-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gray);
+  padding: 2.5rem 10rem;
+}
+
+.order-title {
+  font-size: 2.1rem;
+  color: var(--brown);
+}
+
+.order-text {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
 .cards-container {
   display: flex;
-  margin: auto;
+  justify-content: center;
+}
+
+.card {
   align-items: center;
-  justify-content: space-between;
-  width: 80vw;
-  background-color: var(--light-gray);
-  padding: 3.2rem 4.8rem;
+  justify-content: center;
+  margin: 0 2rem;
+  width: 30%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.fa-2x {
+  color: var(--brown);
 }
 
 .panel {
   display: flex;
   margin-top: 2rem;
-  align-items: center;
-  height: 30rem;
+  text-align: center;
+  background-color: var(--light-gray);
 }
 
-.content {
-  background-color: var(--gray);
+.panel-content {
   width: 50%;
-  height: 100%;
-  padding-right: 0;
+  padding: 5rem 6rem;
+  margin: auto;
+  color: var(--gray);
 }
 
-.plant {
-  padding-left: 0;
-  max-height: 100%;
+.panel-title {
+  font-size: 2rem;
+  color: var(--brown);
+}
+
+.panel-text {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.panel-button {
+  color: var(--white);
+  background-color: var(--brown);
+  border: none;
+  border-radius: 999rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.image-container {
+  min-width: 50%;
+  display: block;
+  background: url("../assets/photos/plant.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 56rem) {
+  .order-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .card {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem 2rem;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+
+  .card-text {
+    display: none;
+  }
+
+  .fa-mug-hot {
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  .cards-container {
+    display: block;
+  }
+
+  .card {
+    margin: 0rem 1rem;
+    padding: 0.5rem 0rem;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+  }
+
+  .fa-car {
+    padding-left: 1.9rem;
+  }
+
+  .fa-mug-hot {
+    padding-left: 0.8rem;
+    padding-bottom: 0rem;
+  }
 }

@@ -6,32 +6,41 @@ import ImageSlider from '../components/ImageSlider.js';
 import { SliderData } from '../components/SliderData';
 import plant from '../assets/photos/plant.jpg';
 
+// We always work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts. We reap what we sow and we want the best future for our planet.
+
 const Home = () => {
     return (
         <div className='home-container'>
-            <ImageSlider slides={SliderData}/>
-            <div className='cards-container'>
-                <div>
-                    <div>Icon</div>
-                    <h1>Title</h1>
-                    <p>Text</p>
-                </div>
-                <div>
-                    <div>Icon</div>
-                    <h1>Title</h1>
-                    <p>Text</p>
-                </div>
-                <div>
-                    <div>Icon</div>
-                    <h1>Title</h1>
-                    <p>Text</p>
+                <ImageSlider slides={SliderData}/>
+                <div className='order-container'>
+                    <h1 className='order-title'>Ways to Order</h1>
+                    <p className='order-text'>Tell us how you want your order.</p>
+                    <div className='cards-container'>
+                    <div className='card'>
+                        <i className='fas fa-car fa-2x'></i>
+                        <h1 className='card-title'>Drive-Thru</h1>
+                        <p className='card-text'>Hop in the line and let us know you have a mobile order.</p>
+                    </div>
+                    
+                    <div className='card'>
+                        <i className='fas fa-motorcycle fa-2x'></i>
+                        <h1 className='card-title'>Delivery</h1>
+                        <p className='card-text'>Get your CH favorites delivered right to your doorstep with our app, Uber Eats or iFood.</p>
+                    </div>
+                    <div className='card'>
+                        <i className='fas fa-mug-hot fa-2x'></i>
+                        <h1 className='card-title'>In-Store</h1>
+                        <p className='card-text'>Pick up your order inside the restaurant.</p>
+                    </div>
                 </div>
             </div>
             <div className='panel'>
-                <div className='content'>
-                    <p>Text here</p>
+                <div className='panel-content'>
+                    <h1 className='panel-title'>Eco-Friendly</h1>
+                    <p  className='panel-text'>We reap what we sow and we want the best future for our planet.</p>
+                    <button  className='panel-button'>Learn more</button>
                 </div>
-                <img src={plant} className='plant'/>
+                <div className='image-container'></div>
             </div>
         </div>
     )

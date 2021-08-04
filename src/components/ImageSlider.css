@@ -96,5 +96,8 @@
   opacity: 0.75;
 }
 
-@media screen and (max-width: 39rem) {
+@media screen and (max-width: 16.5rem) {
+  .slider {
+    display: none;
+  }
 }

@@ -145,7 +145,7 @@
   }
 
   .nav-link:hover {
-    color: var(--brown);
+    color: var(--lighter-brown);
   }
 
   .overlay.active {

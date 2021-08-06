@@ -1,7 +1,7 @@
 /*eslint-disable*/
 
 import React from 'react';
-import './Home.css';
+import '../styles/Home.css';
 import ImageSlider from '../components/ImageSlider.js';
 import { SliderData } from '../components/SliderData';
 import chApp from '../assets/ch-app.png';

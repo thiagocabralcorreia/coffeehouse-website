@@ -19,7 +19,7 @@ const StoreLocator = () => {
                 </div>
                 <div className='locator-form'>
                     <button className='location-btn'>
-                        Use your current location <i class='fas fa-map-marker-alt'></i>
+                        Use your current location <i class='fas fa-map-marker-alt button-pin'></i>
                     </button>
                 </div>
             </div>

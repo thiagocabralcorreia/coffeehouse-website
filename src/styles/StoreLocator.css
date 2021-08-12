@@ -96,7 +96,7 @@
   background-color: var(--light-brown);
 }
 
-.fa-map-marker-alt {
+.button-pin {
   font-size: 1.1rem;
   color: var(--white);
   padding-left: 0.8rem;

@@ -44,6 +44,11 @@ function NavBar() {
                             More <i className='fas fa-caret-down'></i>
                         </Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to='/store-locator' className='nav-link'>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className={click ? 'overlay active' : 'overlay'} onClick={() => setClick(!click)}></div>

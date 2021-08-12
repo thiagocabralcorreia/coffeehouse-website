@@ -1,6 +1,7 @@
 /*eslint-disable*/
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import ImageSlider from '../components/ImageSlider.js';
 import { SliderData } from '../components/SliderData';
@@ -39,7 +40,9 @@ const Home = () => {
                 <div className='panel-content'>
                     <h1 className='panel-title'>Eco-Friendly</h1>
                     <p  className='panel-text'>We reap what we sow and we want the best future for our planet.</p>
-                    <button  className='panel-button'>Learn more</button>
+                    <Link to='/'>
+                        <button className='panel-button'>Learn more</button>
+                    </Link>
                 </div>
                 <div className='image-container'></div>
             </div>
@@ -50,7 +53,9 @@ const Home = () => {
                 <div className='app-content'>
                     <h1 className='app-title'>Order on the app</h1>
                     <p className='app-text'>Download our mobile app to enroll and start ordering ahead. Find stores, redeem offers and earn rewards.</p>
-                    <img src={chApp} className='ch-app' alt='CH App Button'/>
+                    <Link to='/'>
+                        <img src={chApp} className='ch-app' alt='CH App Button'/>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,28 @@
+.main-menu {
+  width: 100%;
+  display: flex;
+  background-color: var(--lighter-brown);
+}
+
+.menu-list {
+  width: 16rem;
+  margin: 2rem;
+  background-color: var(--lighter-gray);
+}
+
+.nav-menu {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1.3rem;
+}
+
+.menu-item {
+  color: var(--brown);
+  transition: 0.2s;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

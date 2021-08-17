@@ -1,32 +1,39 @@
 import React, { useState } from 'react';
+import MenuCard from './MenuCard';
 import '../styles/MainMenu.css';
 
 const MainMenu = () => {
-    const [ click, setClick ] = useState();
+    const [ clickDrink, setClickDrink ] = useState();
+    const [ clickFood, setClickFood ] = useState();
+
+    const drinkTypes = ['Coffee', 'Tea', 'Cold Drinks'];
+    const foodTypes = ['Breakfast & Lunch', 'Pastries', 'Snacks & Treats']
+
     return (
         <div className='main-menu'>
             <div className='menu-list'>
                 <ul className='nav-menu'>
                     <li className='menu-item'
-                    onClick={() => setClick(!click)}
-                    >Drinks <i className='fas fa-caret-down'></i>
-                        <ul>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Coffee</li>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Tea</li>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Cold Drinks</li>
-                        </ul>
+                        onClick={() => setClickDrink(!clickDrink)}
+                        >Drinks <i className={clickDrink ? 'fas fa-caret-up' : 'fas fa-caret-down'}></i>
                     </li>
+                    <ul className={clickDrink ? 'inside-list' : 'hidden'}>
+                        {drinkTypes.map((item) => {
+                            return <li className='menu-item'>{item}</li>
+                        })}
+                    </ul>
                     <li className='menu-item'
-                    onClick={() => setClick(!click)}
-                    >Food <i className='fas fa-caret-down'></i>
-                        <ul>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Breakfast & Lunch</li>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Pastries</li>
-                            <li className={click ? 'menu-item' : 'hidden menu-item' }>Snacks & Treats</li>
-                        </ul>
+                        onClick={() => setClickFood(!clickFood)}
+                        >Food <i className={clickFood ? 'fas fa-caret-up' : 'fas fa-caret-down'}></i>
                     </li>
+                    <ul className={clickFood ? 'inside-list' : 'hidden'}>
+                        {foodTypes.map((item) => {
+                            return <li className='menu-item'>{item}</li>
+                        })}
+                    </ul>
                 </ul>
             </div>
+            <MenuCard/>
         </div>
     )
 }

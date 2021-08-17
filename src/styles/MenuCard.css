@@ -1,0 +1,36 @@
+.menu-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.menu-card-title {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  color: var(--brown);
+}
+
+.menu-card-item {
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 1rem;
+}
+
+.card-item-title {
+  align-self: center;
+  padding-right: 1rem;
+}
+
+.card-item-description {
+  align-self: center;
+  padding-top: 0.2rem;
+  padding-right: 2rem;
+  color: var(--light-brown);
+}
+
+.menu-card-image {
+  width: 20rem;
+  height: 20rem;
+  background-color: red;
+}

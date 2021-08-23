@@ -1,36 +1,50 @@
 import React, { useState } from 'react';
-import MenuCard from './MenuCard';
+import { MenuCard } from './MenuCard';
 import '../styles/MainMenu.css';
+import { menuSections } from '../assets/data';
 
 const MainMenu = () => {
-    const [ clickDrink, setClickDrink ] = useState();
-    const [ clickFood, setClickFood ] = useState();
-
-    const drinkTypes = ['Coffee', 'Tea', 'Cold Drinks'];
-    const foodTypes = ['Breakfast & Lunch', 'Pastries', 'Snacks & Treats']
-
+    const [ showList, setShowList ] = useState('');
+    const [ selected, setSelected ] = useState('');
+    console.log(showList)
     return (
         <div className='main-menu'>
             <div className='menu-list'>
                 <ul className='nav-menu'>
-                    <li className='menu-item'
-                        onClick={() => setClickDrink(!clickDrink)}
-                        >Drinks <i className={clickDrink ? 'fas fa-caret-up' : 'fas fa-caret-down'}></i>
-                    </li>
-                    <ul className={clickDrink ? 'inside-list' : 'hidden'}>
-                        {drinkTypes.map((item) => {
-                            return <li className='menu-item'>{item}</li>
-                        })}
-                    </ul>
-                    <li className='menu-item'
-                        onClick={() => setClickFood(!clickFood)}
-                        >Food <i className={clickFood ? 'fas fa-caret-up' : 'fas fa-caret-down'}></i>
-                    </li>
-                    <ul className={clickFood ? 'inside-list' : 'hidden'}>
-                        {foodTypes.map((item) => {
-                            return <li className='menu-item'>{item}</li>
-                        })}
-                    </ul>
+                   
+                    {menuSections.map((type) => {
+                        return (
+                            <>
+                                <li className='menu-item'
+                                onClick={() => {
+                                    setSelected(type.section)
+                                    setShowList(!showList)
+                                }}
+                                >{type.section}
+                                <div className={selected === type.section && showList
+                                    ? 'menu-arrow-icon' : 'active menu-arrow-icon'}
+                                >
+                                    <i className='fas fa-caret-up'></i>
+                                </div>
+                                    
+                                </li>
+                                <ul className={selected === type.section && showList 
+                                    ? 'active inside-list' : 'inside-list'}>
+                                    {menuSections.map((menu) => 
+                                        menu.subsections.map((item) => {
+                                                if (menu.section === type.section) {
+                                                    return <li className='menu-item'>{item.title}</li>
+                                                }
+                                                else {
+                                                    return '';
+                                                }
+                                            })
+                                        )
+                                    }
+                                </ul>
+                            </>
+                        )
+                    })}
                 </ul>
             </div>
             <MenuCard/>

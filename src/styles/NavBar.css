@@ -52,12 +52,9 @@
   color: var(--light-brown);
 }
 
-.fa-caret-down {
-  padding-left: 10px;
-}
-
-.fa-caret-up {
-  padding-left: 10px;
+.navbar-arrow-icon {
+  padding-left: 0.75rem;
+  display: inline-block;
 }
 
 .overlay {
@@ -131,6 +128,7 @@
   }
 
   .nav-link {
+    display: flex;
     color: var(--white);
     transition: 0.2s;
     font-size: 1.1rem;

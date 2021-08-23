@@ -41,7 +41,10 @@ function NavBar() {
                     </li>
                     <li className='nav-item'>
                         <Link to='/' className='nav-link'>
-                            More <i className='fas fa-caret-down'></i>
+                            More
+                            <div className='navbar-arrow-icon'>
+                                <i className='fas fa-caret-down'></i>
+                            </div>
                         </Link>
                     </li>
                     <li className='nav-item'>

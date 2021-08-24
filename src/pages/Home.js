@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import ImageSlider from '../components/ImageSlider.js';
-import { SliderData } from '../components/SliderData';
+import { SliderData } from '../assets/data';
 import chApp from '../assets/ch-app.png';
 import smartphone from '../assets/photos/smartphone.png';
 
@@ -27,7 +27,7 @@ const Home = () => {
                     <div className='card'>
                         <i className='fas fa-motorcycle fa-2x'></i>
                         <h1 className='card-title'>Delivery</h1>
-                        <p className='card-text'>Get your CH favorites delivered right to your doorstep with our app, Uber Eats or iFood.</p>
+                        <p className='card-text'>Get your CH favorites delivered right to your doorstep with our app</p>
                     </div>
                     <div className='card'>
                         <i className='fas fa-mug-hot fa-2x'></i>

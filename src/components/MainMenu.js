@@ -11,12 +11,10 @@ const MainMenu = () => {
         <div className='main-menu'>
             <div className='menu-list'>
                 <ul className='nav-menu'>
-                   
                     {menuSections.map((type) => {
                         return (
                             <>
-                                <li className='menu-item'
-                                onClick={() => {
+                                <li onClick={() => {
                                     setSelected(type.section)
                                     setShowList(!showList)
                                 }}
@@ -33,7 +31,7 @@ const MainMenu = () => {
                                     {menuSections.map((menu) => 
                                         menu.subsections.map((item) => {
                                                 if (menu.section === type.section) {
-                                                    return <li className='menu-item'>{item.title}</li>
+                                                    return <li>{item.title}</li>
                                                 }
                                                 else {
                                                     return '';

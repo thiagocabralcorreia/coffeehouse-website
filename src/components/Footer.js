@@ -10,8 +10,8 @@ const Footer = () => {
                 <Link to='/' className='footer-conditions-link'>Cookie Policy</Link>
                 <Link to='/' className='footer-conditions-link'>Terms and Conditions</Link>
             </div>
-            <div className='copyright-container'>
-                <p className='copyright'>© Copyright 2021 | Coffee House by Thiago Correia. All rights reserved.</p>
+            <div className='copyright'>
+                <p>© Copyright 2021 | Coffee House by Thiago Correia. All rights reserved.</p>
             </div>
         </div>
     )

@@ -5,19 +5,19 @@
   padding: 2rem;
 }
 
-.menu-card-title {
+.menu-card-content h1 {
   font-size: 2.5rem;
   color: var(--brown);
 }
 
-.menu-card-title::after {
-  display: block;
+.menu-card-content h1::after {
   content: "";
+  display: block;
   left: 0;
   height: 0.1rem;
   width: 100%;
   background-color: var(--light-brown);
-  margin: 1.5rem 0rem;
+  margin: 1.2rem 0rem 1.5rem;
 }
 
 .menu-card-item {
@@ -26,13 +26,13 @@
   padding-bottom: 1rem;
 }
 
-.card-item-title {
+.menu-card-item h2 {
   align-self: center;
   padding-right: 1rem;
   font-size: 1.3rem;
 }
 
-.card-item-description {
+.menu-card-item p {
   align-self: center;
   padding-top: 0.2rem;
   padding-right: 2rem;
@@ -51,7 +51,7 @@
     padding: auto;
   }
 
-  .card-item-description {
+  .menu-card-item p {
     padding-right: 0rem;
   }
 

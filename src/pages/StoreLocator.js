@@ -5,8 +5,8 @@ const StoreLocator = () => {
     return (
         <div className='locator-container'>
             <div className='locator-sidebar'>
-                <h1 className='locator-title'>Looking for fresh coffee?</h1>
-                <p className='locator-text'>Find a store near you.</p>
+                <h1>Looking for fresh coffee?</h1>
+                <p>Find a store near you.</p>
                 <div className='locator-form'>
                     <input
                         className='locator-input'

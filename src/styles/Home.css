@@ -42,12 +42,12 @@
   width: 30%;
 }
 
-.card-title {
+.card h1 {
   font-size: 1.5rem;
   padding-top: 1rem;
 }
 
-.card-text {
+.card p {
   font-size: 1rem;
   padding-top: 0.5rem;
 }
@@ -63,24 +63,24 @@
   background-color: var(--lighter-gray);
 }
 
-.panel-content {
+.panel {
   width: 50%;
   padding: 5rem 6rem;
   margin: auto;
 }
 
-.panel-title {
+.panel h1 {
   font-size: 2rem;
   color: var(--brown);
 }
 
-.panel-text {
+.panel p {
   font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
-.panel-button {
+.panel button {
   color: var(--white);
   background-color: var(--brown);
   border: none;
@@ -89,10 +89,6 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: 0.2s;
-}
-
-.panel-button:hover {
-  background-color: var(--light-brown);
 }
 
 .image-container {
@@ -121,7 +117,7 @@
   background-size: cover;
 }
 
-.smartphone {
+.app-image img {
   position: absolute;
   max-height: 120%;
   left: 3rem;
@@ -135,11 +131,11 @@
   color: var(--white);
 }
 
-.app-title {
+.app-content h1 {
   font-size: 2rem;
 }
 
-.app-text {
+.app-content p {
   font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -166,13 +162,13 @@
     width: 100%;
   }
 
-  .card-title {
+  .card h1 {
     font-size: 1.35rem;
     padding-left: 1rem;
     padding-top: 0;
   }
 
-  .card-text {
+  .card p {
     display: none;
   }
 
@@ -200,7 +196,7 @@
     width: 100%;
   }
 
-  .card-title {
+  .card h1 {
     font-size: 1.25rem;
     padding-left: 1rem;
     padding-right: 5rem;
@@ -220,7 +216,7 @@
     height: 28rem;
   }
 
-  .panel-content {
+  .panel {
     width: 100%;
     height: 50%;
     padding: 2rem 3rem;
@@ -265,14 +261,18 @@
     display: block;
   }
 
-  .card-title {
+  .order-title::after {
+    width: 5rem;
+  }
+
+  .card h1 {
     font-size: 1.2rem;
     padding-top: 1rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
 
-  .card-text {
+  .card p {
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
@@ -299,7 +299,7 @@
     display: none;
   }
 
-  .panel-content {
+  .panel {
     height: 100%;
     padding: 2rem 2rem;
     margin: auto;
@@ -307,7 +307,7 @@
     padding-bottom: 3rem;
   }
 
-  .panel-text {
+  .panel p {
     font-size: 1rem;
   }
 

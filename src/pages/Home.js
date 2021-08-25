@@ -20,39 +20,39 @@ const Home = () => {
                     <div className='cards-container'>
                     <div className='card'>
                         <i className='fas fa-car fa-2x'></i>
-                        <h1 className='card-title'>Drive-Thru</h1>
-                        <p className='card-text'>Hop in the line and let us know you have a mobile order.</p>
+                        <h1>Drive-Thru</h1>
+                        <p>Hop in the line and let us know you have a mobile order.</p>
                     </div>
                     
                     <div className='card'>
                         <i className='fas fa-motorcycle fa-2x'></i>
-                        <h1 className='card-title'>Delivery</h1>
-                        <p className='card-text'>Get your CH favorites delivered right to your doorstep with our app</p>
+                        <h1>Delivery</h1>
+                        <p>Get your CH favorites delivered right to your doorstep with our app</p>
                     </div>
                     <div className='card'>
                         <i className='fas fa-mug-hot fa-2x'></i>
-                        <h1 className='card-title'>In-Store</h1>
-                        <p className='card-text'>Pick up your order inside the restaurant.</p>
+                        <h1>In-Store</h1>
+                        <p>Pick up your order inside the restaurant.</p>
                     </div>
                 </div>
             </div>
             <div className='panel-container'>
-                <div className='panel-content'>
-                    <h1 className='panel-title'>Eco-Friendly</h1>
-                    <p  className='panel-text'>We reap what we sow and we want the best future for our planet.</p>
+                <div className='panel'>
+                    <h1>Eco-Friendly</h1>
+                    <p >We reap what we sow and we want the best future for our planet.</p>
                     <Link to='/'>
-                        <button className='panel-button'>Learn more</button>
+                        <button>Learn more</button>
                     </Link>
                 </div>
                 <div className='image-container'></div>
             </div>
             <div className='app-container'>
                 <div className='app-image'>
-                    <img src={smartphone} className='smartphone'/>
+                    <img src={smartphone}/>
                 </div>
                 <div className='app-content'>
-                    <h1 className='app-title'>Order on the app</h1>
-                    <p className='app-text'>Download our mobile app to enroll and start ordering ahead. Find stores, redeem offers and earn rewards.</p>
+                    <h1>Order on the app</h1>
+                    <p>Download our mobile app to enroll and start ordering ahead. Find stores, redeem offers and earn rewards.</p>
                     <Link to='/'>
                         <img src={chApp} className='ch-app' alt='CH App Button'/>
                     </Link>

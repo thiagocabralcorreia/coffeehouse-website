@@ -24,22 +24,22 @@ function NavBar() {
                     <div className='line bottom'></div>
                 </div>
                 <ul className={click ? 'nav-list mobile' : 'nav-list'}>
-                    <li className='nav-item'>
+                    <li>
                         <Link to='/' className='nav-link'>
                             Home
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li>
                         <Link to='/menu' className='nav-link'>
                             Menu
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li>
                         <Link to='/shop' className='nav-link'>
                             Shop
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li>
                         <Link to='/' className='nav-link'>
                             More
                             <div className='navbar-arrow-icon'>
@@ -47,7 +47,7 @@ function NavBar() {
                             </div>
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li>
                         <Link to='/store-locator' className='nav-link'>
                             <i class="fas fa-map-marker-alt"></i>
                         </Link>

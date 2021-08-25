@@ -35,7 +35,7 @@
   padding-right: 3rem;
 }
 
-.nav-item {
+.nav-list li {
   display: flex;
   font-size: 1rem;
   font-weight: bolder;
@@ -160,7 +160,7 @@
 }
 
 @media screen and screen and (max-width: 400px) {
-  .nav-item {
+  .nav-list li {
     padding-left: 5rem;
   }
 }

@@ -1,18 +1,16 @@
 .locator-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 30rem;
 }
 
 .locator-sidebar {
   min-width: 40%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: var(--lighter-gray);
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 5rem 6rem;
+  align-items: center;
+  padding: 7rem 2.5rem;
 }
 
 .locator-sidebar h1 {
@@ -26,80 +24,8 @@
   padding-bottom: 2rem;
 }
 
-.locator-form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  height: 3rem;
-}
-
-.locator-input {
-  height: 100%;
-  font-size: 1.1rem;
-  color: var(--gray);
-  border-radius: 1.5rem 0 0 1.5rem;
-  border-style: solid;
-  border: solid 0.1rem var(--light-gray);
-  padding-left: 1.7rem;
-  align-items: center;
-  cursor: text;
-  transition: 0.2s;
-  width: 30rem;
-}
-
-.locator-input:focus {
-  border: solid 0.1rem var(--brown);
-}
-
-.locator-input:hover {
-  border: solid 0.1rem var(--light-brown);
-}
-
-.search-btn {
-  height: 100%;
-  padding: 0.7rem 1.5rem 0.7rem 1.2rem;
-  border-radius: 0 1.5rem 1.5rem 0;
-  border: none;
-  background-color: var(--brown);
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.search-btn:hover {
-  background-color: var(--light-brown);
-}
-
-.fa-search {
-  font-size: 1.1rem;
-  color: var(--white);
-}
-
-.location-btn {
-  height: 100%;
-  min-width: 19rem;
-  padding: 0.7rem 1.5rem 0.7rem 1.2rem;
-  font-size: 1.1rem;
-  border-radius: 1.5rem;
-  border: none;
-  padding-left: 1.7rem;
-  align-items: center;
-  cursor: pointer;
-  background-color: var(--brown);
-  color: var(--white);
-  transition: 0.2s;
-  margin-top: 5rem;
-}
-
-.location-btn:hover {
-  background-color: var(--light-brown);
-}
-
-.button-pin {
-  font-size: 1.1rem;
-  color: var(--white);
-  padding-left: 0.8rem;
+.button-location {
+  margin-top: 1rem;
 }
 
 .map {
@@ -108,4 +34,22 @@
   width: 60%;
   height: 100%;
   background-size: cover;
+}
+
+@media screen and (max-width: 45rem) {
+  .locator-container {
+    display: block;
+    height: 50rem;
+  }
+
+  .locator-sidebar {
+    align-items: center;
+    height: 45%;
+    padding: 2.5rem;
+  }
+
+  .map {
+    width: 100%;
+    height: 55%;
+  }
 }

@@ -39,7 +39,7 @@ const ImageSlider = ({ slides }) => {
                         </div>
                     )
                 })}
-            <div className='button-container'>
+            <div className='arrow-container'>
                 <button className='arrowBtn left' onClick={previousSlide}>
                     <i className='fas fa-chevron-left'></i>
                 </button>    

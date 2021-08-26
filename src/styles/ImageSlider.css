@@ -23,7 +23,7 @@
   display: block;
 }
 
-.button-container {
+.arrow-container {
   display: flex;
   width: 100%;
   justify-content: space-between;

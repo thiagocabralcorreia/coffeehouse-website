@@ -3,10 +3,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import ImageSlider from '../components/ImageSlider.js';
+import ImageSlider from '../components/ImageSlider';
 import { SliderData } from '../assets/data';
 import chApp from '../assets/ch-app.png';
 import smartphone from '../assets/photos/smartphone.png';
+import Button from '../components/Button';
 
 // We always work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts. We reap what we sow and we want the best future for our planet.
 
@@ -40,8 +41,8 @@ const Home = () => {
                 <div className='panel'>
                     <h1>Eco-Friendly</h1>
                     <p >We reap what we sow and we want the best future for our planet.</p>
-                    <Link to='/'>
-                        <button>Learn more</button>
+                    <Link to='/' className='link'>
+                        <Button text='Learn more'/>
                     </Link>
                 </div>
                 <div className='image-container'></div>

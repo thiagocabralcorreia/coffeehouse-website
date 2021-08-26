@@ -35,11 +35,6 @@ function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/shop' className='nav-link'>
-                            Shop
-                        </Link>
-                    </li>
-                    <li>
                         <Link to='/' className='nav-link'>
                             More
                             <div className='navbar-arrow-icon'>

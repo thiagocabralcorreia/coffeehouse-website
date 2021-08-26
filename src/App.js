@@ -3,7 +3,6 @@ import './styles/App.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
-import Shop from './pages/Shop';
 import StoreLocator from './pages/StoreLocator';
 import Footer from './components/Footer';
 
@@ -14,7 +13,6 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/menu' exact component={Menu} />
-          <Route path='/shop' exact component={Shop} />
           <Route path='/store-locator' exact component={StoreLocator} />
         </Switch>
       <Footer/>

@@ -19,134 +19,136 @@ export const SliderData = [
 ]
 
 export const menuSections = [
-    {section: 'Drinks',
+    {id: 'drinks',
+    section: 'Drinks',
     subsections: [
-        {title: 'Coffee',
-        id: '',
+        {type: 'Coffee',
+        id: 'coffee',
         image: menuCoffee,
         items: [
-                {type: 'Espresso',
+                {subtype: 'Espresso',
                 ingredients: 'Espresso'
                 },
-                {type: 'Americano',
+                {subtype: 'Americano',
                 ingredients: 'Espresso, Hot Water'
                 },
-                {type: 'Latte',
+                {subtype: 'Latte',
                 ingredients: 'Espresso, Creamy Steamed Milk'
                 },
-                {type: 'Cappuccino',
+                {subtype: 'Cappuccino',
                 ingredients: 'Espresso, Milk Foam'
                 },
-                {type: 'Mocha',
+                {subtype: 'Mocha',
                 ingredients: 'Espresso, Steamed Milk, Chocolate'
                 },
-                {type: 'Caramel Macchiato',
+                {subtype: 'Caramel Macchiato',
                 ingredients: 'Espresso, Steamed Milk, Vanilla, Caramel'
                 }
             ]
         },
-        {title: 'Tea',
-        id: '',
+        {type: 'Tea',
+        id: 'tea',
         image: menuCoffee,
         items: [
-                {type: 'English Breakfast Tea',
+                {subtype: 'English Breakfast Tea',
                 ingredients: 'Black Tea'
                 },
-                {type: 'Chai Tea',
+                {subtype: 'Chai Tea',
                 ingredients: 'Black Tea, Cinnamon, Black Pepper'
                 },
-                {type: 'Chai Tea Latte',
+                {subtype: 'Chai Tea Latte',
                 ingredients: 'Black Tea, Cinnamon, Black Pepper, Steamed Milk'
                 },
-                {type: 'Earl Grey Tea',
+                {subtype: 'Earl Grey Tea',
                 ingredients: 'Black Tea, Bergamot essence'
                 },
-                {type: 'Chamomile Mint Tea',
+                {subtype: 'Chamomile Mint Tea',
                 ingredients: 'Chamomile Tea, Lemongrass, Mint'
                 },
-                {type: 'Green Ginger Tea',
+                {subtype: 'Green Ginger Tea',
                 ingredients: 'Green Tea, Fresh Ginger'
                 },
-                {type: 'Blueberry Green Tea',
+                {subtype: 'Blueberry Green Tea',
                 ingredients: 'Green Tea, Lemonade, Blueberry'
                 },
             ]
         },
-        {title: 'Cold Drinks',
-        id: '',
+        {type: 'Cold Drinks',
+        id: 'cold-drinks',
         image: menuCoffee,
         items: [
-                {type: 'Cold Brew',
+                {subtype: 'Cold Brew',
                 ingredients: 'Cold Coffee, Ice'
                 },
-                {type: 'Iced Latte',
+                {subtype: 'Iced Latte',
                 ingredients: 'Espresso, Cold Milk, Ice'
                 },
-                {type: 'Iced Mocha',
+                {subtype: 'Iced Mocha',
                 ingredients: 'Espresso, Cold Milk, Chocolate, Ice'
                 },
-                {type: 'Iced Vanilla Mocha',
+                {subtype: 'Iced Vanilla Mocha',
                 ingredients: 'Espresso, Cold Milk, Chocolate, Vanilla, Ice'
                 },
-                {type: 'Tropical Tea',
+                {subtype: 'Tropical Tea',
                 ingredients: 'Green Tea, Pineapple Notes, Ice'
                 },
-                {type: 'Iced Green Tea Lemonade',
+                {subtype: 'Iced Green Tea Lemonade',
                 ingredients: 'Green Tea, Lemonade, Ice'
                 },
-                {type: 'Iced Chai Tea Latte',
+                {subtype: 'Iced Chai Tea Latte',
                 ingredients: 'Black Tea, Cinnamon, Cold Milk, Black Pepper, Ice'
                 },
             ]
         }
     ]
     },
-    {section: 'Food',
+    {id: 'food',
+    section: 'Food',
     subsections: [
-        {title: 'Breakfast & Lunch',
-        id: '',
+        {type: 'Breakfast & Lunch',
+        id: 'breakfast-lunch',
         image: menuCoffee,
         items: [
-                {type: 'Bacon Sandwich',
+                {subtype: 'Bacon Sandwich',
                 ingredients: 'Bread, Egg, Dutch Cheese, Bacon'
                 },
-                {type: 'Turkey Sandwich',
+                {subtype: 'Turkey Sandwich',
                 ingredients: 'Wheat Bread, Tomato, Smoked Turkey Breast, Pesto'
                 },
-                {type: 'Sausage Sandwich',
+                {subtype: 'Sausage Sandwich',
                 ingredients: 'Bread, Sausage, Egg, Dutch Cheese, Bacon'
                 },
-                {type: 'All Butter Croissant.',
+                {subtype: 'All Butter Croissant.',
                 ingredients: 'Croissant'
                 },
-                {type: 'Almond Croissant',
+                {subtype: 'Almond Croissant',
                 ingredients: 'Croissant, Almond Filling, Almond Flakes, Icing Sugar'
                 },
-                {type: 'Avocado Wrap',
+                {subtype: 'Avocado Wrap',
                 ingredients: 'Whole Grain Tortilla, Tomato, Swiss Cheese, Avocado'
                 }
             ]
         },
-        {title: 'Snacks & Treats',
-        id: '',
+        {type: 'Snacks & Treats',
+        id: 'snacks-treats',
         image: menuCoffee,
         items: [
-                {type: 'CH Cake',
+                {subtype: 'CH Cake',
                 ingredients: 'Coffee Cake, Caramel Brown Sugar, Cinnamon Topping'
                 },
-                {type: 'Dutch Stroopwafels',
+                {subtype: 'Dutch Stroopwafels',
                 ingredients: 'Dutch Caramel Waffles'
                 },
-                {type: 'Cherry Bakewells',
+                {subtype: 'Cherry Bakewells',
                 ingredients: 'Buttery Dough, Cherry Jam, Sweet Fondant'
                 },
-                {type: 'Strawberries Muffin',
+                {subtype: 'Strawberries Muffin',
                 ingredients: 'Muffin, Strawberries, Strawberry Jam'
                 },
-                {type: 'Chocolate Donut',
+                {subtype: 'Chocolate Donut',
                 ingredients: 'Donut, Chocolate Glaze'
                 },
-                {type: 'Chocolate Cookie',
+                {subtype: 'Chocolate Cookie',
                 ingredients: 'Buttery Cookie, Chocolate Buttons'
                 },
             ]

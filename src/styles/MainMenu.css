@@ -19,38 +19,6 @@
   transition: 0.2s;
 }
 
-.nav-menu li {
-  color: var(--white);
-  transition: 0.2s;
-  list-style-type: none;
-  cursor: pointer;
-  padding-top: 1.3rem;
-}
-
-.nav-menu li:hover {
-  color: var(--lighter-brown);
-}
-
-.inside-list {
-  display: none;
-}
-
-.inside-list.active {
-  display: block;
-  padding-left: 2rem;
-}
-
-.menu-arrow-icon {
-  display: inline-block;
-  margin-left: 0.75rem;
-  transform: rotate(180deg);
-  transition: transform 0.3s;
-}
-
-.menu-arrow-icon.active {
-  transform: rotate(0deg);
-}
-
 @media screen and (max-width: 70rem) {
   .menu-list {
     min-width: 15rem;

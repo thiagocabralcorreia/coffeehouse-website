@@ -1,27 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/MenuCard.css';
 import { menuSections } from '../assets/data';
 import menuCoffee from '../assets/photos/menu-coffee.jpg';
 
-export function MenuCard() {
+function MenuCard() {
+    const type = 'Coffee';
     return (
         <div className='menu-card-container'>
             <div className='menu-card-content'>
-                <h1>Coffee</h1>
-                <ul>
+                <h1>{type}</h1>
                     {menuSections.map((menu) => 
-                        menu.subsections.map((subsection) =>
-                            subsection.items.map((item) => {
-                                return (
-                                    <li className='menu-card-item'>
-                                        <h2>{item.type}</h2>
-                                        <p>{item.ingredients}</p>
-                                    </li>
-                                )
-                            })
-                        )
+                        menu.subsections.map((subsection) => {
+                            return (
+                            <div key={subsection.id}>
+                                {subsection.type === type
+                                && subsection.items.map((item, index) => {
+                                    return (
+                                        <div
+                                        className='menu-card-item'
+                                        key={index}>
+                                            <h2>{item.subtype}</h2>
+                                            <p>{item.ingredients}</p>
+                                        </div>
+                                    )
+                                })}
+                            </div>)
+                        })
                     )}
-                </ul>
             </div>
             <div className='menu-card-image'>
                 <img className='menu-card-image' src={menuCoffee} alt='Coffee'></img>
@@ -29,3 +34,5 @@ export function MenuCard() {
         </div>
     )
 }
+
+export default MenuCard;

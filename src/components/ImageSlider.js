@@ -20,7 +20,9 @@ const ImageSlider = ({ slides }) => {
         <div className='slider'>
                 {SliderData.map((slide, index) => {
                     return (
-                        <div className={index === current ? 'current slide' : 'slide'} key={index}>
+                        <div
+                        key={index}
+                        className={index === current ? 'current slide' : 'slide'}>
                             {index === current && <img src={slide.image} className='image' alt='Coffee'/>}
                             <div className='dots-container'>
                                 <button

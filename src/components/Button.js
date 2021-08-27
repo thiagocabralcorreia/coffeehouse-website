@@ -2,12 +2,12 @@ import React from 'react';
 import '../styles/Button.css';
 import Icon from './Icon';
 
-const Button = ({ text, onClick, display, hasIcon }) => {
+const Button = ({ text, white, onClick, hasIcon }) => {
     const { icon } = hasIcon || {};
 
     return (
         <button
-        className='main-button'
+        className={white ? 'white' : 'brown'}
         onClick={onClick}
         style={hasIcon && {display: 'flex'}}>
             {text}

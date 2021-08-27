@@ -8,7 +8,7 @@ const Menu = () => {
         <div className='menu-container'>
             <div className='menu-banner'>
                 <video src={cappuccino} autoPlay loop muted />
-                <div className='banner-content'>
+                <div className='menu-content'>
                     <h1>Menu</h1>
                     <p>Fresh coffee, breakfast and lunch.<br/>With something for everyone, our menu will delight you.</p>
                 </div>

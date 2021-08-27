@@ -1,0 +1,27 @@
+.menu-sections li {
+  color: var(--white);
+  transition: 0.2s;
+  list-style-type: none;
+  cursor: pointer;
+  padding-top: 1.3rem;
+}
+
+.menu-sections li:hover {
+  color: var(--lighter-brown);
+}
+
+.section-ul {
+  display: block;
+  padding-left: 2rem;
+}
+
+.menu-arrow-icon {
+  display: inline-block;
+  margin-left: 0.75rem;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.menu-arrow-icon.active {
+  transform: rotate(0deg);
+}

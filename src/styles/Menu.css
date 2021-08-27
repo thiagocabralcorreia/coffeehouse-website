@@ -14,12 +14,12 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   z-index: -10;
 }
 
-.banner-content {
+.menu-content {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@
   color: var(--white);
 }
 
-.banner-content h1 {
+.menu-content h1 {
   font-size: 3.2rem;
 }
 
-.banner-content p {
+.menu-content p {
   font-size: 1.6rem;
   padding-top: 1.5rem;
   line-height: 2.2rem;
@@ -48,7 +48,7 @@
     z-index: -10;
   }
 
-  .banner-content {
+  .menu-content {
     padding: 4rem 4rem 5rem;
   }
 }

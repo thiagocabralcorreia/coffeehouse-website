@@ -161,9 +161,3 @@
     transition-timing-function: ease;
   }
 }
-
-@media screen and screen and (max-width: 400px) {
-  .nav-list li {
-    padding-left: 5rem;
-  }
-}

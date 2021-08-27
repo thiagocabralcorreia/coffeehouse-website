@@ -44,7 +44,7 @@ function NavBar() {
                     </li>
                     <li>
                         <Link to='/store-locator' className='nav-link'>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i className="fas fa-map-marker-alt"></i>
                         </Link>
                     </li>
                 </ul>

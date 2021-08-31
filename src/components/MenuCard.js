@@ -1,19 +1,20 @@
 import React from 'react';
 import '../styles/MenuCard.css';
 import { menuSections } from '../assets/data';
+import { useMenu } from '../context/MenuContext';
 import menuCoffee from '../assets/photos/menu-coffee.jpg';
 
 function MenuCard() {
-    const type = 'Coffee';
+    const { currentMenu } = useMenu();
     return (
         <div className='menu-card-container'>
             <div className='menu-card-content'>
-                <h1>{type}</h1>
+                <h1>{currentMenu}</h1>
                     {menuSections.map((menu) => 
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
-                                {subsection.type === type
+                                {subsection.type === currentMenu
                                 && subsection.items.map((item, index) => {
                                     return (
                                         <div
@@ -29,7 +30,18 @@ function MenuCard() {
                     )}
             </div>
             <div className='menu-card-image'>
-                <img className='menu-card-image' src={menuCoffee} alt='Coffee'></img>
+                {menuSections.map((menu) => 
+                        menu.subsections.map((subsection) => {
+                            return (
+                            <div key={subsection.id}>
+                                {subsection.type === currentMenu
+                                && <img className='menu-card-image'
+                                    src={subsection.image}
+                                    alt={currentMenu}></img>
+                                }
+                            </div>)
+                        })
+                    )}
             </div>
         </div>
     )

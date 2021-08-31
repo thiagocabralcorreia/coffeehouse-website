@@ -5,6 +5,10 @@ import chbanner03 from '../assets/photos/chbanner03.png';
 
 // menuSections Images
 import menuCoffee from '../assets/photos/menu-coffee.jpg';
+import menuTea from '../assets/photos/menu-tea.jpg';
+import menuColdDrinks from '../assets/photos/menu-cold-drinks.jpg';
+import menuBreakfast from '../assets/photos/menu-breakfast.jpg';
+import menuTreats from '../assets/photos/menu-treats.jpg';
 
 export const SliderData = [
     {
@@ -48,7 +52,7 @@ export const menuSections = [
         },
         {type: 'Tea',
         id: 'tea',
-        image: menuCoffee,
+        image: menuTea,
         items: [
                 {subtype: 'English Breakfast Tea',
                 ingredients: 'Black Tea'
@@ -75,7 +79,7 @@ export const menuSections = [
         },
         {type: 'Cold Drinks',
         id: 'cold-drinks',
-        image: menuCoffee,
+        image: menuColdDrinks,
         items: [
                 {subtype: 'Cold Brew',
                 ingredients: 'Cold Coffee, Ice'
@@ -107,8 +111,17 @@ export const menuSections = [
     subsections: [
         {type: 'Breakfast & Lunch',
         id: 'breakfast-lunch',
-        image: menuCoffee,
+        image: menuBreakfast,
         items: [
+                {subtype: 'All Butter Croissant',
+                ingredients: 'Croissant'
+                },
+                {subtype: 'Almond Croissant',
+                ingredients: 'Croissant, Almond Filling, Almond Flakes, Icing Sugar'
+                },
+                {subtype: 'Avocado Wrap',
+                ingredients: 'Whole Grain Tortilla, Tomato, Swiss Cheese, Avocado'
+                },
                 {subtype: 'Bacon Sandwich',
                 ingredients: 'Bread, Egg, Dutch Cheese, Bacon'
                 },
@@ -117,21 +130,12 @@ export const menuSections = [
                 },
                 {subtype: 'Sausage Sandwich',
                 ingredients: 'Bread, Sausage, Egg, Dutch Cheese, Bacon'
-                },
-                {subtype: 'All Butter Croissant.',
-                ingredients: 'Croissant'
-                },
-                {subtype: 'Almond Croissant',
-                ingredients: 'Croissant, Almond Filling, Almond Flakes, Icing Sugar'
-                },
-                {subtype: 'Avocado Wrap',
-                ingredients: 'Whole Grain Tortilla, Tomato, Swiss Cheese, Avocado'
                 }
             ]
         },
         {type: 'Snacks & Treats',
         id: 'snacks-treats',
-        image: menuCoffee,
+        image: menuTreats,
         items: [
                 {subtype: 'CH Cake',
                 ingredients: 'Coffee Cake, Caramel Brown Sugar, Cinnamon Topping'

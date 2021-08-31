@@ -42,6 +42,8 @@
   max-width: 17rem;
   max-height: 17rem;
   margin: 0 1.5rem;
+  transition: 0.5s;
+  transition-duration: 1s linear;
 }
 
 @media screen and (max-width: 80rem) {

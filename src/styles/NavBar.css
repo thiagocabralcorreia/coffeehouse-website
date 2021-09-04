@@ -1,26 +1,23 @@
 .navbar {
   height: 4.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  position: sticky;
   top: 0;
   z-index: 100;
+  position: relative;
   background-color: var(--white);
   box-shadow: 0 1px 3px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
 }
 
 .navbar-container {
-  align-items: center;
+  display: flex;
+  justify-content: center;
   justify-content: space-between;
   width: 100%;
-  display: flex;
 }
 
 .logo {
-  height: 4rem;
+  height: 4.2rem;
   padding-left: 3rem;
   padding-right: 2rem;
   fill: var(--brown);
@@ -32,29 +29,25 @@
 
 .nav-list {
   display: flex;
-  padding-right: 3rem;
+  padding-right: 3.5rem;
 }
 
-.nav-list li {
-  display: flex;
-  font-size: 1rem;
+.nav-list-item {
+  list-style: none;
+  font-size: 1.1rem;
   font-weight: bolder;
-  padding: 0 1.3rem 0 1.3rem;
+  padding: 1.6rem 0.5rem 1.6rem 2.5rem;
 }
 
 .nav-link {
   color: var(--brown);
   text-decoration: none;
+  cursor: pointer;
   transition: 0.2s;
 }
 
 .nav-link:hover {
   color: var(--light-brown);
-}
-
-.navbar-arrow-icon {
-  padding-left: 0.75rem;
-  display: inline-block;
 }
 
 .overlay {
@@ -70,8 +63,8 @@
     justify-content: center;
     color: var(--white);
     cursor: pointer;
-    margin-right: 3rem;
-    padding: 2rem;
+    margin-right: 4rem;
+    padding: 0;
   }
 
   .line {
@@ -115,7 +108,7 @@
     min-width: 60%;
     left: 0;
     top: 4.51rem;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 3rem 2rem 1rem 2.5rem;
     transform: initial;
     transition: 0.2s;
     opacity: 1;
@@ -127,6 +120,10 @@
   .nav-list {
     display: none;
     opacity: 0;
+  }
+
+  .nav-list-item {
+    padding: 0 1rem;
   }
 
   .nav-link {

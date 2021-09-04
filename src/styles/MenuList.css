@@ -3,7 +3,9 @@
   transition: 0.2s;
   list-style-type: none;
   cursor: pointer;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  line-height: 2rem;
 }
 
 .menu-sections li:hover {

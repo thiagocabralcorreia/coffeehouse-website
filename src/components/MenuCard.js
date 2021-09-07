@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/MenuCard.css';
 import { menuSections } from '../assets/data';
 import { useMenu } from '../context/MenuContext';
-import menuCoffee from '../assets/photos/menu-coffee.jpg';
 
 function MenuCard() {
     const { currentMenu } = useMenu();

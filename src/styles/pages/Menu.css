@@ -28,7 +28,7 @@
 }
 
 .menu-content h1 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 
 .menu-content p {
@@ -50,5 +50,9 @@
 
   .menu-content {
     padding: 4rem 4rem 5rem;
+  }
+
+  .menu-content h1 {
+    font-size: 3rem;
   }
 }

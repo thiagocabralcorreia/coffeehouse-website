@@ -89,7 +89,7 @@
 .image-container {
   min-width: 50%;
   display: block;
-  background: url("../assets/photos/plant.jpg") no-repeat center center;
+  background: url("../../assets/photos/plant.jpg") no-repeat center center;
   background-size: cover;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import MainMenu from '../components/MainMenu';
-import '../styles/Menu.css';
+import '../styles/pages/Menu.css';
 import cappuccino from '../assets/videos/cappuccino.mp4';
 
 const Menu = () => {

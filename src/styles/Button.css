@@ -1,4 +1,4 @@
-.brown {
+.brown-button {
   align-items: center;
   padding: 0.7rem 1.5rem;
   font-size: 1.1rem;
@@ -11,15 +11,15 @@
   height: 3rem;
 }
 
-.brown:hover {
+.brown-button:hover {
   background-color: var(--light-brown);
 }
 
-.brown i {
+.brown-button i {
   padding-left: 0.8rem;
 }
 
-.white {
+.white-button {
   align-items: center;
   padding: 0.7rem 1.5rem;
   font-size: 1.1rem;
@@ -32,11 +32,11 @@
   height: 3rem;
 }
 
-.white:hover {
+.white-button:hover {
   background-color: var(--light-brown);
   color: var(--white);
 }
 
-.white i {
+.white-button i {
   padding-left: 0.8rem;
 }

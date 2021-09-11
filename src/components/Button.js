@@ -7,7 +7,7 @@ const Button = ({ text, white, onClick, hasIcon }) => {
 
     return (
         <button
-        className={white ? 'white' : 'brown'}
+        className={white ? 'white-button' : 'brown-button'}
         onClick={onClick}
         style={hasIcon && {display: 'flex'}}>
             {text}

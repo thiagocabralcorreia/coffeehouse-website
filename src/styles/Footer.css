@@ -9,15 +9,15 @@
 
 .footer-conditions {
   display: flex;
+  flex-direction: row;
   font-size: 0.9rem;
   padding-top: 2rem;
-  padding-left: 3rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 
 .footer-conditions-link {
-  padding-right: 3rem;
   color: var(--white);
   text-decoration: none;
 }
@@ -30,20 +30,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .copyright p {
   font-size: 0.9rem;
   color: var(--white);
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.copyright a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: var(--lighter-brown);
 }
 
 @media screen and (max-width: 39rem) {
   .footer-conditions {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .footer-conditions-link {

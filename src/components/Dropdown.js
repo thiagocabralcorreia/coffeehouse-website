@@ -12,9 +12,9 @@ function Dropdown() {
                     <Link
                         onClick={() => setCloseDropdown(false)}
                         className='dropdown-link'
-                        to='/about-us'
+                        to='/about'
                     >
-                        About Us
+                        About
                     </Link>
                 </li>
                 <li>

@@ -11,7 +11,7 @@ const Footer = () => {
                 <Link to='/' className='footer-conditions-link'>Terms and Conditions</Link>
             </div>
             <div className='copyright'>
-                <p>© Copyright 2021 | Coffee House by Thiago Correia. All rights reserved.</p>
+                <p>© Copyright 2021 | Coffee House by <a href='https://www.linkedin.com/in/thiago-cabral-correia/' target='_blank' rel="noreferrer">Thiago Correia</a>. All rights reserved.</p>
             </div>
         </div>
     )

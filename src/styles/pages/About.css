@@ -1,0 +1,60 @@
+.about-banner {
+  margin-top: -4.5rem;
+  display: block;
+  height: 100vh;
+  justify-content: center;
+  background-color: var(--brown);
+}
+
+.about-banner img {
+  margin-top: -4.5rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.about-bar {
+  display: flex;
+  margin-top: -0.25rem;
+  border-bottom: solid 0.25rem var(--brown);
+  height: 4.5rem;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.about-content {
+  padding: 3rem 0 3.5rem;
+  text-align: center;
+  max-width: 62%;
+  margin: auto;
+  background-color: var(--white);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  padding-bottom: 1rem;
+}
+
+.about-content p:last-child {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 37rem) {
+  .about-banner img {
+    height: 90vh;
+  }
+
+  .about-bar {
+    height: 8rem;
+    padding: 1rem 2rem 0;
+  }
+
+  .about-bar h2 {
+    padding: 2rem 1rem 1rem;
+  }
+}

@@ -19,7 +19,7 @@ function Routes() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/menu' exact component={Menu} />
-          <Route path='/about-us' exact component={About} />
+          <Route path='/about' exact component={About} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/impact' exact component={Impact} />
           <Route path='/store-locator' exact component={StoreLocator} />

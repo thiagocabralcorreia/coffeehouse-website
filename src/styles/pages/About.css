@@ -1,3 +1,7 @@
+.about-container {
+  background-color: var(--white);
+}
+
 .about-banner {
   margin-top: -4.5rem;
   display: block;
@@ -29,19 +33,43 @@
 .about-content {
   padding: 3rem 0 3.5rem;
   text-align: center;
-  max-width: 62%;
+  max-width: 65%;
   margin: auto;
   background-color: var(--white);
 }
 
-.about-content p {
+.about-container h1 {
+  font-size: 4rem;
+  padding: 1rem 0 1rem;
+  color: var(--brown);
+}
+
+.about-container p {
   font-size: 1.2rem;
   color: var(--gray);
   padding-bottom: 1rem;
 }
 
-.about-content p:last-child {
+.about-container p:last-child {
   padding-bottom: 0;
+}
+
+.about-container a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  color: var(--light-brown);
+}
+
+.about-team {
+  width: 100%;
+  background-color: var(--lighter-gray);
+  padding: 2rem 3rem 10rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 37rem) {

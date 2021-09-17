@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/MenuCard.css';
-import { menuSections } from '../assets/data';
+import { menuSections } from '../data/menu';
 import { useMenu } from '../context/MenuContext';
 
 function MenuCard() {

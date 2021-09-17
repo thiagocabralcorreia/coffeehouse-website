@@ -1,26 +1,8 @@
-// SliderData Images
-import chbanner01 from '../assets/photos/chbanner01.png';
-import chbanner02 from '../assets/photos/chbanner02.png';
-import chbanner03 from '../assets/photos/chbanner03.png';
-
-// menuSections Images
 import menuCoffee from '../assets/photos/menu-coffee.jpg';
 import menuTea from '../assets/photos/menu-tea.jpg';
 import menuColdDrinks from '../assets/photos/menu-cold-drinks.jpg';
 import menuBreakfast from '../assets/photos/menu-breakfast.jpg';
 import menuTreats from '../assets/photos/menu-treats.jpg';
-
-export const SliderData = [
-    {
-        image: chbanner01
-    },
-    {
-        image: chbanner02
-    },
-    {
-        image: chbanner03
-    },
-]
 
 export const menuSections = [
     {id: 'drinks',

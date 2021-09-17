@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/pages/Home.css';
 import ImageSlider from '../components/ImageSlider';
-import { SliderData } from '../assets/data';
+import { SliderData } from '../data/sliderData';
 import chApp from '../assets/ch-app.png';
 import smartphone from '../assets/photos/smartphone.png';
 import Button from '../components/Button';

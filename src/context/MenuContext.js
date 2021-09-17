@@ -2,8 +2,8 @@ import React, { createContext, useContext, useState } from 'react';
 
 const MenuContext = createContext();
 
-export default function MenuProvider({ children }) {
-    const [currentMenu, setCurrentMenu] = useState('Coffee');
+export default function MenuProvider({ children, defaultState }) {
+    const [currentMenu, setCurrentMenu] = useState(defaultState ? defaultState : '');
     return (
         <MenuContext.Provider value={{ currentMenu, setCurrentMenu }}>
             { children }

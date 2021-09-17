@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/pages/Impact.css';
 
 import chImpact from '../assets/photos/impact.jpg';
-import Grid from '../components/Grid';
+import ImpactGrid from '../components/ImpactGrid';
 
 function Impact() {
     return (
@@ -15,7 +15,7 @@ function Impact() {
                 <p>Our mission is to make the world a better place. That's why Coffee House has always taken care of nature and communities. We work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts.
                 </p>
             </div>
-            <Grid />
+            <ImpactGrid />
         </div>
     )
 }

@@ -5,13 +5,15 @@
   width: 100%;
 }
 
-.grid-row {
-  display: flex;
-  flex-direction: row;
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .grid figure {
-  width: 33.4%;
+  width: 100%;
   overflow: hidden;
   cursor: pointer;
 }

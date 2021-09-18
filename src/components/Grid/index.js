@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Grid.css';
-import { impactPratices } from '../data/impactPratices';
+import './styles.css';
+import { impactPratices } from '../../data/impactPratices';
 
-function ImpactGrid() {
+function Grid({ openModal }) {
     return (
-        <div className='grid'>
+        <div className='grid' onClick={openModal}>
                 <div className='grid-container'>
                     {impactPratices.map((item, index) => {
                         return (
@@ -17,4 +17,4 @@ function ImpactGrid() {
     )
 }
 
-export default ImpactGrid;
+export default Grid;

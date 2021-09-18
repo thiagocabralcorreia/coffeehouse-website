@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/Button.css';
-import Icon from './Icon';
+import './styles.css';
 
 const Button = ({ text, white, onClick, hasIcon }) => {
     const { icon } = hasIcon || {};
@@ -11,7 +10,11 @@ const Button = ({ text, white, onClick, hasIcon }) => {
         onClick={onClick}
         style={hasIcon && {display: 'flex'}}>
             {text}
-            {hasIcon && (<Icon icon={icon}/>)}
+            {hasIcon && (
+                <div>
+                    <i className={icon}></i>
+                </div>
+            )}
         </button>
     )
 }

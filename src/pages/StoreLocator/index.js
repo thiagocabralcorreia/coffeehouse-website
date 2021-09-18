@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../components/Button';
-import InputSearch from '../components/InputSearch';
-import '../styles/pages/StoreLocator.css';
+import './styles.css';
+import Button from '../../components/Button/';
+import InputSearch from '../../components/InputSearch/';
 
 const StoreLocator = () => {
     return (

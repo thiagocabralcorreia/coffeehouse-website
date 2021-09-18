@@ -2,17 +2,17 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/pages/Home.css';
-import ImageSlider from '../components/ImageSlider';
-import { SliderData } from '../data/sliderData';
-import chApp from '../assets/ch-app.png';
-import smartphone from '../assets/photos/smartphone.png';
-import Button from '../components/Button';
+import './styles.css';
+import Slider from '../../components/Slider/';
+import Button from '../../components/Button/';
+import { SliderData } from '../../data/sliderData';
+import chApp from '../../assets/ch-app.png';
+import smartphone from '../../assets/photos/smartphone.png';
 
 const Home = () => {
     return (
         <div className='home-container'>
-                <ImageSlider slides={SliderData}/>
+                <Slider slides={SliderData}/>
                 <div className='order-container'>
                     <h1 className='order-title'>Ways to Order</h1>
                     <p className='order-text'>Tell us how you want your order.</p>

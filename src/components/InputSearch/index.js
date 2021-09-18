@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/InputSearch.css';
-import Icon from './Icon';
+import './styles.css';
 
 const InputSearch = ({ placeholder }) => {
     return (
@@ -11,7 +10,7 @@ const InputSearch = ({ placeholder }) => {
                 placeholder={placeholder}            
             />
             <button className='search-btn'>
-                <Icon icon='fas fa-search'/>
+                <i className='fas fa-search'/>
             </button>
         </div>
     )

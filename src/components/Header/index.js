@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../styles/NavBar.css';
-import {ReactComponent as Logo} from '../assets/ch-logo.svg';
-import DropdownMenu from '../components/Dropdown';
+import './styles.css';
+import {ReactComponent as Logo} from '../../assets/ch-logo.svg';
+import DropdownMenu from './Dropdown/';
 
-function NavBar() {
+function Header() {
     const [ mobileMenu, setMobileMenu ] = useState(false);
     const [ dropdown, setDropdown] = useState(false);
     
@@ -56,4 +56,4 @@ function NavBar() {
     )
 }
 
-export default NavBar;
+export default Header;

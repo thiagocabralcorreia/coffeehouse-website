@@ -1,7 +1,7 @@
 import React from 'react';
-import MainMenu from '../components/MainMenu';
-import '../styles/pages/Menu.css';
-import cappuccino from '../assets/videos/cappuccino.mp4';
+import './styles.css';
+import MainMenu from '../../components/Menu/';
+import cappuccino from '../../assets/videos/cappuccino.mp4';
 
 const Menu = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Dropdown.css';
+import './styles.css';
 
 function Dropdown() {
     const [ closeDropdown, setCloseDropdown ] = useState(true);

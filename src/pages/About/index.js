@@ -1,13 +1,12 @@
 import React from 'react';
-import '../styles/pages/About.css';
-
-import about from '../assets/photos/about-cover.jpg';
+import './styles.css';
+import aboutCover from '../../assets/photos/about-cover.jpg';
 
 function About() {
     return (
         <div className='about-container'>
             <div className='about-banner'>
-                <img src={about} alt='Coffee House Counter' />
+                <img src={aboutCover} alt='Coffee House Counter' />
                 <div className='about-bar'>
                     <h2>Who is Behind All Those Cups of Coffee</h2>
                 </div>

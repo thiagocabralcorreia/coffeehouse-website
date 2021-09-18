@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/MainMenu.css';
-import { menuSections } from '../data/menu';
-import MenuCard from './MenuCard';
-import MenuList from './MenuList';
+import './styles.css';
+import { menuSections } from '../../data/menu';
+import MenuCard from './MenuCard/';
+import MenuList from './MenuList/';
 
-import MenuProvider from '../context/MenuContext';
+import MenuProvider from '../../context/MenuContext';
 
 const MainMenu = () => {
     return (

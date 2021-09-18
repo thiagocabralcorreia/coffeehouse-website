@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useMenu } from '../context/MenuContext';
-import '../styles/MenuList.css';
+import { useMenu } from '../../../context/MenuContext';
+import './styles.css';
 
 const MenuList = ({ section, subsections }) => {
     const [showList, setShowList] = useState(false);

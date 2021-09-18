@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/MenuCard.css';
-import { menuSections } from '../data/menu';
-import { useMenu } from '../context/MenuContext';
+import './styles.css';
+import { menuSections } from '../../../data/menu';
+import { useMenu } from '../../../context/MenuContext';
 
 function MenuCard() {
     const { currentMenu } = useMenu();

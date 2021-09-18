@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Banner.css';
-import Button from '../components/Button';
-import store from '../assets/photos/ch-store.png';
+import './styles.css';
+import Button from '../../components/Button/';
+import store from '../../assets/photos/ch-store.png';
 
 function Banner() {
     return (

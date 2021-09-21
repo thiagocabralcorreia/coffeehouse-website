@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import chImpact from '../../assets/photos/impact.jpg';
 import Grid from '../../components/Grid/';
+import TeamModal from '../../components/TeamModal';
 
 function Impact() {
+  const [isOpen, setIsOpen] = useState(false);
+    console.log(isOpen);
+    
     return (
         <div>
             <div className='impact-banner'>
@@ -14,7 +18,12 @@ function Impact() {
                 <p>Our mission is to make the world a better place. That's why Coffee House has always taken care of nature and communities. We work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts.
                 </p>
             </div>
+            <div style={{ display: 'flex', backgroundColor: 'white', justifyContent: 'center', margin: 'auto'}}>
+              <button onClick={() => setIsOpen(!isOpen)}>Modal</button>
+            </div>
             <Grid />
+            <TeamModal open={isOpen}
+              onClose={() => setIsOpen(!isOpen)}/>
         </div>
     )
 }

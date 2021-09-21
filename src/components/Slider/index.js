@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { SliderData } from '../../data/sliderData';
+import PropTypes from 'prop-types';
 import './styles.css';
+import { sliderData } from '../../data/sliderData';
 
 const Slider = ({ slides }) => {
     const [ current, setCurrent ] = useState(0);
@@ -18,12 +19,24 @@ const Slider = ({ slides }) => {
     }
     return (
         <div className='slider'>
-                {SliderData.map((slide, index) => {
+                {sliderData.map((slide, index) => {
                     return (
                         <div
                         key={index}
                         className={index === current ? 'current slide' : 'slide'}>
-                            {index === current && <img src={slide.image} className='image' alt='Coffee'/>}
+                            {index === current &&
+                                <div>
+                                    <img 
+                                    src={slide.landscape}
+                                    className='landscape'
+                                    alt='Coffee banner'
+                                    />
+                                    <img 
+                                    src={slide.square}
+                                    className='square'
+                                    alt='Coffee banner'
+                                    />
+                                </div>}
                             <div className='dots-container'>
                                 <button
                                     className={current === 0 ? 'active slider-dot' : 'slider-dot'}
@@ -51,6 +64,14 @@ const Slider = ({ slides }) => {
             </div>
         </div>
     )
+};
+
+Slider.propTypes = {
+    className: PropTypes.arrayOf(PropTypes.object),
+};
+
+Slider.defaultProps = {
+    className: [],
 };
 
 export default Slider;

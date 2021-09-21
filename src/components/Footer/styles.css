@@ -38,8 +38,8 @@
 .copyright p {
   font-size: 0.9rem;
   color: var(--white);
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .copyright a {
@@ -49,6 +49,24 @@
 
 .copyright a:hover {
   color: var(--lighter-brown);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.social-media i:hover {
+  color: var(--lighter-brown);
+}
+
+.social-media i:hover {
+  color: var(--light-brown);
 }
 
 @media screen and (max-width: 39rem) {

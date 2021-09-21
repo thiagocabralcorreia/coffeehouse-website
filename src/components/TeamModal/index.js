@@ -1,10 +1,10 @@
 import React from 'react';
 import Modal from '../Modal/';
 
-function TeamModal({ open, close}) {
+function TeamModal({ onClose, open}) {
     return (
-        <Modal open={open}>
-            <button onClick={close}></button>
+        <Modal open={open} onClose={onClose}>
+            <button onClick={onClose}></button>
             <h1 style={{ color: 'black', fontSize: '5rem '}}>Teste</h1>
         </Modal>
     )

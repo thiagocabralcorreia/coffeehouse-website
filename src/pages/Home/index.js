@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import Slider from '../../components/Slider/';
 import Button from '../../components/Button/';
-import { SliderData } from '../../data/sliderData';
+import { sliderData } from '../../data/sliderData';
 import chApp from '../../assets/ch-app.png';
 import smartphone from '../../assets/photos/smartphone.png';
 
 const Home = () => {
     return (
         <div className='home-container'>
-                <Slider slides={SliderData}/>
+                <Slider slides={sliderData}/>
                 <div className='order-container'>
                     <h1 className='order-title'>Ways to Order</h1>
                     <p className='order-text'>Tell us how you want your order.</p>

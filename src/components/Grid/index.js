@@ -2,9 +2,9 @@ import React from 'react';
 import './styles.css';
 import { impactPratices } from '../../data/impactPratices';
 
-function Grid({ openModal }) {
+function Grid() {
     return (
-        <div className='grid' onClick={openModal}>
+        <div className='grid'>
                 <div className='grid-container'>
                     {impactPratices.map((item, index) => {
                         return (

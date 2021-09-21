@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 const InputSearch = ({ placeholder }) => {
@@ -15,5 +16,13 @@ const InputSearch = ({ placeholder }) => {
         </div>
     )
 }
+
+InputSearch.propTypes = {
+    className: PropTypes.string,
+};
+
+InputSearch.defaultProps = {
+    className: '',
+};
 
 export default InputSearch;

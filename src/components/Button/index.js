@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 const Button = ({ text, white, onClick, hasIcon }) => {
@@ -18,5 +19,17 @@ const Button = ({ text, white, onClick, hasIcon }) => {
         </button>
     )
 }
+
+Button.propTypes = {
+    text: PropTypes.string,
+    white: PropTypes.bool,
+    onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+    text: '',
+    size: 'true',
+    onClick: undefined,
+};
 
 export default Button;

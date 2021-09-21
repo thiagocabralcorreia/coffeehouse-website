@@ -4,7 +4,6 @@ import './styles.css';
 
 function Dropdown() {
     const [ closeDropdown, setCloseDropdown ] = useState(true);
-    console.log(closeDropdown);
     return (
         <div className={closeDropdown ? 'dropdown-menu open' :'dropdown-menu closed'}>
             <ul>

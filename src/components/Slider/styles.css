@@ -17,10 +17,14 @@
   width: 100%;
 }
 
-.image {
+.landscape {
+  display: block;
   width: 100%;
   max-height: 100%;
-  display: block;
+}
+
+.square {
+  display: none;
 }
 
 .arrow-container {
@@ -96,8 +100,14 @@
   opacity: 0.75;
 }
 
-@media screen and (max-width: 16.5rem) {
-  .slider {
+@media screen and (max-width: 34rem) {
+  .landscape {
     display: none;
+  }
+
+  .square {
+    display: block;
+    width: 100%;
+    max-height: 100%;
   }
 }

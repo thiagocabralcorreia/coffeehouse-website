@@ -1,15 +1,21 @@
 import chbanner01 from '../assets/photos/chbanner01.png';
 import chbanner02 from '../assets/photos/chbanner02.png';
 import chbanner03 from '../assets/photos/chbanner03.png';
+import chbannerSquare01 from '../assets/photos/chbanner-square01.png';
+import chbannerSquare02 from '../assets/photos/chbanner-square02.png';
+import chbannerSquare03 from '../assets/photos/chbanner-square03.png';
 
-export const SliderData = [
+export const sliderData = [
     {
-        image: chbanner01
+        landscape: chbanner01,
+        square: chbannerSquare01
     },
     {
-        image: chbanner02
+        landscape: chbanner02,
+        square: chbannerSquare02
     },
     {
-        image: chbanner03
-    },
+        landscape: chbanner03,
+        square: chbannerSquare03
+    }
 ]

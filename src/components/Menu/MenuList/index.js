@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useMenu } from '../../../context/MenuContext';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 const MenuList = ({ section, subsections }) => {
@@ -27,5 +28,15 @@ const MenuList = ({ section, subsections }) => {
         </div>
     )
 }
+
+MenuList.propTypes = {
+    section: PropTypes.string,
+    subsections: PropTypes.arrayOf(PropTypes.object),
+};
+
+MenuList.defaultProps = {
+    section: '',
+    subsections: [],
+};
 
 export default MenuList;

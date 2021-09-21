@@ -38,7 +38,6 @@
 .impact-content p {
   font-size: 1.2rem;
   width: 65%;
-  color: var(--gray);
 }
 
 @media screen and (max-width: 40rem) {

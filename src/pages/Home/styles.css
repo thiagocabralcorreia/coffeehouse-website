@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--gray);
   padding: 2.5rem 10rem;
 }
 
@@ -227,9 +226,8 @@
 
   .app-container {
     padding: 1rem 2rem;
-    width: 90%;
     height: 100%;
-    margin: 4rem auto 2rem auto;
+    margin: 5rem auto 2rem auto;
   }
 
   .app-content {
@@ -309,6 +307,5 @@
   .app-container {
     justify-content: center;
     padding: 2rem 2rem;
-    width: 100%;
   }
 }

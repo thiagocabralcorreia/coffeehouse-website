@@ -3,7 +3,6 @@
   z-index: 1;
   display: block;
   position: relative;
-  margin-bottom: 2rem;
 }
 
 .slide {
@@ -100,7 +99,7 @@
   opacity: 0.75;
 }
 
-@media screen and (max-width: 34rem) {
+@media screen and (max-width: 36rem) {
   .landscape {
     display: none;
   }

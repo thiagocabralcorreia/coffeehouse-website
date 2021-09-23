@@ -27,24 +27,19 @@
   padding-bottom: 2rem;
 }
 
-.banner-image {
-  display: block;
-  background: url("../../assets/photos/ch-store.png") no-repeat center center;
-  background-size: cover;
+.button-link {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 54rem) {
+@media screen and (max-width: 64rem) {
   .banner-grid {
+    height: 100%;
     grid-template-columns: 1fr;
-    width: 100%;
+    grid-template-rows: 1fr 1fr;
   }
 
   .banner-content {
     text-align: center;
-    padding: 2.5rem 2rem 2.5rem;
-  }
-
-  .banner-image {
-    display: none;
+    padding: 4rem 2rem 4rem;
   }
 }

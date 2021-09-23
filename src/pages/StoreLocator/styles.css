@@ -1,6 +1,7 @@
 .locator-container {
   display: flex;
   height: 30rem;
+  margin: 4.5rem 0 0;
 }
 
 .locator-sidebar {

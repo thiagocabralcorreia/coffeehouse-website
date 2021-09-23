@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactModal from 'react-modal';
+import PropTypes from 'prop-types';
 import './styles.css';
 
-function Modal( children, close, open ) {
+function Modal({ children, onClose, open }) {
   const handleOpen = () => {
     return (document.body.style.overflow = 'hidden');
   };
@@ -14,7 +15,7 @@ function Modal( children, close, open ) {
   return (
     <ReactModal
       isOpen={open}
-      onRequestClose={close}
+      onRequestClose={onClose}
       shouldCloseOnOverlayClick={true}
       onAfterOpen={handleOpen}
       onAfterClose={handleClose}
@@ -26,12 +27,21 @@ function Modal( children, close, open ) {
           right: 0,
           bottom: 0,
           left: 0,
-          backgroundColor: 'rgba(29, 49, 65, 0.8)',
+          backgroundColor: 'rgba(0, 0, 0, 0.4)',
           overflowX: 'hidden',
           overflowY: 'auto',
           zIndex: 2,
         },
-
+        content: {
+          top: '50%',
+          left: '50%',
+          right: 'auto',
+          bottom: 'auto',
+          transform: 'translate(-50%, -50%)',
+          padding: 0,
+          margin: 0,
+          border: 0,
+        },
       }}
       >
       <div className='modal-container' open={open}>
@@ -40,5 +50,16 @@ function Modal( children, close, open ) {
       </ReactModal>
   )
 }
+
+Modal.propTypes = {
+  children: PropTypes.node.isRequired,
+  open: PropTypes.bool.isRequired,
+  onClose: PropTypes.func,
+};
+
+Modal.defaultProps = {
+  onClose: () => {},
+};
+
 
 export default Modal;

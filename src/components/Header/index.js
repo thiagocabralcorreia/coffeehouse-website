@@ -7,22 +7,48 @@ import DropdownMenu from './Dropdown/';
 function Header() {
     const [ mobileMenu, setMobileMenu ] = useState(false);
     const [ dropdown, setDropdown] = useState(false);
-    
+
+    const onClose = () => {
+        setMobileMenu(false);
+        return (document.body.style.overflow = 'unset');
+    };
+
+    const onOpen = () => {
+        setMobileMenu(true);
+        return (document.body.style.overflow = 'hidden');
+    };
+
+    const handleClick = () => {
+        setMobileMenu(!mobileMenu);
+        if (mobileMenu === false) {onOpen()} else {onClose()}
+    };
+
     const { pathname } = useLocation()
     useEffect(() => {
         setMobileMenu(false);
-    }, [pathname])
+        onClose();
+    }, [pathname]);
+
+    const showMobileMenu = () => {
+        if (window.innerWidth >= 720) {onClose()}
+    };
+
+    useEffect(() => {
+        showMobileMenu();
+    });
+
+    window.addEventListener('resize', showMobileMenu);
 
     return (
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' >
+                    <Link to='/' onClick={() => setMobileMenu(onClose)}>
                         <Logo className='logo'/>
                     </Link>
                     <div
                     className={mobileMenu ? 'menu-icon active' : 'menu-icon'}
-                    onClick={() => setMobileMenu(!mobileMenu)}
+                    onClick={() => setMobileMenu(handleClick)}
                     >
                         <div className='line top'></div>
                         <div className='line middle'></div>
@@ -50,7 +76,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-                <div className={mobileMenu ? 'overlay active' : 'overlay'} onClick={() => setMobileMenu(!mobileMenu)}></div>
+                <div className={mobileMenu ? 'overlay active' : 'overlay'} onClick={() => setMobileMenu(onClose)}></div>
             </nav>
         </>
     )

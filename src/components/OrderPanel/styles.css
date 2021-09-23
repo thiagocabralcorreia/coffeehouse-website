@@ -1,0 +1,157 @@
+.order-container {
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 4rem 2.5rem;
+}
+
+.order-title {
+  font-size: 2.1rem;
+  color: var(--brown);
+}
+
+.order-title::after {
+  display: block;
+  content: "";
+  height: 0.1rem;
+  width: 20rem;
+  background-color: var(--light-brown);
+  margin: 1rem auto;
+}
+
+.order-text {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.card {
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.card i {
+  color: var(--brown);
+}
+
+@media screen and (max-width: 56rem) {
+  .order-container {
+    padding: 3.5rem 1rem 2.5rem;
+  }
+
+  .cards-container {
+    gap: 0;
+  }
+
+  .card {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem 2rem;
+    width: 100%;
+  }
+
+  .card h1 {
+    font-size: 1.35rem;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+
+  .card p {
+    display: none;
+  }
+
+  .fa-mug-hot {
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 45rem) {
+  .cards-container {
+    display: block;
+  }
+
+  .card {
+    margin: 0rem 1rem;
+    padding: 0.5rem 0rem;
+    width: 100%;
+  }
+
+  .card h1 {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+  }
+
+  .fa-car {
+    padding-left: 1.9rem;
+  }
+
+  .fa-mug-hot {
+    padding-left: 0.8rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .cards-container {
+    display: block;
+    justify-content: center;
+  }
+
+  .card {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    display: block;
+  }
+
+  .order-title::after {
+    width: 5rem;
+  }
+
+  .card h1 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .fa-2x {
+    margin: auto;
+  }
+
+  .fa-car {
+    padding-left: 0;
+  }
+
+  .fa-mug-hot {
+    padding-left: 0;
+    padding-bottom: 0rem;
+  }
+}

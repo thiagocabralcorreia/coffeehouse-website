@@ -1,8 +1,9 @@
 import React from 'react';
 import './styles.css';
 import MainMenu from '../../components/Menu/';
-import Banner from '../../components/Banner/';
 import cappuccino from '../../assets/videos/cappuccino.mp4';
+import Banner from '../../components/Banner';
+import chStore from '../../assets/photos/ch-store.png';
 
 const Menu = () => {
     return (
@@ -15,7 +16,13 @@ const Menu = () => {
                 </div>
             </div>
             <MainMenu />
-            <Banner />
+            <Banner
+                title='Find a location nearby'
+                subtitle='Use the search feature or turn on location services.'
+                to='/store-locator'
+                buttonText='Search a store'
+                image={chStore}
+            />
         </div>
     )
 }

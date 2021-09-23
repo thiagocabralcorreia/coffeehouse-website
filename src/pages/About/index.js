@@ -9,7 +9,7 @@ function About() {
     return (
         <div className='about-container'>
             <div className='about-banner'>
-                <img src={aboutCover} alt='Coffee House Counter' />
+                <div src={aboutCover} className='about-image'></div>
                 <div className='about-bar'>
                     <h2>Who is Behind All Those Cups of Coffee</h2>
                 </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
+
 import chImpact from '../../assets/photos/impact.jpg';
 import Grid from '../../components/Grid/';
 import TeamModal from '../../components/TeamModal';

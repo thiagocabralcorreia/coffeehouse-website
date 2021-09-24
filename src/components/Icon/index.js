@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Icon({ className, size, color, hoverColor, width, height, pointer  }) {
+function Icon({ className, size, color, hoverColor, width, height, cursor, onClick  }) {
     const [ fill, setFill ] = useState(color);
     return (
         <div>
             <i className={className}
+                onClick={onClick}
                 onMouseOver={() => setFill(hoverColor)}
                 onMouseOut={() => setFill(color)}
-                style={{ fontSize: size, color: fill, width: width, height: height, cursor: pointer }}
+                style={{ fontSize: size, color: fill, width: width, height: height, cursor: cursor, transition: '0.2s' }}
             />
         </div>
     )
@@ -21,6 +22,8 @@ Icon.propTypes = {
     hoverColor: PropTypes.string,
     width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    cursor: PropTypes.string,
+    onClick: PropTypes.func,
 };
 
 Icon.defaultProps = {
@@ -30,6 +33,7 @@ Icon.defaultProps = {
     hoverColor: '',
     width: '100%',
     height: '100%',
+    cursor: '',
 };
 
 export default Icon;

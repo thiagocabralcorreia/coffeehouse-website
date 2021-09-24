@@ -38,7 +38,11 @@
   z-index: 50;
 }
 
-.arrowBtn {
+.arrow-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   background-color: var(--brown);
@@ -48,24 +52,14 @@
   cursor: pointer;
 }
 
-.arrowBtn:hover {
+.arrow-container button:hover {
   opacity: 0.25;
 }
 
-.fa-chevron-left {
-  font-size: 1rem;
+.arrow-container i {
+  font-size: 0.9rem;
   color: var(--white);
   align-self: center;
-  padding-top: 1px;
-  padding-right: 2px;
-}
-
-.fa-chevron-right {
-  font-size: 1rem;
-  color: var(--white);
-  align-self: center;
-  padding-top: 1px;
-  padding-left: 2px;
 }
 
 .dots-container {

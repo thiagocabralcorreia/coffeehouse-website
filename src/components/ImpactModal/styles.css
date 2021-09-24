@@ -1,0 +1,53 @@
+.impact-modal {
+  position: relative;
+}
+
+.impact-modal-icon {
+  top: 1.25rem;
+  right: 1.5rem;
+  position: absolute;
+}
+
+.impact-modal img {
+  width: 30rem;
+  margin-bottom: 4rem;
+}
+
+.impact-text-modal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--brown);
+  color: var(--white);
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.impact-text-modal p {
+  font-size: 1.1rem;
+}
+
+.modal-arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  padding: 0.75rem;
+  z-index: 50;
+}
+
+.modal-arrows i {
+  font-size: 0.9rem;
+  color: var(--white);
+  align-self: center;
+}
+
+@media screen and (max-width: 35rem) {
+  .impact-modal img {
+    width: 20rem;
+  }
+}

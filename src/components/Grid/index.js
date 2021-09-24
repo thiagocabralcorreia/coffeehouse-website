@@ -1,20 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
-import { impactPratices } from '../../data/impactPratices';
 
-function Grid() {
+import { impactPratices } from '../../data/impactPratices';
+import { useValue } from '../../context/PageContext';
+
+function Grid({ onClick }) {
+    const { setCurrentValue } = useValue();
     return (
-        <div className='grid'>
+        <div className='grid' onClick={onClick}>
                 <div className='grid-container'>
                     {impactPratices.map((item, index) => {
                         return (
                         <figure key={index}>
-                            <img src={item.image} alt={item.description}></img>
+                            <img
+                                src={item.image}
+                                alt={item.description}
+                                onClick={() => setCurrentValue(item.id)}
+                                ></img>
                         </figure>)
                     })}
                 </div>
             </div>
     )
+}
+
+Grid.propTypes = {
+    onClick: PropTypes.func,
 }
 
 export default Grid;

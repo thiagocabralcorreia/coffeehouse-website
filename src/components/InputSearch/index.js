@@ -18,11 +18,11 @@ const InputSearch = ({ placeholder }) => {
 }
 
 InputSearch.propTypes = {
-    className: PropTypes.string,
+    placeholder: PropTypes.string,
 };
 
 InputSearch.defaultProps = {
-    className: '',
+    placeholder: '',
 };
 
 export default InputSearch;

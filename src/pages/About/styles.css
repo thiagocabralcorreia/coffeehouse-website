@@ -40,12 +40,6 @@
   background-color: var(--white);
 }
 
-.about-container h1 {
-  font-size: 4rem;
-  padding: 1rem 0 1rem;
-  color: var(--brown);
-}
-
 .about-container p {
   font-size: 1.2rem;
   padding-bottom: 1rem;

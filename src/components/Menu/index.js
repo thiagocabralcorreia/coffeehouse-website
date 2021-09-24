@@ -4,11 +4,11 @@ import { menuSections } from '../../data/menu';
 import MenuCard from './MenuCard/';
 import MenuList from './MenuList/';
 
-import MenuProvider from '../../context/MenuContext';
+import PageProvider from '../../context/PageContext';
 
 const MainMenu = () => {
     return (
-        <MenuProvider defaultState='Coffee'>
+        <PageProvider defaultState='Coffee'>
             <div className='main-menu'>
                 <div className='menu-list'>
                     <ul className='nav-menu'>
@@ -21,7 +21,7 @@ const MainMenu = () => {
                 </div>
                 <MenuCard/>
             </div>
-        </MenuProvider>
+        </PageProvider>
     )
 }
 

@@ -3,14 +3,15 @@ import './styles.css';
 
 import chImpact from '../../assets/photos/impact.jpg';
 import Grid from '../../components/Grid/';
-import TeamModal from '../../components/TeamModal';
+import ImpactModal from '../../components/ImpactModal';
+
+import PageProvider from '../../context/PageContext';
 
 function Impact() {
   const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen);
     
     return (
-        <div>
+        <PageProvider>
             <div className='impact-banner'>
                 <img src={chImpact} alt='Coffee harvest' />
                 <h1>Environmental<br/>and Social Impact</h1>
@@ -20,12 +21,12 @@ function Impact() {
                 </p>
             </div>
             <div style={{ display: 'flex', backgroundColor: 'white', justifyContent: 'center', margin: 'auto'}}>
-              <button onClick={() => setIsOpen(!isOpen)}>Modal</button>
             </div>
-            <Grid />
-            <TeamModal open={isOpen}
+            <Grid onClick={() => setIsOpen(!isOpen)}/>
+            <ImpactModal
+              open={isOpen}
               onClose={() => setIsOpen(!isOpen)}/>
-        </div>
+        </PageProvider>
     )
 }
 

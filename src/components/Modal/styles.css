@@ -1,6 +1,6 @@
 .modal-container {
-  display: flex;
+  display: block;
   height: 100%;
   width: 100%;
-  background-color: var(--brown);
+  background-color: var(--white);
 }

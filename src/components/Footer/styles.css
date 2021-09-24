@@ -23,7 +23,7 @@
 }
 
 .footer-conditions-link:hover {
-  color: var(--lighter-brown);
+  color: var(--light-brown);
 }
 
 .copyright {
@@ -48,7 +48,7 @@
 }
 
 .copyright a:hover {
-  color: var(--lighter-brown);
+  color: var(--light-brown);
 }
 
 .social-media {
@@ -59,10 +59,6 @@
   gap: 2rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
-}
-
-.social-media i:hover {
-  color: var(--lighter-brown);
 }
 
 .social-media i:hover {

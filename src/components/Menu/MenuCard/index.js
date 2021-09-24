@@ -1,19 +1,21 @@
 import React from 'react';
 import './styles.css';
+
 import { menuSections } from '../../../data/menu';
-import { useMenu } from '../../../context/MenuContext';
+import { useValue } from '../../../context/PageContext';
 
 function MenuCard() {
-    const { currentMenu } = useMenu();
+    const { currentValue } = useValue();
+
     return (
         <div className='menu-card-container'>
             <div className='menu-card-content'>
-                <h1>{currentMenu}</h1>
+                <h1>{currentValue}</h1>
                     {menuSections.map((menu) => 
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
-                                {subsection.type === currentMenu
+                                {subsection.type === currentValue
                                 && subsection.items.map((item, index) => {
                                     return (
                                         <div
@@ -33,10 +35,10 @@ function MenuCard() {
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
-                                {subsection.type === currentMenu
+                                {subsection.type === currentValue
                                 && <img className='menu-card-image'
                                     src={subsection.image}
-                                    alt={currentMenu}></img>
+                                    alt={currentValue}></img>
                                 }
                             </div>)
                         })

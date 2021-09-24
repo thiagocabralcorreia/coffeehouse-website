@@ -20,6 +20,7 @@ function Modal({ children, onClose, open }) {
       onAfterOpen={handleOpen}
       onAfterClose={handleClose}
       closeTimeoutMS={490}
+      ariaHideApp={false}
       style={{
         overlay: {
           position: 'fixed',
@@ -30,7 +31,7 @@ function Modal({ children, onClose, open }) {
           backgroundColor: 'rgba(0, 0, 0, 0.4)',
           overflowX: 'hidden',
           overflowY: 'auto',
-          zIndex: 2,
+          zIndex: 100,
         },
         content: {
           top: '50%',

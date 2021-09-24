@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { useMenu } from '../../../context/MenuContext';
 import PropTypes from 'prop-types';
 import './styles.css';
 
+import { useValue } from '../../../context/PageContext';
+
 const MenuList = ({ section, subsections }) => {
     const [showList, setShowList] = useState(false);
-    const { setCurrentMenu } = useMenu();
+    const { setCurrentValue } = useValue();
 
     return (
         <div className='menu-sections'>
@@ -19,7 +20,7 @@ const MenuList = ({ section, subsections }) => {
                 {subsections.map((submenu, index) => {
                     return <li key={index}
                             className='section-li'
-                            onClick={() => setCurrentMenu(submenu.type)}
+                            onClick={() => setCurrentValue(submenu.type)}
                             >
                                 {submenu.type}
                             </li>

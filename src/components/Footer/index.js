@@ -19,8 +19,11 @@ const Footer = () => {
                 {socialMedia.map(( item, index ) => {
                     return (
                         <a key={index} href={item.link} target='_blank' rel='noreferrer'>
-                            <Icon className={item.icon}
-                            hoverColor='var(--lighter-brown)' size='1.5rem'/>
+                            <Icon
+                                className={item.icon}
+                                hoverColor='var(--light-brown)'
+                                size='1.5rem'
+                            />
                         </a>
                     )
                 })}

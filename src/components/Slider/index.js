@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
+
 import { sliderData } from '../../data/sliderData';
 
 const Slider = ({ slides }) => {
@@ -55,10 +56,10 @@ const Slider = ({ slides }) => {
                     )
                 })}
             <div className='arrow-container'>
-                <button className='arrowBtn left' onClick={previousSlide}>
+                <button onClick={previousSlide}>
                     <i className='fas fa-chevron-left'></i>
                 </button>    
-                <button className='arrowBtn right' onClick={nextSlide}>
+                <button onClick={nextSlide}>
                     <i className='fas fa-chevron-right'></i>
                 </button>
             </div>
@@ -67,11 +68,11 @@ const Slider = ({ slides }) => {
 };
 
 Slider.propTypes = {
-    className: PropTypes.arrayOf(PropTypes.object),
+    slides: PropTypes.arrayOf(PropTypes.object),
 };
 
 Slider.defaultProps = {
-    className: [],
+    slides: [],
 };
 
 export default Slider;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './styles.css';
 
 import { impactPratices } from '../../data/impactPratices';
-import { useValue } from '../../context/PageContext';
+import { useValue } from '../../hooks/PageContext';
 
 function Grid({ onClick }) {
     const { setCurrentValue } = useValue();

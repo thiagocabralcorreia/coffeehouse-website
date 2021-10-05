@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Dropdown() {
-    const [ closeDropdown, setCloseDropdown ] = useState(true);
+    const [closeDropdown, setCloseDropdown] = useState(true);
     return (
         <div className={closeDropdown ? 'dropdown-menu open' :'dropdown-menu closed'}>
             <ul>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-import { useValue } from '../../../context/PageContext';
+import { useValue } from '../../../hooks/PageContext';
 
 const MenuList = ({ section, subsections }) => {
     const [showList, setShowList] = useState(false);

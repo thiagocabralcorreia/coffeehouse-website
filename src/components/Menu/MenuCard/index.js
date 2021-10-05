@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 import { menuSections } from '../../../data/menu';
-import { useValue } from '../../../context/PageContext';
+import { useValue } from '../../../hooks/PageContext';
 
 function MenuCard() {
     const { currentValue } = useValue();

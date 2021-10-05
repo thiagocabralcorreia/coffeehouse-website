@@ -47,6 +47,10 @@
   .impact-banner h1 {
     font-size: 3rem;
   }
+
+  .impact-content p {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 30rem) {

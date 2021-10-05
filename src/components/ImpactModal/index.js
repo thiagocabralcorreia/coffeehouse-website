@@ -6,7 +6,7 @@ import Modal from '../Modal';
 import Icon from '../Icon'
 
 import { impactPratices } from '../../data/impactPratices';
-import { useValue } from '../../context/PageContext';
+import { useValue } from '../../hooks/PageContext';
 
 function ImpactModal({ onClose, open }) {
     const { currentValue, setCurrentValue } = useValue();
@@ -67,7 +67,6 @@ function ImpactModal({ onClose, open }) {
 ImpactModal.propTypes = {
     onClose: PropTypes.func,
     open: PropTypes.bool,
-    slides: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default ImpactModal;

@@ -89,7 +89,7 @@
   grid-column: 2 / 4;
 }
 
-@media screen and (max-width: 37rem) {
+@media screen and (max-width: 40rem) {
   .about-banner {
     height: 60vh;
   }
@@ -100,6 +100,10 @@
   .about-bar {
     height: 7rem;
     padding: 1rem 2rem 1rem;
+  }
+
+  .about-content {
+    max-width: 75%;
   }
 
   .about-gallery {

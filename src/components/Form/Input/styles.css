@@ -1,0 +1,42 @@
+.input-container {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-container label {
+    color: var(--brown);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input-container span {
+    color: var(--warning);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input-container input{
+    background-color: var(--white);
+    border: .06rem solid var(--gray);
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 3rem;
+    line-height: normal;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.input-container input:focus{
+    border: none;
+    outline: 0.13rem solid var(--brown);
+}
+
+.input-container p {
+    color: var(--warning);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}

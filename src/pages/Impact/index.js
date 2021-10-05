@@ -5,7 +5,7 @@ import chImpact from '../../assets/photos/impact.jpg';
 import Grid from '../../components/Grid/';
 import ImpactModal from '../../components/ImpactModal';
 
-import PageProvider from '../../context/PageContext';
+import PageProvider from '../../hooks/PageContext';
 
 function Impact() {
   const [isOpen, setIsOpen] = useState(false);

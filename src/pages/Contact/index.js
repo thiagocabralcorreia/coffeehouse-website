@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import './styles.css';
 
+import Form from '../../components/Form';
+import SuccessMessage from '../../components/Form/SuccessMessage';
+
 function Contact() {
+    const [submitted, setSubmitted] = useState(false);
+    const submitForm = useCallback(() => {
+            setSubmitted(true);
+          }, [setSubmitted])
+          
     return (
         <div className='contact-container'>
             <div className='contact-header'>
@@ -9,10 +17,9 @@ function Contact() {
             </div>
             <div className='contact-content'>
                 <h2>We want to hear from you</h2>
-                <p>If you can’t find what you’re looking for on website, feel free to submit your question or suggestion using the form below. Coffe House’s customer service will get back to you shortly.</p>
+                <p>If you can’t find what you’re looking for on website, feel free to submit your question or suggestion using this form. We love to hear your feedback.</p>
             </div>
-            <div className='contact-form'>
-            </div>
+            {!submitted? <Form submitForm={submitForm} /> : <SuccessMessage /> }
         </div>
     )
 }

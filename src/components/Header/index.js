@@ -5,8 +5,8 @@ import {ReactComponent as Logo} from '../../assets/ch-logo.svg';
 import DropdownMenu from './Dropdown/';
 
 function Header() {
-    const [ mobileMenu, setMobileMenu ] = useState(false);
-    const [ dropdown, setDropdown] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
     const onClose = () => {
         setMobileMenu(false);

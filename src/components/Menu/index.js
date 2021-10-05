@@ -4,7 +4,7 @@ import { menuSections } from '../../data/menu';
 import MenuCard from './MenuCard/';
 import MenuList from './MenuList/';
 
-import PageProvider from '../../context/PageContext';
+import PageProvider from '../../hooks/PageContext';
 
 const MainMenu = () => {
     return (

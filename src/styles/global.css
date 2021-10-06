@@ -18,3 +18,8 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
+
+::selection {
+  color: var(--white);
+  background: var(--brown);
+}

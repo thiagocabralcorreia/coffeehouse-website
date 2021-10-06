@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-import Input from './Input';
-import Textarea from './Textarea';
-import Button from '../Button';
 import validate from './Validation';
 import useForm from './../../hooks/useForm';
+import Select from './Select';
+import Input from './Input';
+import Textarea from './Textarea';
+import Button from './Button';
 
 function Form({ submitForm }) {
     const { handleSubmit, handleChange, values, errors } = useForm( submitForm, validate );
@@ -60,6 +61,14 @@ function Form({ submitForm }) {
                     value={values.email2}
                     onChange={handleChange}
                     errors={errors.email2}
+                    required
+                />
+                <Select
+                    label='Please choose one of the following options'
+                    name='select'
+                    value={values.select}
+                    onChange={handleChange}
+                    errors={errors.select}
                     required
                 />
                 <Textarea

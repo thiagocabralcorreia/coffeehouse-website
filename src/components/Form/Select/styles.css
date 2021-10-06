@@ -1,0 +1,55 @@
+.select-container {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.select-container::before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    bottom: 1.3rem;
+    right: 1rem;
+    border-left: 0.35rem solid transparent;
+    border-right: 0.35rem solid transparent;
+    border-top: 0.35rem solid var(--brown);
+}
+
+.select-container label {
+    color: var(--brown);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.select-container span {
+    color: var(--warning);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.select-container select {
+    appearance: none;
+    background-color: var(--white);
+    border: .06rem solid var(--gray);
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 3rem;
+    line-height: normal;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.select-container select:focus {
+    border: none;
+    outline: 0.13rem solid var(--brown);
+}
+
+.select-container p {
+    color: var(--warning);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}

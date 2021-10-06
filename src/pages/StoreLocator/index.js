@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Button from '../../components/Button/';
+import Button from '../../components/Form/Button';
 import InputSearch from '../../components/InputSearch/';
 
 const StoreLocator = () => {

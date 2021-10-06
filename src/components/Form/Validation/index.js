@@ -25,6 +25,10 @@ export default function Validation(values) {
     errors.email2 = 'Please confirm that both email addresses are the same.';
   }
 
+  if (!values.select.trim()) {
+    errors.select = 'Select the nature of your contact.';
+  }
+
   if (!values.message.trim()) {
     errors.message = 'Message is required.';
   } else if (values.message.length > 1200) {

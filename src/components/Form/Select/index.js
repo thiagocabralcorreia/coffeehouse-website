@@ -1,0 +1,39 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import './styles.css';
+
+import { selectOptions } from '../../../data/selectOptions';
+
+function Select({ label, name, required, value, onChange, errors }) {
+    return (
+        <div className='select-container'>
+        <label>{label}{required ? <span>*</span> : ''}</label>
+            <select name={name} value={value} onChange={onChange}>
+                <option disabled value='Select One' selected='selected'>Select One</option>
+                {selectOptions.map((item, index ) => {
+                    return <option key={index} value={item.value}>{item.option}</option>
+                })}
+            </select>
+            {errors && <p>{errors}</p>}
+        </div>
+    )
+}
+
+Select.propTypes = {
+    label: PropTypes.string,
+    name: PropTypes.string,
+    required: PropTypes.bool,
+    value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    onChange: PropTypes.func,
+    errors: PropTypes.string,
+  };
+  
+  Select.defaultProps = {
+    label: '',
+    name: '',
+    required: false,
+    value: '',
+    errors: '',
+  };
+
+export default Select;

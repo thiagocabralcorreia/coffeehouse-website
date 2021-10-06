@@ -8,6 +8,7 @@ const useForm = (callback, validate) => {
     email: '',
     email2: '',
     message: '',
+    select: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -26,6 +27,8 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
+    
+    console.log(values)
   };
 
   useEffect(() => {

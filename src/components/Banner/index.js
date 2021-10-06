@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-import Button from '../../components/Button/';
+import Button from '../../components/Form/Button';
 function Banner({ title, subtitle, to, buttonText, image }) {
     return (
         <div className='banner-container'>

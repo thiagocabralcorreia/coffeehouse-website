@@ -9,7 +9,7 @@ function Select({ label, name, required, value, onChange, errors }) {
         <div className='select-container'>
         <label>{label}{required ? <span>*</span> : ''}</label>
             <select name={name} value={value} onChange={onChange}>
-                <option disabled value='Select One' selected='selected'>Select One</option>
+                <option hidden>Choose one</option>
                 {selectOptions.map((item, index ) => {
                     return <option key={index} value={item.value}>{item.option}</option>
                 })}

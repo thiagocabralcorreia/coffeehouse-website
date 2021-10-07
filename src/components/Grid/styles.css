@@ -31,3 +31,9 @@
 .grid img:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 40rem) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

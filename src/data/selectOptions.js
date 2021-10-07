@@ -1,7 +1,7 @@
 export const selectOptions = [
     {
         value: 'store',
-        option: 'Recent store visit',
+        option: 'Store environment',
     },
     {
         value: 'delivery',
@@ -12,16 +12,16 @@ export const selectOptions = [
         option: 'Product feedback',
     },
     {
-        value: 'app',
-        option: 'Coffee House App',
+        value: 'nutritional',
+        option: 'Nutritional information',
     },
     {
         value: 'website',
-        option: 'Website',
+        option: 'Coffee House Website',
     },
     {
-        value: 'nutricional',
-        option: 'Nutricional',
+        value: 'app',
+        option: 'Mobile App',
     },
     {
         value: 'other',

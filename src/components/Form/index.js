@@ -64,7 +64,7 @@ function Form({ submitForm }) {
                     required
                 />
                 <Select
-                    label='Please choose one of the following options'
+                    label='Please select a topic'
                     name='select'
                     value={values.select}
                     onChange={handleChange}

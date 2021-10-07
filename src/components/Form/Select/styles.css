@@ -5,11 +5,11 @@
     position: relative;
 }
 
-.select-container::before {
+.select-container label::before {
     content: '';
     pointer-events: none;
     position: absolute;
-    bottom: 1.3rem;
+    top: 3.15rem;
     right: 1rem;
     border-left: 0.35rem solid transparent;
     border-right: 0.35rem solid transparent;

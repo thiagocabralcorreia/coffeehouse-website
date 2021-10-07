@@ -46,7 +46,7 @@ export const menuSections = [
                 ingredients: 'Black Tea, Cinnamon, Black Pepper, Steamed Milk'
                 },
                 {subtype: 'Earl Grey Tea',
-                ingredients: 'Black Tea, Bergamot essence'
+                ingredients: 'Black Tea, Bergamot Essence'
                 },
                 {subtype: 'Chamomile Mint Tea',
                 ingredients: 'Chamomile Tea, Lemongrass, Mint'

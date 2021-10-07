@@ -27,8 +27,6 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
-    
-    console.log(values)
   };
 
   useEffect(() => {

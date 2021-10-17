@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
-import Button from '../../components/Form/Button';
+import './styles.scss';
+import Button from '../../components/Button';
 import InputSearch from '../../components/InputSearch/';
 
 const StoreLocator = () => {
     return (
-        <div className='locator-container'>
-            <div className='locator-sidebar'>
+        <div className='locator'>
+            <div className='sidebar'>
                 <h1>Looking for fresh coffee?</h1>
                 <p>Find a store near you.</p>
                 <InputSearch

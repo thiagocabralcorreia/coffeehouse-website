@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import '../styles.scss';
 
 import { selectOptions } from '../../../data/selectOptions';
 
 function Select({ label, name, required, value, onChange, errors }) {
     return (
-        <div className='select-container'>
+        <div className='select'>
         <label>{label}{required ? <span>*</span> : ''}</label>
             <select name={name} value={value} onChange={onChange}>
                 <option hidden>Choose one</option>

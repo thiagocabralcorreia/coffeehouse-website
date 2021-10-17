@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import '../styles.scss';
 
 const Textarea = ({ label, name, placeholder, rows, cols, limit, required, value, onChange, errors }) => {
     const [count, setCount] = useState(0);
@@ -10,8 +10,8 @@ const Textarea = ({ label, name, placeholder, rows, cols, limit, required, value
       };
     
     return (
-        <div className='textarea-container'>
-            <div className='textarea-row'>
+        <div className='textarea'>
+            <div className='row'>
                 <label>{label}{required ? <span>*</span> : ''}</label>
                 <p>{count}{limit}</p>
             </div>
@@ -23,7 +23,7 @@ const Textarea = ({ label, name, placeholder, rows, cols, limit, required, value
                 rows={rows}
                 cols={cols}
             />
-              {errors && <p className='textarea-error'>{errors}</p>}
+              {errors && <p>{errors}</p>}
             </div>
     )
 }

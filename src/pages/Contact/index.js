@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import './styles.css';
+import './styles.scss';
 
 import Form from '../../components/Form';
 import SuccessMessage from '../../components/Form/SuccessMessage';
@@ -11,11 +11,11 @@ function Contact() {
           }, [setSubmitted])
           
     return (
-        <div className='contact-container'>
-            <div className='contact-header'>
+        <div className='contact'>
+            <div className='header'>
                 <h1>Contact</h1>
             </div>
-            <div className='contact-content'>
+            <div className='content'>
                 <h2>We want to hear from you</h2>
                 <p>If you can’t find what you’re looking for on website, feel free to submit your question or suggestion using this form. We love to hear your feedback.</p>
             </div>

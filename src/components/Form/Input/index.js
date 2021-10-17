@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import '../styles.scss';
 
 const Input = ({ label, type, name, placeholder, required, value, onChange, errors }) => {
     return (
-        <div className='input-container'>
+        <div className='input'>
               <label>{label}{required ? <span>*</span> : ''}</label>
               <input
                 type={type}

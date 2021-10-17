@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 import { impactPratices } from '../../data/impactPratices';
 import { useValue } from '../../hooks/PageContext';
@@ -9,7 +9,7 @@ function Grid({ onClick }) {
     const { setCurrentValue } = useValue();
     return (
         <div className='grid' onClick={onClick}>
-                <div className='grid-container'>
+                <div className='container'>
                     {impactPratices.map((item, index) => {
                         return (
                         <figure key={index}>

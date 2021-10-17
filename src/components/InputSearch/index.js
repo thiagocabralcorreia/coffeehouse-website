@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 const InputSearch = ({ placeholder }) => {
     return (
         <div className='search-form'>
             <input
-                className='search-input'
                 type='search'
                 placeholder={placeholder}            
             />
-            <button className='search-btn'>
+            <button>
                 <i className='fas fa-search'/>
             </button>
         </div>

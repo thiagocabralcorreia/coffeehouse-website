@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 import Modal from '../Modal';
 import Icon from '../Icon'
@@ -28,7 +28,7 @@ function ImpactModal({ onClose, open }) {
                 return (
                     item.id === currentValue
                     && <div className='impact-modal' key={index}>
-                        <div className='impact-modal-icon'>
+                        <div className='x-close'>
                             <Icon
                                 className='fas fa-times'
                                 onClick={onClose}
@@ -38,7 +38,7 @@ function ImpactModal({ onClose, open }) {
                             />
                         </div>
                         <img src={item.image} alt={item.description}></img>
-                        <div className='modal-arrows'>
+                        <div className='arrows'>
                             <Icon
                                 className='fas fa-chevron-left'
                                 onClick={previousCard}
@@ -54,7 +54,7 @@ function ImpactModal({ onClose, open }) {
                                 cursor='pointer'
                             />
                         </div>
-                        <div className='impact-text-modal'>
+                        <div className='content'>
                             <p>{item.text}</p>
                         </div>
                     </div>

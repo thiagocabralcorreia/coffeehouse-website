@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 const Button = ({ text, white, type, onClick, hasIcon }) => {
     const { icon } = hasIcon || {};

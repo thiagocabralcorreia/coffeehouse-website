@@ -1,0 +1,60 @@
+// COMPONENTS
+
+// Form
+@mixin button($color, $background) {
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: $color;
+    color: $background;
+    transition: 0.2s;
+    height: 3rem;
+
+    i {
+        padding-left: 0.8rem;
+    }
+
+    &:hover {
+        background-color: $secondary;
+        color: $white;
+      }
+}
+
+@mixin form-component($position) {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: $position;
+    
+    label {
+        color: $primary;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    span {
+        color: $danger;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    p {
+        @extend %error;
+    }
+
+    input {
+        @extend %form;
+    }
+
+    select {
+        @extend %form;
+    }
+
+    textarea {
+        @extend %form;
+        height: 100%;
+    }
+}

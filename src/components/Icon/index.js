@@ -30,7 +30,7 @@ Icon.defaultProps = {
     className: '',
     size: '',
     color: 'var(--white)',
-    hoverColor: '',
+    hoverColor: 'none',
     width: '100%',
     height: '100%',
     cursor: '',

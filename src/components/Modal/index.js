@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 function Modal({ children, onClose, open }) {
   const handleOpen = () => {
@@ -19,7 +19,7 @@ function Modal({ children, onClose, open }) {
       shouldCloseOnOverlayClick={true}
       onAfterOpen={handleOpen}
       onAfterClose={handleClose}
-      closeTimeoutMS={490}
+      closeTimeoutMS={300}
       ariaHideApp={false}
       style={{
         overlay: {
@@ -45,7 +45,7 @@ function Modal({ children, onClose, open }) {
         },
       }}
       >
-      <div className='modal-container' open={open}>
+      <div className='modal' open={open}>
         {children}
       </div>
       </ReactModal>

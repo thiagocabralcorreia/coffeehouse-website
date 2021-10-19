@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
 const Order = () => {
     return (
-         <div className='order-container'>
-            <h1 className='order-title'>Ways to Order</h1>
-            <p className='order-text'>Tell us how you want your order.</p>
-            <div className='cards-container'>
+         <div className='order'>
+            <h1 className='title'>Ways to Order</h1>
+            <p className='text'>Tell us how you want your order.</p>
+            <div className='cards'>
                 <div className='card'>
                     <i className='fas fa-car fa-2x'></i>
                     <h1>Drive-Thru</h1>

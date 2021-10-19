@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
 import { menuSections } from '../../../data/menu';
 import { useValue } from '../../../hooks/PageContext';
@@ -8,8 +8,8 @@ function MenuCard() {
     const { currentValue } = useValue();
 
     return (
-        <div className='menu-card-container'>
-            <div className='menu-card-content'>
+        <div className='menu-card'>
+            <div className='content'>
                 <h1>{currentValue}</h1>
                     {menuSections.map((menu) => 
                         menu.subsections.map((subsection) => {
@@ -19,7 +19,7 @@ function MenuCard() {
                                 && subsection.items.map((item, index) => {
                                     return (
                                         <div
-                                        className='menu-card-item'
+                                        className='card-item'
                                         key={index}>
                                             <h2>{item.subtype}</h2>
                                             <p>{item.ingredients}</p>
@@ -30,13 +30,13 @@ function MenuCard() {
                         })
                     )}
             </div>
-            <div className='menu-card-image'>
+            <div className='image'>
                 {menuSections.map((menu) => 
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
                                 {subsection.type === currentValue
-                                && <img className='menu-card-image'
+                                && <img className='image'
                                     src={subsection.image}
                                     alt={currentValue}></img>
                                 }

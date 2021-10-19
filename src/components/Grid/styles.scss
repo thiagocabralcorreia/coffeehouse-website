@@ -34,7 +34,7 @@
     }    
   }
    
-  @media screen and (max-width: $layout-breakpoint-small) {
+  @media screen and (max-width: $mobile-screen) {
   .grid {
     .container {
       grid-template-columns: repeat(2, 1fr);

@@ -4,14 +4,14 @@
     display: flex;
 
     input {
-        font-size: 1.1rem;
+        font-size: $large;
         color: $gray-300;
         border-radius: 1.5rem 0 0 1.5rem;
         border: solid 0.1rem $gray-200;
         cursor: text;
         transition: 0.2s;
 
-        &::placeholder {
+        &:placeholder {
             padding-left: 1.5rem;
         }
           
@@ -40,7 +40,7 @@
         }
         
         i {
-            font-size: 1rem;
+            font-size: $medium;
             color: $white;
             height: 100%;
         }

@@ -16,12 +16,12 @@
       }
       
       h1 {
-        font-size: 2rem;
+        font-size: $headline;
         color:$primary;
       }
       
        p {
-        font-size: 1.2rem;
+        font-size: $big;
         padding-top: 1rem;
         padding-bottom: 2rem;
       }
@@ -41,7 +41,7 @@
   }
   
   
-  @media screen and (max-width: 45rem) {
+  @media screen and (max-width: $medium-screen) {
     .locator {
       display: block;
       height: 50rem;

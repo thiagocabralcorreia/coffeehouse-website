@@ -1,0 +1,34 @@
+@import 'src/scss';
+
+.sections { 
+    li {
+        font-size: $large;
+        color: $white;
+        transition: 0.2s;
+        list-style-type: none;
+        cursor: pointer;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        line-height: 2rem;
+    
+        &:hover {
+            color: $tertiary;
+          }
+        
+        .arrow {
+            display: inline-block;
+            margin-left: 0.75rem;
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+        }
+        
+        .arrow.active {
+            transform: rotate(0deg);
+        }
+    }
+    
+    ul {
+        display: block;
+        padding-left: 2rem;
+    }
+}

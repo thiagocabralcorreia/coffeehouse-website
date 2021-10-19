@@ -7,6 +7,7 @@
 .dropdown {
     top: 4.5rem;
     right: 4rem;
+    height: 10.4rem;
     flex-direction: column;
     position: absolute;
     background-color: $primary;
@@ -20,6 +21,18 @@
         cursor: pointer;
         transition: 0.2s;
         line-height: 2.5rem;
+
+        .dropdown-link {
+            font-size: $medium;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            color: $white;
+        
+              &:hover {
+                color: $tertiary;
+              }
+        }
     }
     
     &:after {
@@ -35,54 +48,27 @@
 
 }
 
-.dropdown-link {
-    font-size: 1rem;
-    text-decoration: none;
-    display: block;
-    color: $white;
-
-      &:hover {
-        color: $tertiary;
-      }
-}
-
-.dropdown.mobile {
-    top: 4.51rem;
-    right: 5rem;
-    width: 10rem;
-    height: 10rem;
-    padding: 1rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: $secondary;
-    transition: 0.2s;
-    border-radius: 0.5rem;
-}
-
-@media screen and (max-width: 45rem) {
-    .dropdown {
+@media screen and (max-width: $medium-screen) {
+    .dropdown {    
         top: 0;
         right: 0;
         position: relative;
         background-color: transparent;
         border-radius: 0;
         padding: 2rem 0 0.5rem 1rem;
+        margin-bottom: 2rem;
         border-top: 0.1rem solid $white;
 
         li {
             line-height: 1.2rem;
+
+            .dropdown-link {
+                font-size: $large;
+                padding-bottom: 2rem;  
+            }
         }
     
-        .dropdown-link {
-            font-size: 1.1rem;
-            text-decoration: none;
-            display: block;
-            color: $white;
-            padding-bottom: 2rem;   
-        }
-    
-        &::after {
+        &:after {
             display: none;
         }
     }   

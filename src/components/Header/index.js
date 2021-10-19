@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './styles.css';
+import './styles.scss';
 import {ReactComponent as Logo} from '../../assets/ch-logo.svg';
 import DropdownMenu from './Dropdown/';
 
@@ -42,34 +42,34 @@ function Header() {
     return (
         <>
             <nav className='navbar'>
-                <div className='navbar-container'>
+                <div className='container'>
                     <Link to='/' onClick={() => setMobileMenu(onClose)}>
                         <Logo className='logo'/>
                     </Link>
                     <div
-                    className={mobileMenu ? 'menu-icon active' : 'menu-icon'}
-                    onClick={() => setMobileMenu(handleClick)}
+                        className={mobileMenu ? 'menu-icon active' : 'menu-icon'}
+                        onClick={() => setMobileMenu(handleClick)}
                     >
                         <div className='line top'></div>
                         <div className='line middle'></div>
                         <div className='line bottom'></div>
                     </div>
                     <ul className={mobileMenu ? 'nav-list mobile' : 'nav-list'}>
-                        <li className='nav-list-item'>
+                        <li className='nav-item'>
                             <Link to='/' className='nav-link'>Home</Link>
                         </li>
-                        <li className='nav-list-item'>
+                        <li className='nav-item'>
                             <Link to='/menu' className='nav-link'>Menu</Link>
                         </li>
                         <li
-                            className='nav-list-item'
+                            className='nav-item'
                             onMouseEnter={() => setDropdown(true)}
                             onMouseLeave={() => setDropdown(false)}
                         >
                             <p className='nav-link'>More</p>
                             {dropdown && <DropdownMenu />}
                         </li>
-                        <li className='nav-list-item'>
+                        <li className='nav-item'>
                             <Link to='/store-locator' className='nav-link'>
                                 <i className="fas fa-map-marker-alt"></i>
                             </Link>

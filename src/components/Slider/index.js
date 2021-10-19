@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 import { sliderData } from '../../data/sliderData';
 
@@ -38,7 +38,7 @@ const Slider = ({ slides }) => {
                                     alt='Coffee banner'
                                     />
                                 </div>}
-                            <div className='dots-container'>
+                            <div className='dots'>
                                 <button
                                     className={current === 0 ? 'active slider-dot' : 'slider-dot'}
                                     onClick={() => setCurrent(0)}>

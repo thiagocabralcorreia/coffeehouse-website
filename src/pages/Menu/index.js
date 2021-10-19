@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 import MainMenu from '../../components/Menu/';
 import beans from '../../assets/videos/beans.mp4';
 import Banner from '../../components/Banner';
@@ -7,12 +7,12 @@ import chStore from '../../assets/photos/ch-store.png';
 
 const Menu = () => {
     return (
-        <div className='menu-container'>
-            <div className='menu-cover'>
+        <div className='menu'>
+            <div className='cover'>
                 <video src={beans} autoPlay loop muted />
-                <div className='menu-content'>
+                <div className='content'>
                     <h1>Menu</h1>
-                    <p>Fresh coffee, breakfast and lunch.<br/>With something for everyone, our menu will delight you.</p>
+                    <h2>Fresh coffee, breakfast and lunch.<br/> With something for everyone, our menu will delight you.</h2>
                 </div>
             </div>
             <MainMenu />

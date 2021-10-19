@@ -29,7 +29,6 @@ Icon.propTypes = {
 Icon.defaultProps = {
     className: '',
     size: '',
-    color: 'var(--white)',
     hoverColor: 'none',
     width: '100%',
     height: '100%',

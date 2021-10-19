@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../Icon';
 import { socialMedia } from '../../data/socialMedia';
-import './styles.css';
+import './styles.scss';
 
 const Footer = () => {
     return (
-        <div className='footer-container'>
-            <div className='footer-conditions'>
-                <Link to='/' className='footer-conditions-link'>Privacy Policy</Link>
-                <Link to='/' className='footer-conditions-link'>Cookie Policy</Link>
-                <Link to='/' className='footer-conditions-link'>Terms and Conditions</Link>
+        <div className='footer'>
+            <div className='conditions'>
+                <Link to='/' className='link'>Privacy Policy</Link>
+                <Link to='/' className='link'>Cookie Policy</Link>
+                <Link to='/' className='link'>Terms and Conditions</Link>
             </div>
             <div className='copyright'>
                 <p>© Copyright 2021 | Coffee House by <a href='https://www.linkedin.com/in/thiago-cabral-correia/' target='_blank' rel='noreferrer'>Thiago Correia</a>. All rights reserved.</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <a key={index} href={item.link} target='_blank' rel='noreferrer'>
                             <Icon
                                 className={item.icon}
-                                hoverColor='var(--light-brown)'
+                                hoverColor='$secondary'
                                 size='1.5rem'
                             />
                         </a>

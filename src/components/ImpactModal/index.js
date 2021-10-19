@@ -32,7 +32,7 @@ function ImpactModal({ onClose, open }) {
                             <Icon
                                 className='fas fa-times'
                                 onClick={onClose}
-                                hoverColor='var(--light-brown)'
+                                hoverColor='$secondary'
                                 size='1.5rem'
                                 cursor='pointer'
                             />
@@ -42,14 +42,14 @@ function ImpactModal({ onClose, open }) {
                             <Icon
                                 className='fas fa-chevron-left'
                                 onClick={previousCard}
-                                hoverColor='var(--light-brown)'
+                                hoverColor='$secondary'
                                 size='1.5rem'
                                 cursor='pointer'
                             />
                             <Icon
                                 className='fas fa-chevron-right'
                                 onClick={nextCard}
-                                hoverColor='var(--light-brown)'
+                                hoverColor='$secondary'
                                 size='1.5rem'
                                 cursor='pointer'
                             />

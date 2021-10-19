@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './styles.scss';
 
 import { useValue } from '../../../hooks/PageContext';
 
@@ -9,17 +9,16 @@ const MenuList = ({ section, subsections }) => {
     const { setCurrentValue } = useValue();
 
     return (
-        <div className='menu-sections'>
+        <div className='sections'>
             <li 
-            onClick={() => setShowList(!showList)}>{section}
-                    <div className={showList ? 'active menu-arrow-icon' : 'menu-arrow-icon'}>
-                        <i className='fas fa-caret-up'></i>
-                    </div>
+                onClick={() => setShowList(!showList)}>{section}
+                <div className={showList ? 'active arrow' : 'arrow'}>
+                    <i className='fas fa-caret-up'></i>
+                </div>
             </li>
-            {showList && <ul className='section-ul'>
+            {showList && <ul>
                 {subsections.map((submenu, index) => {
                     return <li key={index}
-                            className='section-li'
                             onClick={() => setCurrentValue(submenu.type)}
                             >
                                 {submenu.type}

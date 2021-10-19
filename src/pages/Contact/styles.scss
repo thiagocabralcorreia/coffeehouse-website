@@ -13,7 +13,7 @@
     background-color: $secondary;
     
     h1 {
-        font-size: 4rem;
+        font-size: $largeTitle;
         padding: 2.5rem;
     }
   }
@@ -21,20 +21,15 @@
   .content {
     @extend %centered-content;
     background-color: $white;
-
-    .impact-content p {
-        font-size: 1.2rem;
-        
-      }
     
     h2 {
-        font-size: 2rem;
+        font-size: $headline;
         padding-bottom: 1.5rem;
         color: $primary;
     }
     
     p {
-        font-size: 1.2rem;
+        font-size: $big;
         padding-bottom: 0.5rem;
     }
   }
@@ -48,7 +43,7 @@
     padding-bottom: 3rem;
   }
   
-  @media screen and (max-width: $layout-breakpoint-small) {
+  @media screen and (max-width: $mobile-screen) {
     .contact-content {
       padding: 3rem 0;
       max-width: 75%;

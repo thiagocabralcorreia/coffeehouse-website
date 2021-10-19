@@ -20,7 +20,7 @@
     
         .select {
             @include form-component(relative);
-            label::before {
+            label:before {
                 content: '';
                 pointer-events: none;
                 position: absolute;
@@ -29,6 +29,10 @@
                 border-left: 0.35rem solid transparent;
                 border-right: 0.35rem solid transparent;
                 border-top: 0.35rem solid $primary;
+
+                &:focus {
+                    border-top: 0.35rem solid $secondary;
+                }
             }
         }
         
@@ -40,8 +44,8 @@
                 justify-content: space-between;
                 
                 p {
-                    color: var(--light-gray);
-                    font-size: 0.8rem;
+                    color: $gray-200;
+                    font-size: $tiny;
                 }
             }
         }

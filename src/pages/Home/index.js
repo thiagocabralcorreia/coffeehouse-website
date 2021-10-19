@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
 import Slider from '../../components/Slider/';
 import { sliderData } from '../../data/sliderData';
@@ -10,7 +10,7 @@ import AppPanel from '../../components/AppPanel';
 
 const Home = () => {
     return (
-        <div className='home-container'>
+        <div className='home'>
             <Slider slides={sliderData}/>
             <OrderPanel />
             <Banner

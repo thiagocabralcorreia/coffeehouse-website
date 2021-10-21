@@ -8,12 +8,12 @@
     justify-content: center;
     position: relative;
 
-    .image {
-      width: 100%;
-      height: 100vh;
-      display: block;
-      background: url("../../assets/photos/about-cover.jpg") no-repeat center center;
-      background-size: cover;
+    .aboutCover {
+      @include background-cover("../assets/photos/about-cover.jpg");
+    }
+
+    .cupsCover {
+      @include background-cover("../assets/photos/cups-cover.jpg");
     }
 
     .bar {

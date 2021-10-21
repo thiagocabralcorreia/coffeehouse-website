@@ -1,5 +1,14 @@
 // COMPONENTS
 
+// Background Cover
+@mixin background-cover($src) {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: url($src) no-repeat center center;
+    background-size: cover;
+}
+
 // Form
 @mixin button($color, $background) {
     align-items: center;

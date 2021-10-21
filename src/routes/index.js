@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Home from '../pages/Home/';
 import Menu from '../pages/Menu/';
 import About from '../pages/About/';
+import Team from '../pages/About/Team/';
 import Contact from '../pages/Contact/';
 import Impact from '../pages/Impact/';
 import StoreLocator from '../pages/StoreLocator/';
@@ -20,6 +21,7 @@ function Routes() {
           <Route path='/' exact component={Home} />
           <Route path='/menu' exact component={Menu} />
           <Route path='/about' exact component={About} />
+          <Route path='/team' exact component={Team} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/impact' exact component={Impact} />
           <Route path='/store-locator' exact component={StoreLocator} />

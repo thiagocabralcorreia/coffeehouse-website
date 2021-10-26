@@ -8,16 +8,22 @@
     top: 1.25rem;
     right: 1.5rem;
     position: absolute;
-    color: $white;
 
-    &:hover {
-      color: $secondary;
-  }
+    i {
+      font-size: $small;
+      color: $white;
+      align-self: center;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
   }
   
   img {
     width: 30rem;
     margin-bottom: 4rem;
+    @include fadeIn(.5s, alternate);
   }
   
   .content {
@@ -33,37 +39,38 @@
     
         p {
             font-size: $large;
+            @include fadeIn(.7s, forwards);
         }
     }
 
     .arrows {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        top: 45%;
-        padding: 0.75rem;
-        z-index: 50;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 45%;
+      padding: 0.75rem;
+      z-index: 50;
 
-        i {
-            font-size: $small;
-            color: $white;
-            align-self: center;
+      i {
+        font-size: $small;
+        color: $white;
+        align-self: center;
 
-            &:hover {
-              color: $secondary;
-          }
+        &:hover {
+          color: $secondary;
         }
+      }
     }
 }
   
-  @media screen and (max-width: $smaller-screen) {
-    .impact-modal {
-        width: 20rem;
-      img {
-        width: 20rem;
-      }
+@media screen and (max-width: $smaller-screen) {
+  .impact-modal {
+    width: 20rem;
+    img {
+      width: 20rem;
     }
   }
+}
   

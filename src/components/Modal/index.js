@@ -30,7 +30,7 @@ function Modal({ children, onClose, open }) {
           left: 0,
           backgroundColor: 'rgba(0, 0, 0, 0.4)',
           overflowX: 'hidden',
-          overflowY: 'auto',
+          overflowY: 'hidden',
           zIndex: 100,
         },
         content: {

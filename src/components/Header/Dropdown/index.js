@@ -2,38 +2,40 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
+export function DropdownItem({ title, to, onClick }) {
+    return (
+        <li>
+            <Link
+                onClick={onClick}
+                className='dropdown-link'
+                to={to}
+            >
+                {title}
+            </Link>
+        </li>
+    )
+};
+
 function Dropdown() {
     const [closeDropdown, setCloseDropdown] = useState(true);
     return (
         <div className={closeDropdown ? 'dropdown' :'dropdown closed'}>
             <ul>
-                <li>
-                    <Link
-                        onClick={() => setCloseDropdown(false)}
-                        className='dropdown-link'
-                        to='/about'
-                    >
-                        About
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        onClick={() => setCloseDropdown(false)}
-                        className='dropdown-link'
-                        to='/contact'
-                    >
-                        Contact
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        onClick={() => setCloseDropdown(false)}
-                        className='dropdown-link'
-                        to='/impact'
-                    >
-                        Impact
-                    </Link>
-                </li>
+                <DropdownItem
+                    title='About'
+                    to='/about'
+                    onClick={() => setCloseDropdown(false)}
+                />
+                <DropdownItem
+                    title='Contact'
+                    to='/contact'
+                    onClick={() => setCloseDropdown(false)}
+                />
+                <DropdownItem
+                    title='Impact'
+                    to='/impact'
+                    onClick={() => setCloseDropdown(false)}
+                />
             </ul>
         </div>
     )

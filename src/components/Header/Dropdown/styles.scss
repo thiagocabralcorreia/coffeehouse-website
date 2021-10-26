@@ -4,23 +4,24 @@
     display: none;
   }
   
-.dropdown {
+  .dropdown {
     top: 4.5rem;
     right: 4rem;
     height: 10.4rem;
     flex-direction: column;
     position: absolute;
     background-color: $primary;
-    transition: 0.2s;
     border-radius: 0.5rem;
     padding: 1.2rem 3rem 1.7rem 1.7rem;
     z-index: 101;
+    @include slideDown(alternate);
 
     li {
         list-style: none;
         cursor: pointer;
-        transition: 0.2s;
+        transition: 0.5s;
         line-height: 2.5rem;
+        @include slideDown(forwards);
 
         .dropdown-link {
             font-size: $medium;
@@ -58,9 +59,11 @@
         padding: 2rem 0 0.5rem 1rem;
         margin-bottom: 2rem;
         border-top: 0.1rem solid $white;
+        @include slideDown(alternate);
 
         li {
             line-height: 1.2rem;
+            @include slideDown(forwards);
 
             .dropdown-link {
                 font-size: $large;

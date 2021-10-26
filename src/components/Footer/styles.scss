@@ -28,6 +28,7 @@
         .link {
             color: $white;
             text-decoration: none;
+            transition: 0.5s;
             
             &:hover {
                 color: $secondary;
@@ -53,6 +54,7 @@
         a {
             color: $white;
             text-decoration: none;
+            transition: 0.5s;
 
             &:hover {
                 color: $secondary;
@@ -68,11 +70,13 @@
         gap: 2rem;
         padding-top: 1rem;
         padding-bottom: 2rem;
+        transition: 2s;
             i {                
                 color: $white;
 
                 &:hover {
                     color: $secondary;
+                    transform: scale(1.2);
                 }
             }            
         }

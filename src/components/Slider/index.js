@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
@@ -15,9 +15,19 @@ const Slider = ({ slides }) => {
         setCurrent(current === length - 1 ? 0 : current + 1); 
     }
 
+    const delay = 10000;
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            nextSlide();
+          }, delay);
+      
+         return () => clearTimeout(timeout);
+    });
+
     if(!Array.isArray(slides) || length <= 0) {
         return null;
     }
+
     return (
         <div className='slider'>
                 {sliderData.map((slide, index) => {

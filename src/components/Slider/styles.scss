@@ -8,15 +8,13 @@
     position: relative;
 
     .slide {
-        opacity: 0.75;
-        transition-duration: 1s linear;
         display: none;
+        @include fadeIn(2s, alternate);
     }
       
     .current.slide {
         display: block;
         opacity: 1;
-        transition-duration: 1s;
         width: 100%;
       
         .landscape {

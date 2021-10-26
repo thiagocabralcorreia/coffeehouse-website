@@ -7,19 +7,17 @@ import Button from '../../components/Button';
 function Banner({ title, subtitle, to, buttonText, image }) {
     return (
         <div className='banner'>
-            <div className='grid'>
-                <div className='content'>
-                    <h1>{title}</h1>
-                    <p>{subtitle}</p>
-                    <Link to={to} className='button-link'>
-                        <Button text={buttonText}/>
-                    </Link>
-                </div>
-                    <div className='image'
-                        style={{ background: `url(${image}) no-repeat center center`,
-                        display: 'block', backgroundSize: 'cover'}}
-                    />
+            <div className='content'>
+                <h1>{title}</h1>
+                <p>{subtitle}</p>
+                <Link to={to} className='button-link'>
+                    <Button text={buttonText}/>
+                </Link>
             </div>
+            <div className='image'
+                style={{ background: `url(${image}) no-repeat center center`,
+                display: 'block', backgroundSize: 'cover'}}
+            />
         </div>
     )
 }

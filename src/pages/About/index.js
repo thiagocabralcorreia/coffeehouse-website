@@ -7,8 +7,8 @@ import coffeePot from '../../assets/photos/coffee-pot.jpg';
 function About() {
     return (
         <div className='about'>
-            <div className='banner'>
-                <div className='aboutCover'></div>
+            <div className='cover'>
+                <div className='story'></div>
                 <div className='bar'>
                     <h2>Coffee is Our Greatest Legacy</h2>
                     {/* Who is Behind All Those Cups of Coffee */}

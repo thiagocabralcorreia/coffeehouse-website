@@ -16,15 +16,15 @@ const MenuList = ({ section, subsections }) => {
                     <i className='fas fa-caret-up'></i>
                 </div>
             </li>
-            {showList && <ul>
+            <ul className={showList ? 'grow-down' : 'close-up'}>
                 {subsections.map((submenu, index) => {
                     return <li key={index}
-                            onClick={() => setCurrentValue(submenu.type)}
+                                onClick={() => setCurrentValue(submenu.type)}
                             >
                                 {submenu.type}
                             </li>
                 })}
-            </ul>}
+            </ul>
         </div>
     )
 }

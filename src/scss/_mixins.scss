@@ -2,18 +2,72 @@
 
 // Background Cover
 @mixin background-cover($src) {
-    width: 100%;
-    height: 100vh;
+    max-width: 100vw;
     display: block;
     background: url($src) no-repeat center center;
     background-size: cover;
+}
+
+// Animations
+@mixin slideDown($direction) {
+    animation: fadeIn .3s $direction,
+    slideDown .5s cubic-bezier(.3,1,.3,1.3) $direction; 
+
+    @keyframes slideDown {
+        from { transform: translate3d(0, -2rem, 0); }
+        to { transform: translate3d(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; visibility: visible; }
+    }
+}
+
+@mixin slideDown($direction) {
+    animation: fadeIn .3s $direction,
+    slideDown .5s cubic-bezier(.3,1,.3,1.3) $direction; 
+
+    @keyframes slideDown {
+        from { transform: translate3d(0, -2rem, 0); }
+        to { transform: translate3d(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; visibility: visible; }
+    }
+}
+
+@mixin fadeIn($time, $direction) {
+    animation: fadeIn $time $direction;
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; visibility: visible; }
+    }
+}
+
+@mixin slideUp($direction) {
+    animation: fadeOut .3s $direction,
+    slideUp .5s cubic-bezier(.3,1,.3,1.3) $direction; 
+
+    @keyframes slideUp {
+        from { transform: translate3d(0); }
+        to { transform: translate3d(0, -1rem, 0); }
+    }
+
+    @keyframes fadeOut {
+           from { opacity: 1; }
+           to { opacity: 0; display: none; }
+    }
 }
 
 // Form
 @mixin button($color, $background) {
     align-items: center;
     padding: 0.7rem 1.5rem;
-    font-size: $large;
+    font-size: $medium;
+    font-weight: bold;
     border-radius: 1.5rem;
     border: none;
     cursor: pointer;

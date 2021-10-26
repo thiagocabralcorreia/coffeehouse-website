@@ -80,12 +80,10 @@
                 }
             
                 .top {
-                    transform: none;
                     margin-bottom: 0.3rem;
                 }
             
                 .bottom {
-                    transform: none;
                     margin-top: 0.3rem;
                 }
             }
@@ -125,11 +123,17 @@
                 opacity: 1;
                 box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.05);
                 z-index: 90;
+                animation: slidein 0.5s;
 
-                .nav-list {
-                    display: none;
-                    opacity: 0;
-                }
+                @keyframes slidein {
+                    from {
+                      margin-left: -100%;
+                    }
+                  
+                    to {
+                      margin-left: 0%;
+                    }
+                  }
             
                 .nav-item {
                     padding: 0 1rem;
@@ -165,7 +169,7 @@
             right: 0;
             background-color: $black;
             opacity: 0.25;
-            transition: 0.2s;
+            transition: 1s;
             overflow-x: hidden;
             overflow-y: auto;
             transition-timing-function: ease;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './styles.scss';
-import {ReactComponent as Logo} from '../../assets/ch-logo.svg';
+import {ReactComponent as Logo} from '../../assets/svg/ch-logo.svg';
 import DropdownMenu from './Dropdown/';
 
 function Header() {

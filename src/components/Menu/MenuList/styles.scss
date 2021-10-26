@@ -4,7 +4,6 @@
     li {
         font-size: $large;
         color: $white;
-        transition: 0.2s;
         list-style-type: none;
         cursor: pointer;
         padding-top: 1rem;
@@ -27,8 +26,18 @@
         }
     }
     
-    ul {
-        display: block;
-        padding-left: 2rem;
+     ul {
+         padding-left: 2rem;
+     }
+
+    .grow-down {
+        @include slideDown(alternate);
+        li {
+            @include slideDown(forwards);
+        }
+    }
+    
+    .close-up {
+        display: none;
     }
 }

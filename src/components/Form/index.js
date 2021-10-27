@@ -9,7 +9,7 @@ import Input from './Input';
 import Textarea from './Textarea';
 import Button from '../Button';
 
-function Form({ submitForm }) {
+const Form = ({ submitForm }) => {
     const { handleSubmit, handleChange, values, errors } = useForm( submitForm, validate );
     
     return (
@@ -85,7 +85,7 @@ function Form({ submitForm }) {
                     text='Submit'
                     type='submit'
                 />
-                </form>
+            </form>
         </div>
     )
 }

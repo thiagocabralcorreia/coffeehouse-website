@@ -4,7 +4,7 @@ import './styles.scss';
 import { menuSections } from '../../../data/menu';
 import { useValue } from '../../../hooks/PageContext';
 
-function MenuCard() {
+const MenuCard = () => {
     const { currentValue } = useValue();
 
     return (

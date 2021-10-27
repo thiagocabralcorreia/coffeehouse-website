@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './styles.scss';
-import {ReactComponent as Logo} from '../../assets/svg/ch-logo.svg';
+import logo from '../../assets/ch-logo.png';
 import DropdownMenu from './Dropdown/';
 
-function Header() {
+const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
@@ -44,7 +44,7 @@ function Header() {
             <nav className='navbar'>
                 <div className='container'>
                     <Link to='/' onClick={() => setMobileMenu(onClose)}>
-                        <Logo className='logo'/>
+                        <img src={logo} className='logo' alt='CH logo'/>
                     </Link>
                     <div
                         className={mobileMenu ? 'menu-icon active' : 'menu-icon'}

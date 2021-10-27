@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 import Button from '../../components/Button';
-function Banner({ title, subtitle, to, buttonText, image }) {
+const Banner = ({ title, subtitle, to, buttonText, image }) => {
     return (
         <div className='banner'>
             <div className='content'>

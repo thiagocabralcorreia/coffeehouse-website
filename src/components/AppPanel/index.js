@@ -5,7 +5,7 @@ import './styles.scss';
 import chApp from '../../assets/ch-app.png';
 import smartphone from '../../assets/photos/smartphone.png';
 
-function AppPanel() {
+const AppPanel = () => {
     return (
         <div className='app'>
                 <figure>

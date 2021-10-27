@@ -1,9 +1,9 @@
-import chbanner01 from '../assets/photos/chbanner01.png';
-import chbanner02 from '../assets/photos/chbanner02.png';
-import chbanner03 from '../assets/photos/chbanner03.png';
-import chbannerSquare01 from '../assets/photos/chbanner-square01.png';
-import chbannerSquare02 from '../assets/photos/chbanner-square02.png';
-import chbannerSquare03 from '../assets/photos/chbanner-square03.png';
+import chbanner01 from '../assets/photos/chbanner01.jpg';
+import chbanner02 from '../assets/photos/chbanner02.jpg';
+import chbanner03 from '../assets/photos/chbanner03.jpg';
+import chbannerSquare01 from '../assets/photos/chbanner-square01.jpg';
+import chbannerSquare02 from '../assets/photos/chbanner-square02.jpg';
+import chbannerSquare03 from '../assets/photos/chbanner-square03.jpg';
 
 export const sliderData = [
     {

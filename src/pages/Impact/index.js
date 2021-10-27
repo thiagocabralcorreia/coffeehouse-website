@@ -7,7 +7,7 @@ import ImpactModal from '../../components/ImpactModal';
 
 import PageProvider from '../../hooks/PageContext';
 
-function Impact() {
+const Impact = () => {
   const [isOpen, setIsOpen] = useState(false);
     
     return (

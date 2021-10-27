@@ -8,7 +8,7 @@ import Icon from '../Icon'
 import { impactPratices } from '../../data/impactPratices';
 import { useValue } from '../../hooks/PageContext';
 
-function ImpactModal({ onClose, open }) {
+const ImpactModal = ({ onClose, open }) => {
     const { currentValue, setCurrentValue } = useValue();
     const length = impactPratices.length;
 

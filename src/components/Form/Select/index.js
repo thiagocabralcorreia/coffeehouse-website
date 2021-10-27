@@ -4,7 +4,7 @@ import '../styles.scss';
 
 import { selectOptions } from '../../../data/selectOptions';
 
-function Select({ label, name, required, value, onChange, errors }) {
+const Select = ({ label, name, required, value, onChange, errors }) => {
     return (
         <div className='select'>
         <label>{label}{required ? <span>*</span> : ''}</label>

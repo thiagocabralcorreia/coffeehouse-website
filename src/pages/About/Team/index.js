@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles.scss';
 
-function Team() {
+const Team = () => {
     return (
         <div className='about'>
             <div className='cover'>

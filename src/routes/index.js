@@ -13,7 +13,7 @@ import Impact from '../pages/Impact/';
 import StoreLocator from '../pages/StoreLocator/';
 import Footer from '../components/Footer/';
 
-function Routes() {
+const Routes = () => {
     return (
     <BrowserRouter>
         <Header />

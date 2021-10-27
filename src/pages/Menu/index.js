@@ -3,7 +3,7 @@ import './styles.scss';
 import MainMenu from '../../components/Menu/';
 import beans from '../../assets/videos/beans.mp4';
 import Banner from '../../components/Banner';
-import chStore from '../../assets/photos/ch-store.png';
+import chStore from '../../assets/photos/ch-store.jpg';
 
 const Menu = () => {
     return (

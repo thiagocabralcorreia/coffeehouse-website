@@ -4,7 +4,7 @@ import coffeeBerry from '../../assets/photos/coffee-berry.jpg';
 import coffeeBeans from '../../assets/photos/coffee-beans.jpg';
 import coffeePot from '../../assets/photos/coffee-pot.jpg';
 
-function About() {
+const About = () => {
     return (
         <div className='about'>
             <div className='cover'>

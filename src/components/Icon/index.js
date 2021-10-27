@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Icon({ className, size, color, hoverColor, width, height, cursor, onClick  }) {
+const Icon = ({ className, size, color, hoverColor, width, height, cursor, onClick  }) => {
     const [ fill, setFill ] = useState(color);
     return (
         <div>

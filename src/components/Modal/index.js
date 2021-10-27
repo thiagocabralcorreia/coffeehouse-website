@@ -3,7 +3,7 @@ import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-function Modal({ children, onClose, open }) {
+const Modal = ({ children, onClose, open }) => {
   const handleOpen = () => {
     return (document.body.style.overflow = 'hidden');
   };

@@ -7,6 +7,7 @@ import OrderPanel from '../../components/OrderPanel';
 import Banner from '../../components/Banner';
 import coffeePlant from '../../assets/photos/coffee-plant.jpg';
 import AppPanel from '../../components/AppPanel';
+import NewsletterSignup from '../../components/NewsletterSignup';
 
 const Home = () => {
     return (
@@ -20,7 +21,8 @@ const Home = () => {
                 buttonText='Learn more'
                 image={coffeePlant}
             />
-            <AppPanel/>
+            <AppPanel />
+            <NewsletterSignup />
         </div>
     )
 }

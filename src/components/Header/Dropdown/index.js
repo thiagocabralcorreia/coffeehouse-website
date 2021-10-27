@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-export function DropdownItem({ title, to, onClick }) {
+export const DropdownItem = ({ title, to, onClick }) => {
     return (
         <li>
             <Link
@@ -16,7 +16,7 @@ export function DropdownItem({ title, to, onClick }) {
     )
 };
 
-function Dropdown() {
+const Dropdown = () => {
     const [closeDropdown, setCloseDropdown] = useState(true);
     return (
         <div className={closeDropdown ? 'dropdown' :'dropdown closed'}>

@@ -5,7 +5,7 @@ import './styles.scss';
 import { impactPratices } from '../../data/impactPratices';
 import { useValue } from '../../hooks/PageContext';
 
-function Grid({ onClick }) {
+const Grid = ({ onClick }) => {
     const { setCurrentValue } = useValue();
     return (
         <div className='grid' onClick={onClick}>

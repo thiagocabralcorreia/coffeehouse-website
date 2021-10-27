@@ -4,7 +4,7 @@ import './styles.scss';
 import Form from '../../components/Form';
 import SuccessMessage from '../../components/Form/SuccessMessage';
 
-function Contact() {
+const Contact = () => {
     const [submitted, setSubmitted] = useState(false);
     const submitForm = useCallback(() => {
             setSubmitted(true);

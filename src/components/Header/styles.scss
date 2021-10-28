@@ -108,7 +108,7 @@
                 display: none;
             }
             
-            .nav-list.mobile {
+            .nav-list.mobile {       
                 display: flex;
                 flex-direction: column;
                 position: fixed;
@@ -122,10 +122,10 @@
                 transition: 0.2s;
                 opacity: 1;
                 box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.05);
-                z-index: 90;
-                animation: slidein 0.5s;
-
-                @keyframes slidein {
+                z-index: 90;                  
+                animation: slideIn 0.5s;
+                
+                @keyframes slideIn {
                     from {
                       margin-left: -100%;
                     }

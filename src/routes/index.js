@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 
 // Routes
@@ -11,6 +11,7 @@ import Team from '../pages/About/Team/';
 import Contact from '../pages/Contact/';
 import Impact from '../pages/Impact/';
 import StoreLocator from '../pages/StoreLocator/';
+import NotFound from '../pages/NotFound/';
 import Footer from '../components/Footer/';
 
 const Routes = () => {
@@ -25,6 +26,8 @@ const Routes = () => {
           <Route path='/contact' exact component={Contact} />
           <Route path='/impact' exact component={Impact} />
           <Route path='/store-locator' exact component={StoreLocator} />
+          <Route path='/404' component={NotFound} />
+          <Redirect from='*' to='/404' />
         </Switch>
         <Footer />
     </BrowserRouter>

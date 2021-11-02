@@ -1,0 +1,68 @@
+@import 'src/scss';
+
+.flex-wrapper {    
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    justify-content: center; 
+    margin: auto;   
+    width: 65%;
+    gap: 1.5rem;
+
+    .single-chart {
+        @extend %centered-column;
+        text-align: center;    
+        width: 25rem; 
+            
+      .circular-chart {
+        height: 15rem;
+        display: block;
+        margin: 0 auto;
+      
+        .circle {
+            fill: none;
+            stroke-width: 4;
+            animation: progress 1s ease-out forwards;
+        }
+
+        .resource {
+          stroke: $secondary;
+        }
+
+        .energy {
+          stroke: $primary;
+        }
+      
+        .percentage {
+            fill: $gray-200;
+            font-size: 0.5em;
+            text-anchor: middle;
+        }
+      }         
+
+      p {
+        padding-top: 1rem;
+        font-size: $big;
+      }
+    }    
+}
+
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  @media screen and (max-width: $mobile-screen) {
+    .flex-wrapper {    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .single-chart {
+        width: 100%; 
+      }
+    }
+  }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles.scss';
 
 import chImpact from '../../assets/photos/impact.jpg';
+import Chart from '../../components/Chart/';
 import Grid from '../../components/Grid/';
 import ImpactModal from '../../components/ImpactModal';
 
@@ -20,7 +21,10 @@ const Impact = () => {
                 <p>Our mission is to make the world a better place. That's why Coffee House has always taken care of nature and communities. We work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts.
                 </p>
             </div>
-            <div style={{ display: 'flex', backgroundColor: 'white', justifyContent: 'center', margin: 'auto'}}>
+            <div className='chart-container'>
+                
+                            
+                <Chart />
             </div>
             <Grid onClick={() => setIsOpen(!isOpen)}/>
             <ImpactModal

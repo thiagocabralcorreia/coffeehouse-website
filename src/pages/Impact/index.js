@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
 import chImpact from '../../assets/photos/impact.jpg';
@@ -9,7 +9,11 @@ import ImpactModal from '../../components/ImpactModal';
 import PageProvider from '../../hooks/PageContext';
 
 const Impact = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     
     return (
         <PageProvider>
@@ -21,15 +25,16 @@ const Impact = () => {
                 <p>Our mission is to make the world a better place. That's why Coffee House has always taken care of nature and communities. We work with an environmental conscience, using recycled products, and practicing compost, improving soil health, reducing greenhouse gas emissions, recycling nutrients, and mitigating the impact of droughts.
                 </p>
             </div>
-            <div className='chart-container'>
-                
-                            
+            <div className='impact-chart'>         
                 <Chart />
             </div>
-            <Grid onClick={() => setIsOpen(!isOpen)}/>
-            <ImpactModal
-              open={isOpen}
-              onClose={() => setIsOpen(!isOpen)}/>
+            <div className='impact-grid'>  
+                <Grid onClick={() => setIsOpen(!isOpen)}/>
+                <ImpactModal
+                    open={isOpen}
+                    onClose={() => setIsOpen(!isOpen)}
+                />
+            </div>
         </PageProvider>
     )
 }

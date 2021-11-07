@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useCallback, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 import Slider from '../../components/Slider/';
@@ -10,9 +11,33 @@ import AppPanel from '../../components/AppPanel';
 import NewsletterSignup from '../../components/NewsletterSignup';
 
 const Home = () => {
+    const [showTag, setShowTag] = useState(false);    
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
+    // Show Contact tag
+    const onScroll = useCallback(() => {
+        if (window.scrollY > 975) {
+            setShowTag(true);
+        }
+    }, []);
+    useEffect(() => {
+        window.addEventListener('scroll', onScroll);
+    },[onScroll]);
+
     return (
         <div className='home'>
             <Slider slides={sliderData}/>
+            {showTag && <div className='tag-container'>
+                <Link
+                    to='/contact'
+                    className='tag-link'
+                >
+                    <p>Contact</p>
+                </Link>
+            </div>}
             <OrderPanel />
             <Banner
                 title='Eco-Friendly'

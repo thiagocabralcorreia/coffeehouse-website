@@ -17,7 +17,7 @@ const SignUp = ({ submitForm }) => {
             noValidate
         >
             <div className='subscribe-column'>
-                <h1>Never Miss Our Latest News & Offers</h1>
+                <h1>Never Miss Our Latest News<span> </span><br/>& Offers</h1>
                 <p>Join today to get 15% off your first order and enjoy a free beverage. Sign up for our newsletter and receive surprise rewards.</p>
             </div>
             <div className='subscribe-row'>

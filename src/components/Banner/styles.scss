@@ -2,10 +2,12 @@
 
 .banner {
     display: grid;
+    height: 20.8rem;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     background-color: $gray-100;
     margin: 0 auto 0;
+    @include fadeIn(1s, alternate);
 
     .content {
         text-align: center;

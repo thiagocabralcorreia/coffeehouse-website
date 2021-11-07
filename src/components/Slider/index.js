@@ -17,7 +17,7 @@ const Slider = ({ slides }) => {
         setCurrent(current === length - 1 ? 0 : current + 1); 
     }
 
-    const delay = 10000;
+    const delay = 6000;
     useEffect(() => {
         const timeout = setTimeout(() => {
             nextSlide();

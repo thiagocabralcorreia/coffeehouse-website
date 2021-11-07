@@ -29,7 +29,8 @@
             h2 {
                 align-self: center;
                 padding-right: 1rem;
-                font-size: $big;
+                font-size: $big;                
+                @include fadeIn(1s, alternate);
             }
 
             p {
@@ -37,6 +38,7 @@
                 padding-top: 0.2rem;
                 padding-right: 2rem;
                 color: $secondary;
+                @include fadeIn(1s, alternate);
             }
         }
     }
@@ -47,6 +49,7 @@
         margin: 0 1.5rem;
         transition: 0.5s;
         transition-duration: 1s linear;
+        @include fadeIn(.7s, alternate);
     }
 }
 

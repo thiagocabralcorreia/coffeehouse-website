@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 import MainMenu from '../../components/Menu/';
 import beans from '../../assets/videos/beans.mp4';
@@ -6,6 +6,10 @@ import Banner from '../../components/Banner';
 import chStore from '../../assets/photos/ch-store.jpg';
 
 const Menu = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <div className='menu'>
             <div className='cover'>

@@ -1,6 +1,6 @@
 @import 'src/scss';
 
-.flex-wrapper {    
+.chart-wrapper {    
     display: flex;
     flex-direction: row;
     background-color: $white;
@@ -8,6 +8,7 @@
     margin: auto;   
     width: 65%;
     gap: 1.5rem;
+    @include fadeIn(1s, alternate);
 
     .single-chart {
         @extend %centered-column;
@@ -55,7 +56,7 @@
   }
   
   @media screen and (max-width: $mobile-screen) {
-    .flex-wrapper {    
+    .chart-wrapper {    
       display: flex;
       flex-direction: column;
       align-items: center;

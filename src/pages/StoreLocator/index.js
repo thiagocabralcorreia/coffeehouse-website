@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 import Button from '../../components/Button';
 import InputSearch from '../../components/InputSearch/';
 
 const StoreLocator = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <div className='locator'>
             <div className='sidebar'>

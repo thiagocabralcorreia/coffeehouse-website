@@ -1,14 +1,19 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './styles.scss';
 
 import Form from '../../components/Form';
 import SuccessMessage from '../../components/Form/SuccessMessage';
 
-const Contact = () => {
+const Contact = () => {      
     const [submitted, setSubmitted] = useState(false);
+
     const submitForm = useCallback(() => {
             setSubmitted(true);
-          }, [setSubmitted])
+          }, [setSubmitted])    
+    
+    useEffect(() => {
+    window.scrollTo(0, 0)
+    }, []);
           
     return (
         <div className='contact'>

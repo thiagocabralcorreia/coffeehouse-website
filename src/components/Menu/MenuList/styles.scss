@@ -31,9 +31,9 @@
      }
 
     .grow-down {
-        @include slideDown(alternate);
+        @include slideDown(alternate, .3s, .5s);
         li {
-            @include slideDown(forwards);
+            @include slideDown(forwards, .3s, .5s);
         }
     }
     

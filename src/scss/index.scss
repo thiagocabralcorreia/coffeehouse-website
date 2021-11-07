@@ -3,7 +3,7 @@
 @import 'extends';
 
 :root {
-  
+  overflow-x: hidden;
 }
 
 * {
@@ -17,9 +17,3 @@
   color: $white;
   background: $primary;
 }
-
-// @extend .input;
-
-// @mixin input($isAuto: true) {
-//@include input()
-//@include input(true)

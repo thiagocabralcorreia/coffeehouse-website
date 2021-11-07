@@ -14,14 +14,14 @@
     border-radius: 0.5rem;
     padding: 1.2rem 3rem 1.7rem 1.7rem;
     z-index: 101;
-    @include slideDown(alternate);
+    @include slideDown(alternate, .3s, .5s);
 
     li {
         list-style: none;
         cursor: pointer;
         transition: 0.5s;
         line-height: 2.5rem;
-        @include slideDown(forwards);
+        @include slideDown(forwards, .3s, .5s);
 
         .dropdown-link {
             font-size: $medium;
@@ -59,11 +59,11 @@
         padding: 2rem 0 0.5rem 1rem;
         margin-bottom: 2rem;
         border-top: 0.1rem solid $white;
-        @include slideDown(alternate);
+        @include slideDown(alternate, .3s, .5s);
 
         li {
             line-height: 1.2rem;
-            @include slideDown(forwards);
+            @include slideDown(forwards, .3s, .5s);
 
             .dropdown-link {
                 font-size: $large;

@@ -60,10 +60,22 @@ const Header = () => {
                     </div>
                     <ul className={mobileMenu ? 'nav-list mobile' : 'nav-list'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-link'>Home</Link>
+                            <Link
+                                to='/'
+                                className='nav-link'
+                                onClick={() => setMobileMenu(onClose)}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/menu' className='nav-link'>Menu</Link>
+                            <Link
+                                to='/menu'
+                                className='nav-link'
+                                onClick={() => setMobileMenu(onClose)}
+                            >
+                                Menu
+                            </Link>
                         </li>
                         <li
                             className='nav-item'
@@ -74,7 +86,11 @@ const Header = () => {
                             {dropdown && <DropdownMenu />}
                         </li>
                         <li className='nav-item'>
-                            <Link to='/store-locator' className='nav-link'>
+                            <Link
+                                to='/store-locator'
+                                className='nav-link'
+                                onClick={() => setMobileMenu(onClose)}
+                            >
                                 <i className="fas fa-map-marker-alt"></i>
                             </Link>
                         </li>

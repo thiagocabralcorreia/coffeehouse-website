@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 import { sliderData } from '../../data/sliderData';
+import blankBanner from '../../assets/photos/blank-banner.jpg';
+import blankSquare from '../../assets/photos/blank-square.jpg';
 
 const Slider = ({ slides }) => {
     const [ current, setCurrent ] = useState(0);
@@ -29,47 +31,57 @@ const Slider = ({ slides }) => {
     }
 
     return (
-        <div className='slider'>
-                {sliderData.map((slide, index) => {
-                    return (
-                        <div
-                        key={index}
-                        className={index === current ? 'current slide' : 'slide'}>
-                            {index === current &&
-                                <div>
-                                    <img 
-                                    src={slide.landscape}
-                                    className='landscape'
-                                    alt='Coffee banner'
-                                    />
-                                    <img 
-                                    src={slide.square}
-                                    className='square'
-                                    alt='Coffee banner'
-                                    />
-                                </div>}
-                            <div className='dots'>
-                                <button
-                                    className={current === 0 ? 'active slider-dot' : 'slider-dot'}
-                                    onClick={() => setCurrent(0)}>
-                                </button>
-                                <button
-                                    className={current === 1 ? 'active slider-dot' : 'slider-dot'}
-                                    onClick={() => setCurrent(1)}>
-                                </button>
-                                <button
-                                    className={current === 2 ? 'active slider-dot' : 'slider-dot'}
-                                    onClick={() => setCurrent(2)}>
-                                </button>
-                            </div>
+        <div className='slider'>                
+            {sliderData.map((slide, index) => {
+                return (
+                    <div
+                    key={index}
+                    className={index === current ? 'current slide' : 'slide'}>
+                        {index === current &&
+                            <div>
+                                <img 
+                                src={slide.landscape}
+                                className='landscape'
+                                alt='Coffee banner'
+                                />
+                                <img 
+                                src={slide.square}
+                                className='square'
+                                alt='Coffee banner'
+                                />
+                            </div>}
+                        <div className='dots'>
+                            <button
+                                className={current === 0 ? 'active slider-dot' : 'slider-dot'}
+                                onClick={() => setCurrent(0)}>
+                            </button>
+                            <button
+                                className={current === 1 ? 'active slider-dot' : 'slider-dot'}
+                                onClick={() => setCurrent(1)}>
+                            </button>
+                            <button
+                                className={current === 2 ? 'active slider-dot' : 'slider-dot'}
+                                onClick={() => setCurrent(2)}>
+                            </button>
                         </div>
-                    )
-                })}
+                    </div>
+                )
+            })}                
+            <img
+                src={blankBanner}                                    
+                className='blank-banner'
+                alt='Blank banner'
+                />
+            <img
+                src={blankSquare}                                    
+                className='blank-square'
+                alt='Blank square'
+            />
             <div className='arrow-container'>
-                <button onClick={previousSlide}>
+                <button onClick={previousSlide} className='arrow-left'>
                     <i className='fas fa-chevron-left'></i>
                 </button>    
-                <button onClick={nextSlide}>
+                <button onClick={nextSlide} className='arrow-right'>
                     <i className='fas fa-chevron-right'></i>
                 </button>
             </div>

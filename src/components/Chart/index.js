@@ -7,7 +7,6 @@ const Chart = () => {
     const onScroll = useCallback(() => {
         if (window.scrollY > 330) {
             setShowChart(true);
-            console.log(window.scrollY)
         }
     }, []);
     useEffect(() => {

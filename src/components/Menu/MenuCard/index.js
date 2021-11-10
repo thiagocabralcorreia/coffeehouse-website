@@ -43,6 +43,7 @@ const MenuCard = () => {
                             </div>)
                         })
                     )}
+                <p>For illustrative purposes only. *Subject to availability.</p>
             </div>
         </div>
     )

@@ -8,12 +8,12 @@
     justify-content: center;
     position: relative;
 
-    .story {
+    .story-photo {
       height: 100%;
       @include background-cover("../assets/photos/about-cover.jpg");
     }
 
-    .team {
+    .team-photo {
       height: 100%;
       @include background-cover("../assets/photos/cups-cover.jpg");
     }

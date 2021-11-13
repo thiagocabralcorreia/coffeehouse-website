@@ -49,13 +49,6 @@
         transition: 0.5s;
         transition-duration: 1s linear; 
         @include fadeIn(.7s, alternate);
-
-        p {            
-            font-size: $small;
-            font-style: italic;
-            padding-top: 0.5rem;
-            color: $gray-200;
-        }
     }
 }
 

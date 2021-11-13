@@ -21,10 +21,10 @@ const Menu = () => {
             </div>
             <MainMenu />
             <Banner
-                title='Find a location nearby'
-                subtitle='Use the search feature or turn on location services.'
-                to='/store-locator'
-                buttonText='Search a store'
+                title='Looking for fresh coffee?'
+                subtitle='Find a store near you.'
+                to='/stores'
+                buttonText='Visit us'
                 image={chStore}
             />
         </div>

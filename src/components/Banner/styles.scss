@@ -2,7 +2,7 @@
 
 .banner {
     display: grid;
-    height: 20.8rem;
+    min-height: 100%;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     background-color: $gray-100;

@@ -16,7 +16,7 @@ const Banner = ({ title, subtitle, to, buttonText, image }) => {
             </div>
             <div className='image'
                 style={{ background: `url(${image}) no-repeat center center`,
-                display: 'block', backgroundSize: 'cover'}}
+                display: 'block', backgroundSize: 'cover', heigh: '100%'}}
             />
         </div>
     )

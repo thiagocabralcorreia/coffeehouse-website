@@ -12,7 +12,7 @@ const AppPanel = () => {
                     <img src={smartphone} alt='Smartphone' />
                 </figure>
                 <div className='content'>
-                    <h1>Order on the app</h1>
+                    <h1>Order on the App</h1>
                     <p>Download our mobile app to enroll and start ordering ahead. Find stores, redeem offers and earn rewards.</p>
                     <Link to='/'>
                         <img src={chApp} className='ch-app' alt='CH App Button'/>

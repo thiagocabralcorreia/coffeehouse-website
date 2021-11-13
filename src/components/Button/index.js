@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
+import Icon from '../Icon';
 
-const Button = ({ text, white, type, onClick, hasIcon }) => {
-    const { icon } = hasIcon || {};
+const Button = ({ text, white, type, onClick, icon, iconSize }) => {
 
     return (
         <button
         className={white ? 'white-button' : 'brown-button'}
         onClick={onClick}
-        type={type}
-        style={hasIcon && {display: 'flex'}}>
+        type={type}>
             {text}
-            {hasIcon && (
-                <div>
-                    <i className={icon}></i>
-                </div>
+            {icon !== '' && (
+                <Icon
+                className={icon}
+                size={iconSize}
+                />
             )}
         </button>
     )
@@ -23,6 +23,8 @@ const Button = ({ text, white, type, onClick, hasIcon }) => {
 
 Button.propTypes = {
     text: PropTypes.string,
+    icon: PropTypes.string,
+    iconSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     white: PropTypes.bool,
     onClick: PropTypes.func,
     type: PropTypes.string,
@@ -30,7 +32,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
     text: '',
-    size: 'true',
+    icon: '',
+    iconSize: '1rem',
     onClick: undefined,
 };
 

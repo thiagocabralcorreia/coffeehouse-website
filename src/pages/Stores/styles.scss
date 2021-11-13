@@ -1,0 +1,86 @@
+@import 'src/scss';
+
+.stores {
+  .page-header {
+    @extend %page-header;  
+  }
+
+  .store-cards {
+    display: grid;
+    width: 75%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 6rem;
+    margin: 3rem auto 2.5rem;
+    gap: 1rem;
+
+    .store-card {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+
+      h1 {
+        font-size: $headline;
+        color: $primary;
+        padding-bottom: 1rem;        
+      }
+
+      .store-data {
+        display: grid;
+        grid-template-columns: 2rem auto;
+        font-size: $medium;
+        padding-bottom: 0.5rem;   
+
+        .icon-wrapper {
+          justify-content: center;
+
+          i {
+            color: $primary;
+            padding-right: 0.7rem;
+          }
+        }        
+      }
+
+      .link-maps {                  
+        text-decoration: none;   
+        padding-top: 0.1rem;
+        color: $gray-200;
+
+        p {
+          text-decoration: none;
+        }
+        
+        .icon-wrapper {
+          i {                     
+            color: $gray-200;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $largest-screen) {
+  .stores {    
+    .store-cards {
+      justify-content: center;
+      padding-left: 0;
+      column-gap: 3rem;
+    }
+  }
+}
+  
+@media (max-width: $medium-screen) {
+  .stores {
+    .store-cards {      
+      grid-template-columns: 1fr;
+      width: 80%;
+
+      .store-card {        
+        h1 {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}

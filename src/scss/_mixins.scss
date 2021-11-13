@@ -46,14 +46,10 @@
     transition: 0.2s;
     height: 3rem;
 
-    i {
-        padding-left: 0.8rem;
-    }
-
     &:hover {
         background-color: $secondary;
         color: $white;
-      }
+    }
 }
 
 @mixin form-component($position) {

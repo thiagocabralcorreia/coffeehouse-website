@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './styles.scss';
 import logo from '../../assets/ch-logo.png';
 import DropdownMenu from './Dropdown/';
+import Icon from '../Icon';
 
 const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -87,11 +88,13 @@ const Header = () => {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/store-locator'
+                                to='/stores'
                                 className='nav-link'
                                 onClick={() => setMobileMenu(onClose)}
                             >
-                                <i className="fas fa-map-marker-alt"></i>
+                                <Icon
+                                    className='fas fa-map-marker-alt'
+                                />
                             </Link>
                         </li>
                     </ul>

@@ -17,11 +17,11 @@ const Contact = () => {
           
     return (
         <div className='contact'>
-            <div className='header'>
+            <div className='page-header'>
                 <h1>Contact</h1>
             </div>
             <div className='content'>
-                <h2>We want to hear from you</h2>
+                <h2>Get in Touch with Us</h2>
                 <p>If you can’t find what you’re looking for on website, feel free to submit your question or suggestion using this form. We love to hear your feedback.</p>
             </div>
             {!submitted? <Form submitForm={submitForm} /> : <SuccessMessage /> }

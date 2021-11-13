@@ -12,10 +12,9 @@ const About = () => {
     return (
         <div className='about'>
             <div className='cover'>
-                <div className='story'></div>
+                <div className='story-photo'></div>
                 <div className='bar'>
                     <h2>Coffee is Our<span> </span><br/>Greatest Legacy</h2>
-                    {/* Who is Behind All Those Cups of Coffee */}
                 </div>
             </div>
             <div className='content'>

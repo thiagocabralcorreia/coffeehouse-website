@@ -4,15 +4,16 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 // Routes
 import Header from '../components/Header';
-import Home from '../pages/Home/';
-import Menu from '../pages/Menu/';
-import About from '../pages/About/';
-import Team from '../pages/About/Team/';
-import Contact from '../pages/Contact/';
-import Impact from '../pages/Impact/';
-import Stores from '../pages/Stores/';
-import NotFound from '../pages/NotFound/';
-import Footer from '../components/Footer/';
+import Home from '../pages/Home';
+import Menu from '../pages/Menu';
+import Quiz from '../pages/Quiz';
+import About from '../pages/About';
+import Team from '../pages/About/Team';
+import Contact from '../pages/Contact';
+import Impact from '../pages/Impact';
+import Stores from '../pages/Stores';
+import NotFound from '../pages/NotFound';
+import Footer from '../components/Footer';
 
 const Routes = () => {
     return (
@@ -21,6 +22,7 @@ const Routes = () => {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/menu' exact component={Menu} />
+          <Route path='/quiz' exact component={Quiz} />
           <Route path='/about' exact component={About} />
           <Route path='/team' exact component={Team} />
           <Route path='/contact' exact component={Contact} />

@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+
 import { menuSections } from '../../data/menu';
 import MenuCard from './MenuCard/';
 import MenuList from './MenuList/';

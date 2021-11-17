@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 import Button from '../../components/Button';
+
 const Banner = ({ title, subtitle, to, buttonText, image }) => {
     return (
         <div className='banner'>

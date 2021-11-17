@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../scss/index.scss';
 import './styles.scss';
 
 import Icon from '../../Icon';

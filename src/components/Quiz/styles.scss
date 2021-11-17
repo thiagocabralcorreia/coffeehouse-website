@@ -1,0 +1,104 @@
+@import 'src/scss';
+
+.quiz-content {
+    @extend %centered-column;
+
+    .page-header {
+        @include page-header($primary, 'none');
+    }
+
+    form {
+        width: 50%;
+        padding: 2rem 2.5rem;
+
+        .question-card {
+
+            h2 {      
+                font-size: $subheadline;
+                color: $primary;               
+            }
+
+            div {
+                padding: 1.5rem 0;
+                font-size: $large;
+
+                label {
+                    display: block;
+                    padding-bottom: 0.7rem;
+                }
+
+                input[type='radio'] {
+                    margin: 0 1rem 0 0;       
+                    
+                    &:checked:after {
+                        width: 0.65rem;
+                        height: 0.65rem;
+                        border-radius: 1rem;
+                        top: -.5px;
+                        left: -1px;
+                        position: relative;
+                        background-color: $secondary;
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: .15rem solid $white;
+                    }
+                }
+            }
+        }
+
+        .quiz-result {
+            width: 100%;            
+            text-align: center;
+            margin-top: 3rem;
+            @include fadeIn(2s, alternate);
+
+            h1 {
+                font-size: $title;
+            }
+
+            h2 {
+                font-size: $headline;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+    .quiz-content {
+    
+        .page-header {
+            h1 {
+                span {
+                    display: none;
+                }
+            }                        
+        }
+    
+        form {
+            width: 85%;
+            padding: 0 2.5rem;
+
+            .question-card {
+    
+                h2 {      
+                    font-size: $big;                   
+                }
+    
+                div {
+                    font-size: $medium;
+                }
+            }
+
+            .quiz-result {
+                h1 {
+                    font-size: $subtitle;
+                }
+    
+                h2 {
+                    font-size: $subheadline;
+                }
+            }
+        }
+    }
+}

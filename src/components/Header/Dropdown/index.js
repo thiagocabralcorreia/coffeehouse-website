@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-export const DropdownItem = ({ title, to, onClick }) => {
+export const DropdownItem = ({ page, to, onClick }) => {
     return (
         <li>
             <Link
@@ -10,32 +10,42 @@ export const DropdownItem = ({ title, to, onClick }) => {
                 className='dropdown-link'
                 to={to}
             >
-                {title}
+                {page}
             </Link>
         </li>
     )
 };
+
+export const pageLinks = [
+    {
+        page: 'Quiz',
+        link: '/quiz'
+    },
+    {
+        page: 'About',
+        link: '/about',
+    },
+    {
+        page: 'Contact',
+        link: '/contact'
+    },
+];
 
 const Dropdown = () => {
     const [closeDropdown, setCloseDropdown] = useState(true);
     return (
         <div className={closeDropdown ? 'dropdown' :'dropdown closed'}>
             <ul>
-                <DropdownItem
-                    title='About'
-                    to='/about'
-                    onClick={() => setCloseDropdown(false)}
-                />
-                <DropdownItem
-                    title='Contact'
-                    to='/contact'
-                    onClick={() => setCloseDropdown(false)}
-                />
-                <DropdownItem
-                    title='Impact'
-                    to='/impact'
-                    onClick={() => setCloseDropdown(false)}
-                />
+                {pageLinks.map((item, index) => {
+                    return (
+                        <DropdownItem
+                            key={index}
+                            page={item.page}
+                            to={item.link}
+                            onClick={() => setCloseDropdown(false)}
+                        />
+                    );
+                })}
             </ul>
         </div>
     )

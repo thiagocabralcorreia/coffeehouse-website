@@ -4,7 +4,7 @@
     padding-bottom: 3rem;
 
   .page-header {
-    @extend %page-header;
+    @include page-header($white, $secondary);
   }
   
   .content {

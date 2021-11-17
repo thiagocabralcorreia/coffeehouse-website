@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles.scss';
+
 import MainMenu from '../../components/Menu/';
 import beans from '../../assets/videos/beans.mp4';
 import Banner from '../../components/Banner';

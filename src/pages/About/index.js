@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles.scss';
+
 import coffeeBerry from '../../assets/photos/coffee-berry.jpg';
 import coffeeBeans from '../../assets/photos/coffee-beans.jpg';
 import coffeePot from '../../assets/photos/coffee-pot.jpg';

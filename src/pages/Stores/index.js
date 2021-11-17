@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles.scss';
+
 import { storeData } from '../../data/storeData';
 import Icon from '../../components/Icon';
 

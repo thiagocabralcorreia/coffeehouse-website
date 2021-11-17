@@ -2,7 +2,7 @@
 
 .stores {
   .page-header {
-    @extend %page-header;  
+    @include page-header($white, $secondary);  
   }
 
   .store-cards {

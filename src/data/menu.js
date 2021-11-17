@@ -131,11 +131,11 @@ export const menuSections = [
                 {subtype: 'Strawberries Muffin',
                 ingredients: 'Muffin, Strawberries, Strawberry Jam'
                 },
+                {subtype: 'Chocolate Biscuit',
+                ingredients: 'Peanut Butter Biscuit, Chocolate Button'
+                },
                 {subtype: 'Chocolate Donut',
                 ingredients: 'Donut, Chocolate Glaze'
-                },
-                {subtype: 'Chocolate Cookie',
-                ingredients: 'Buttery Cookie, Chocolate Buttons'
                 },
             ]
         }

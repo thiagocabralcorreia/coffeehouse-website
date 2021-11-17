@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './styles.scss';
+
 import logo from '../../assets/ch-logo.png';
 import DropdownMenu from './Dropdown/';
 import Icon from '../Icon';
@@ -76,6 +77,15 @@ const Header = () => {
                                 onClick={() => setMobileMenu(onClose)}
                             >
                                 Menu
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                to='/impact'
+                                className='nav-link'
+                                onClick={() => setMobileMenu(onClose)}
+                            >
+                                Impact
                             </Link>
                         </li>
                         <li

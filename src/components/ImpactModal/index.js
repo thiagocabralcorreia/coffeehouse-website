@@ -4,7 +4,6 @@ import './styles.scss';
 
 import Modal from '../Modal';
 import Icon from '../Icon'
-
 import { impactPratices } from '../../data/impactPratices';
 import { useValue } from '../../hooks/PageContext';
 

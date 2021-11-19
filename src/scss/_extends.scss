@@ -20,6 +20,27 @@
     background-color: $primary;
 }
 
+%banner-content {
+    text-align: center;
+    padding: 5rem;
+
+    h1 {
+        font-size: $headline;
+        color: $primary;
+    }
+    
+    p {
+        font-size: $big;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    link {
+        text-decoration: none;
+    }
+}
+
+
 %form {
     appearance: none;
     background-color: $white;

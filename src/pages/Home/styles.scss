@@ -32,6 +32,12 @@
     }
   }
 
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
   @keyframes slideRight {
     from {
     margin-right: -100%;
@@ -51,4 +57,14 @@
       margin-right: -100%;
     }
   }
+}
+
+@media screen and (max-width: $large-screen) {   
+  .home {  
+      .card-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+      }
+  }    
 }

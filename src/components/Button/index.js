@@ -4,11 +4,11 @@ import './styles.scss';
 
 import Icon from '../Icon';
 
-const Button = ({ text, white, type, onClick, icon, iconSize }) => {
+const Button = ({ text, phantom, type, onClick, icon, iconSize }) => {
 
     return (
         <button
-        className={white ? 'white-button' : 'brown-button'}
+        className={phantom ? 'phantom-button' : 'brown-button'}
         onClick={onClick}
         type={type}>
             {text}
@@ -26,7 +26,7 @@ Button.propTypes = {
     text: PropTypes.string,
     icon: PropTypes.string,
     iconSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    white: PropTypes.bool,
+    phantom: PropTypes.bool,
     onClick: PropTypes.func,
     type: PropTypes.string,
 };

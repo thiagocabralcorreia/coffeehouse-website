@@ -30,18 +30,34 @@
                 input[type='radio'] {
                     margin: 0 1rem 0 0;       
                     
+                    &:after {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 13px;
+                        top: -2px;
+                        left: -1px;
+                        position: relative;
+                        background-color: $white;
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: 2px solid $gray-200;
+                        cursor: pointer;
+                    }
+
                     &:checked:after {
-                        width: 0.65rem;
-                        height: 0.65rem;
-                        border-radius: 1rem;
-                        top: -.5px;
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 13px;
+                        top: -2px;
                         left: -1px;
                         position: relative;
                         background-color: $secondary;
                         content: '';
                         display: inline-block;
                         visibility: visible;
-                        border: .15rem solid $white;
+                        border: 2px solid $primary;
+                        cursor: pointer;
                     }
                 }
             }

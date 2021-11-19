@@ -1,32 +1,17 @@
 @import 'src/scss';
 
 .banner {
-    display: grid;
-    min-height: 100%;
-    width: 100%;
+    display: grid;    
     grid-template-columns: 1fr 1fr;
-    background-color: $gray-100;
+    min-height: 100%;
     margin: 0 auto 0;
+
+    width: 100%;
+    background-color: $gray-100;
     @include fadeIn(1s, alternate);
 
     .content {
-        text-align: center;
-        padding: 5rem;
-
-        h1 {
-            font-size: $headline;
-            color: $primary;
-        }
-        
-        p {
-            font-size: $big;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-    
-        .button-link {
-            text-decoration: none;
-        }
+        @extend %banner-content;
     }
 }
 
@@ -38,7 +23,13 @@
         grid-template-rows: 1fr 1fr;
     
         .content {
-            padding: 4rem 2rem 4rem;
+            padding: 4rem 2rem 4rem; 
+
+            h1 {
+                width: 80%;                
+                margin: 0 auto;
+                text-align: center;   
+            }
         }
     }    
 }

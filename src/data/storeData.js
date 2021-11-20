@@ -4,6 +4,13 @@ export const storeData = [
         address: 'Campden St, London W8 7LN, UK',
         hour: 'Every day: 6:00 am - 6:00 pm',
         link: 'https://goo.gl/maps/QA4DT3qsDCqdXHqq5',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+            'delivery'
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -32,6 +39,12 @@ export const storeData = [
         address: '18 Smith Square, London SW1P 3HZ, UK',
         hour: 'Every day: 6:00 am - 7:00 pm',
         link: 'https://goo.gl/maps/VWRjeu2YSzsJo6rZ9',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -55,12 +68,13 @@ export const storeData = [
         address: 'Cardamom Bldg, London, UK',
         hour: 'Every day: 6:00 am - 6:00 pm',
         link: 'https://goo.gl/maps/gsMen6Z98d6MuExq6',
+        facilities: [
+            'physical store',
+            'wifi',
+            'seating',
+            'delivery'
+        ],
         services: [
-            {
-                type: 'Wheelchair access',
-                icon: 'fas fa-wheelchair',
-                size: '1rem',
-            },
             {
                 type: 'Wifi access',
                 icon: 'fas fa-wifi',
@@ -83,6 +97,12 @@ export const storeData = [
         address: '234-B Baker St, London NW1 5RS, UK',
         hour: 'Every day: 6:00 am - 6:00 pm',
         link: 'https://goo.gl/maps/nKjUpfMCw9NCbiZHA',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -103,9 +123,15 @@ export const storeData = [
     },
     {
         name: 'Museum Street',
-        address: '40-41 Museum St, London, UK',
+        address: '42 Museum St, London, UK',
         hour: 'Every day: 6:00 am - 6:00 pm',
-        link: 'https://goo.gl/maps/U7kTPXhnmWV2FNUz5',
+        link: 'https://goo.gl/maps/vnmgGHBmZv2ECT6f9',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -129,6 +155,10 @@ export const storeData = [
         address: 'Chalk Farm Rd, London NW1 8AH, UK',
         hour: 'Every day: 10:00 am - 7:00 pm',
         link: 'https://goo.gl/maps/vJeynLr6jkaRMqxC7',
+        facilities: [
+            'physical store',
+            'accessibility',
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -139,9 +169,17 @@ export const storeData = [
     },    
     {
         name: 'Edgware Road',
-        address: '430 Edgware Rd, London W2 1EG, UK',
+        address: '430 Edgware Rd, London W2 1DY, UK',
         hour: 'Every day: 6:00 am - 8:00 pm',
-        link: 'https://goo.gl/maps/KEer9H1LHa3wmFXS9',
+        link: 'https://goo.gl/maps/9RBsb93edMEsBL6YA',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+            'delivery',
+            'drive-thru'
+        ],
         services: [
             {
                 type: 'Wheelchair access',
@@ -175,6 +213,14 @@ export const storeData = [
         address: '222-224 Commercial Rd, London E1 2JT, UK',
         hour: 'Every day: 6:00 am - 8:00 pm',
         link: 'https://goo.gl/maps/7F4uQjPtbgrqhAy77',
+        facilities: [
+            'physical store',
+            'accessibility',
+            'wifi',
+            'seating',
+            'delivery',
+            'drive-thru'
+        ],
         services: [            
             {
                 type: 'Wifi access',
@@ -207,32 +253,32 @@ export const storeData = [
 
 export const storeButton = [
     {
-        type: 'Store',
+        type: 'physical store',
         icon: 'fas fa-store-alt',
         size: '1rem',
     },
     {
-        type: 'Wheelchair access',
+        type: 'accessibility',
         icon: 'fas fa-wheelchair',
         size: '1rem',
     },
     {
-        type: 'Wifi access',
+        type: 'wifi',
         icon: 'fas fa-wifi',
         size: '1rem',
     },
     {
-        type: 'Seating available',
+        type: 'seating',
         icon: 'fas fa-chair',
         size: '1rem',
     },
     {
-        type: 'Delivery',
+        type: 'delivery',
         icon: 'fas fa-motorcycle',
         size: '1rem',
     },
     {
-        type: 'Drive-Thru',
+        type: 'drive-thru',
         icon: 'fas fa-car',
         size: '1rem',
     },

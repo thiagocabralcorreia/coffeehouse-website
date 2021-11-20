@@ -31,10 +31,10 @@
                     margin: 0 1rem 0 0;       
                     
                     &:after {
-                        width: 13px;
-                        height: 13px;
-                        border-radius: 13px;
-                        top: -2px;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 14px;
+                        top: -1px;
                         left: -1px;
                         position: relative;
                         background-color: $white;
@@ -46,10 +46,10 @@
                     }
 
                     &:checked:after {
-                        width: 13px;
-                        height: 13px;
-                        border-radius: 13px;
-                        top: -2px;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 14px;
+                        top: -1px;
                         left: -1px;
                         position: relative;
                         background-color: $secondary;

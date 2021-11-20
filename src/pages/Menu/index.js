@@ -5,7 +5,7 @@ import MainMenu from '../../components/Menu/';
 import beans from '../../assets/videos/beans.mp4';
 import Banner from '../../components/Banner';
 import chStore from '../../assets/photos/ch-store-sign.jpg';
-import chContact from '../../assets/photos/ch-contact.jpg';
+import chContact from '../../assets/photos/coffee-latte.jpg';
 
 const Menu = () => {
     useEffect(() => {
@@ -33,7 +33,7 @@ const Menu = () => {
                 />   
                 <Banner
                     title='How can we help you?'
-                    subtitle='We would love to hear your questions and suggestions.'
+                    subtitle='We want to hear your questions and suggestions.'
                     to='/contact'
                     buttonText='Talk to us'
                     image={chContact}

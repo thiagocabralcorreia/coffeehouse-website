@@ -15,7 +15,8 @@ const MenuCard = () => {
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
-                                {subsection.type === currentValue
+                                { // filter by food | drink 
+                                subsection.type === currentValue
                                 && subsection.items.map((item, index) => {
                                     return (
                                         <div
@@ -35,7 +36,8 @@ const MenuCard = () => {
                         menu.subsections.map((subsection) => {
                             return (
                             <div key={subsection.id}>
-                                {subsection.type === currentValue
+                                {// filter by food | drink
+                                subsection.type === currentValue
                                 && <img className='image'
                                     src={subsection.image}
                                     alt={currentValue}></img>

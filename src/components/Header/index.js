@@ -10,40 +10,37 @@ const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
-    // Close mobile menu
     const onClose = () => {
         setMobileMenu(false);
         return (document.body.style.overflow = 'unset');
     };
 
-    // Open mobile menu
     const onOpen = () => {
         setMobileMenu(true);
         return (document.body.style.overflow = 'hidden');
     };
 
-    // Open and close mobile menu
     const handleClick = () => {
         setMobileMenu(!mobileMenu);
         if (mobileMenu === false) {onOpen()} else {onClose()}
     };
 
-    // Close mobile menu by clicking on a link
+    // close mobile menu by clicking on a link
     const { pathname } = useLocation()
     useEffect(() => {
         setMobileMenu(false);
         onClose();
     }, [pathname]);
 
-    // Close mobile menu if above or equal to 720
     const showMobileMenu = () => {
         if (window.innerWidth >= 720) {onClose()}
     };
 
     useEffect(() => {
         showMobileMenu();
-    });
+        });
     window.addEventListener('resize', showMobileMenu);
+
 
     return (
         <>
@@ -109,7 +106,10 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={mobileMenu ? 'overlay active' : 'overlay'} onClick={() => setMobileMenu(onClose)}></div>
+                <div
+                    className={mobileMenu ? 'overlay active' : 'overlay'}
+                    onClick={() => setMobileMenu(onClose)}
+                ></div>
             </nav>
         </>
     )

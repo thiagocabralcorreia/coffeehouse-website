@@ -6,6 +6,7 @@ import Icon from '../Icon';
 
 const NewsletterSignup = () => {
     const [submitted, setSubmitted] = useState(false);
+    
     const submitForm = useCallback(() => {
             setSubmitted(true);
           }, [setSubmitted])

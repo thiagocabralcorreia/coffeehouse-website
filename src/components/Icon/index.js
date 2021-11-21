@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 const Icon = ({ className, size, color, hoverColor, width, height, cursor, onClick  }) => {
     const [ fill, setFill ] = useState(color);
+    
     return (
         <div>
-            <i className={className}
+            <i
+                className={className}
                 onClick={onClick}
                 onMouseOver={() => setFill(hoverColor)}
                 onMouseOut={() => setFill(color)}

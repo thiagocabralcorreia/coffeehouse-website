@@ -4,6 +4,7 @@ import '../styles.scss';
 
 const Textarea = ({ label, name, placeholder, rows, cols, limit, required, value, onChange, errors }) => {
     const [count, setCount] = useState(0);
+    // display count of typed characters
     const handleChange = (e) => {
         onChange(e);
         setCount(e.target.value.length);

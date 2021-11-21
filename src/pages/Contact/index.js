@@ -9,10 +9,10 @@ const Contact = () => {
 
     const submitForm = useCallback(() => {
             setSubmitted(true);
-          }, [setSubmitted])    
+    }, [setSubmitted])    
     
     useEffect(() => {
-    window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
     }, []);
           
     return (

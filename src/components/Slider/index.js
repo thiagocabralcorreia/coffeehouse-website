@@ -40,14 +40,14 @@ const Slider = ({ slides }) => {
                         {index === current &&
                             <div>
                                 <img 
-                                src={slide.landscape}
-                                className='landscape'
-                                alt='Coffee banner'
+                                    src={slide.landscape}
+                                    className='landscape'
+                                    alt='Coffee banner'
                                 />
                                 <img 
-                                src={slide.square}
-                                className='square'
-                                alt='Coffee banner'
+                                    src={slide.square}
+                                    className='square'
+                                    alt='Coffee banner'
                                 />
                             </div>}
                         <div className='dots'>
@@ -71,7 +71,7 @@ const Slider = ({ slides }) => {
                 src={blankBanner}                                    
                 className='blank-banner'
                 alt='Blank banner'
-                />
+            />
             <img
                 src={blankSquare}                                    
                 className='blank-square'

@@ -5,7 +5,6 @@ import CoffeeQuiz from "../../components/Quiz";
 import quizCover from '../../assets/photos/quiz-cover.jpg';
 
 const Quiz = () => {
-
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);

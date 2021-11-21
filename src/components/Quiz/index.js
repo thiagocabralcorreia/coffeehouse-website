@@ -8,7 +8,6 @@ import Radio from './Radio';
 
 const CoffeeQuiz = () => {
 
-    // Ten answers to ten questions
     const [answers, setAnswers] = useState({
         q1: '',
         q2: '',
@@ -22,30 +21,28 @@ const CoffeeQuiz = () => {
         q10: '',
     });
     
-    // Save the value of each answer
+    // save the value of each answer
     const handleChange = ({ target }) => {
-    setAnswers({ ...answers, [target.id]: target.value });
+        setAnswers({ ...answers, [target.id]: target.value });
     };
 
-    // Activate/show and deactivate/hidden questions
     const [slide, setSlide] = useState(0);
 
-    // Slide questions
     function handleClick() {
     if (slide < quizQuestions.length - 1) {
         setSlide(slide + 1);
     } else {
-        setSlide(slide + 1); // If there are no more questions, show score
+        setSlide(slide + 1);
         showScore();
     }
     }
 
-    // Calculate right answers and show score
+    // compare and calculate right answers to show score
     const [result, setResult] = useState(null);
 
     function showScore() {
     const score = quizQuestions.filter(({ id, answer }) => answers[id] === answer);
-    setResult(`${score.length} out of ${quizQuestions.length}`);
+        setResult(`${score.length} out of ${quizQuestions.length}`);
     }
 
     return (
@@ -56,11 +53,12 @@ const CoffeeQuiz = () => {
             <form onSubmit={(event) => event.preventDefault()}>
             {quizQuestions.map((question, index) => (
                 <Radio
-                key={question.id}
-                active={slide === index}
-                value={answers[question.id]}
-                onChange={handleChange}
-                {...question} />
+                    key={question.id}
+                    active={slide === index}
+                    value={answers[question.id]}
+                    onChange={handleChange}
+                    {...question}
+                />
             ))}
             {result ? (
                 <div className='quiz-result'>

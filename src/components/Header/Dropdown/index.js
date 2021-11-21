@@ -33,6 +33,7 @@ export const pageLinks = [
 
 const Dropdown = () => {
     const [closeDropdown, setCloseDropdown] = useState(true);
+    
     return (
         <div className={closeDropdown ? 'dropdown' :'dropdown closed'}>
             <ul>

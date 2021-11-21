@@ -4,7 +4,7 @@ import { storeData, storeButton } from '../../data/storeData';
 import Icon from '../../components/Icon';
 
 const Stores = () => {
-    const [ storyList, setStoryList ] = useState('physical store');
+    const [ storeList, setStoreList ] = useState('physical store');
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -23,7 +23,7 @@ const Stores = () => {
                             return (
                                 <button
                                     key={index}
-                                    onClick={() => setStoryList(button.type)}
+                                    onClick={() => setStoreList(button.type)}
                                 >
                                     <Icon
                                         className={button.icon}
@@ -36,8 +36,9 @@ const Stores = () => {
                 </div>
             </div>
             <div className='store-cards'>
-                {storeData.map((store, index) => {          
-                    return store.facilities.indexOf(storyList) >= 0 && (
+                {storeData.map((store, index) => {
+                    // filter stores by state | facility       
+                    return store.facilities.indexOf(storeList) >= 0 && (
                         <div className='store-card' key={index}>
                             <h1>{store.name}</h1>
                             <div className='store-data'>  

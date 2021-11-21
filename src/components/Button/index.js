@@ -8,9 +8,10 @@ const Button = ({ text, phantom, type, onClick, icon, iconSize }) => {
 
     return (
         <button
-        className={phantom ? 'phantom-button' : 'brown-button'}
-        onClick={onClick}
-        type={type}>
+            className={phantom ? 'phantom-button' : 'brown-button'}
+            onClick={onClick}
+            type={type}
+        >
             {text}
             {icon !== '' && (
                 <Icon

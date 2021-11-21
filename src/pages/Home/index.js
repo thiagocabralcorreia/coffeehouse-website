@@ -19,23 +19,28 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     const [showTag, setShowTag] = useState(false);
 
-    // Load page
     useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
+        const pageLoader = setTimeout(() => {
             setLoading(false)
-        }, 1200)
+        }, 1200);
+        return () => {
+            // remove callback bound to loader
+            clearTimeout(pageLoader);
+        }
     }, []);
 
-    // Show Contact tag
     const onScroll = useCallback(() => {
         if (window.scrollY > 2000) {
             setShowTag(true);
         }
     }, []);
+
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
-    },[onScroll]);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+        };
+    });
 
     return (
         <div className='home'>
@@ -58,32 +63,34 @@ const Home = () => {
                         <p>Contact</p>
                     </Link>
                 </div>}
-                <OrderPanel />
-                <Banner
-                    title='Eco-Friendly'
-                    subtitle="We reap what we sow. That's why we are committed to environmental sustainability."
-                    to='/impact'
-                    buttonText='Learn more'
-                    image={coffeePlant}
-                />
-                <AppPanel />
-                <div className='card-wrapper'>
-                    <Card
-                        title='Visit us'
-                        subtitle='Enjoy freshly roasted coffee and great food today.'
-                        to='/stores'
-                        buttonText='Find a store'
-                        image={chStore}
+                <div className='bottom-container'>
+                    <OrderPanel />
+                    <Banner
+                        title='Eco-Friendly'
+                        subtitle="We reap what we sow. That's why we are committed to environmental sustainability."
+                        to='/impact'
+                        buttonText='Learn more'
+                        image={coffeePlant}
                     />
-                    <Card
-                        title='Coffee Quiz'
-                        subtitle='How much do you know about this vital brew?'
-                        to='/quiz'
-                        buttonText='Take the quiz'
-                        image={coffeeQuiz}
-                    />
+                    <AppPanel />
+                    <div className='card-wrapper'>
+                        <Card
+                            title='Visit us'
+                            subtitle='Enjoy freshly roasted coffee and great food today.'
+                            to='/stores'
+                            buttonText='Find a store'
+                            image={chStore}
+                        />
+                        <Card
+                            title='Coffee Quiz'
+                            subtitle='How much do you know about this vital brew?'
+                            to='/quiz'
+                            buttonText='Take the quiz'
+                            image={coffeeQuiz}
+                        />
+                    </div>
+                    <NewsletterSignup />
                 </div>
-                <NewsletterSignup />
             </>}
         </div>
     )

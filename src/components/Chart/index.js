@@ -1,4 +1,4 @@
-import React, {useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import './styles.scss';
 
 const Chart = () => {
@@ -9,6 +9,7 @@ const Chart = () => {
             setShowChart(true);
         }
     }, []);
+
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
     },[onScroll]);
@@ -17,19 +18,19 @@ const Chart = () => {
         <>
             {showChart && (
                 <div className='chart-wrapper'>
-            <div className='single-chart'>
-                    <svg viewBox='0 0 36 36' className='circular-chart'>
-                        <path
-                            className='circle resource'
-                            strokeDasharray='88, 100'
-                            d='M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831'
-                        />
-                        <text x='18' y='20.35' className='percentage'>88%</text>
-                    </svg>
-                    <p>Our resource recovery rate. Looking for better ways to reduce our waste.</p>            
-                </div>
+                    <div className='single-chart'>
+                        <svg viewBox='0 0 36 36' className='circular-chart'>
+                            <path
+                                className='circle resource'
+                                strokeDasharray='88, 100'
+                                d='M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831'
+                            />
+                            <text x='18' y='20.35' className='percentage'>88%</text>
+                        </svg>
+                        <p>Our resource recovery rate. Looking for better ways to reduce our waste.</p>            
+                    </div>
                 <div className='single-chart'>
                     <svg viewBox='0 0 36 36' className='circular-chart'>
                         <path

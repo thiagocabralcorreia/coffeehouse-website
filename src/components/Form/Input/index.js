@@ -14,29 +14,29 @@ const Input = ({ label, type, name, placeholder, required, value, onChange, erro
                 onChange={onChange}
               />
               {errors && <p>{errors}</p>}
-            </div>
+        </div>
     )
 }
 
 Input.propTypes = {
-  label: PropTypes.string,
-  type: PropTypes.string,
-  name: PropTypes.string,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  onChange: PropTypes.func,
-  errors: PropTypes.string,
+    label: PropTypes.string,
+    type: PropTypes.string,
+    name: PropTypes.string,
+    placeholder: PropTypes.string,
+    required: PropTypes.bool,
+    value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    onChange: PropTypes.func,
+    errors: PropTypes.string,
 };
 
 Input.defaultProps = {
-  label: '',
-  type: '',
-  name: '',
-  placeholder: '',
-  required: false,
-  value: '',
-  errors: '',
+    label: '',
+    type: '',
+    name: '',
+    placeholder: '',
+    required: false,
+    value: '',
+    errors: '',
 };
 
 export default Input;

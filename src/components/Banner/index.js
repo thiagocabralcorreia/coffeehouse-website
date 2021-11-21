@@ -17,7 +17,7 @@ const Banner = ({ title, subtitle, to, buttonText, image, right, marginBottom })
             <div className='content'>
                 <h1>{title}</h1>
                 <p>{subtitle}</p>
-                <Link to={to} className='button-link'>
+                <Link to={to}>
                     <Button text={buttonText}/>
                 </Link>
             </div>

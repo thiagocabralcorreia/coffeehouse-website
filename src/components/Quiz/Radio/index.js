@@ -11,12 +11,12 @@ const Radio = ({ question, options, onChange, id, value, active }) => {
                 {options.map((option) => (
                 <label className='check-label' key={option}>
                     <input
-                    type='radio'
-                    id={id}
-                    value={option}
-                    onChange={onChange}
-                    checked={value === option}
-                    name='option'
+                        type='radio'
+                        id={id}
+                        value={option}
+                        onChange={onChange}
+                        checked={value === option}
+                        name='option'
                     />
                     {option}
                 </label>

@@ -15,7 +15,7 @@ const Card = ({ title, subtitle, to, buttonText, image }) => {
             <div className='content'>
                 <h1>{title}</h1>
                 <p>{subtitle}</p>
-                <Link to={to} className='button-link'>
+                <Link to={to}>
                     <Button phantom text={buttonText} />
                 </Link>
             </div>

@@ -11,12 +11,14 @@ import chContact from '../../assets/photos/coffee-latte.jpg';
 const Menu = () => {
     const [loading, setLoading] = useState(true);
 
-    // Load page
     useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
+        const pageLoader = setTimeout(() => {
             setLoading(false)
-        }, 1200)
+        }, 1200);
+        return () => {
+            // remove callback bound to loader
+            clearTimeout(pageLoader);
+        }
     }, []);
 
     return (

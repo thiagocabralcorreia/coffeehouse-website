@@ -4,6 +4,10 @@
   position: relative;
   margin-top: 4.5rem;
 
+  .loading-container {
+    @extend %loading-container;
+  }
+
   .tag-container {
     display: block;
     position: fixed;

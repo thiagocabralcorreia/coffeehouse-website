@@ -9,12 +9,18 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='conditions'>
+                <Link to='/about' className='link'>Our Story</Link>
                 <Link to='/team' className='link'>The Team</Link>
-                <Link to='/' className='link'>Privacy Policy</Link>
-                <Link to='/' className='link'>Terms of Use</Link>
+                <a
+                    href='https://github.com/thiagocabralcorreia/coffeehouse-website' className='link'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    GitHub Code
+                </a>
             </div>
             <div className='copyright'>
-                <p>© Copyright 2021 | Coffee House by <a href='https://www.linkedin.com/in/thiago-cabral-correia/' target='_blank' rel='noreferrer'>Thiago Correia</a>. All rights reserved.</p>
+                <p>© Copyright 2021 | Coffee House project by <a href='https://www.linkedin.com/in/thiago-cabral-correia/' target='_blank' rel='noreferrer'>Thiago Correia</a>. All rights reserved.</p>
             </div>
             <div className='social-media'>
                 {socialMedia.map(( item, index ) => {

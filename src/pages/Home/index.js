@@ -1,5 +1,6 @@
 import React, {useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SyncLoader from "react-spinners/SyncLoader";
 import './styles.scss';
 
 import Slider from '../../components/Slider/';
@@ -14,11 +15,16 @@ import coffeePlant from '../../assets/photos/coffee-plant.jpg';
 import chStore from '../../assets/photos/ch-store-facade.jpg';
 import coffeeQuiz from '../../assets/photos/coffee-beverage.jpg';
 
-const Home = () => {
-    const [showTag, setShowTag] = useState(false);    
+const Home = () => {    
+    const [loading, setLoading] = useState(true);
+    const [showTag, setShowTag] = useState(false);
 
+    // Load page
     useEffect(() => {
-        window.scrollTo(0, 0)
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 1200)
     }, []);
 
     // Show Contact tag
@@ -33,41 +39,52 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <Slider slides={sliderData}/>
-            {showTag && <div className='tag-container'>
-                <Link
-                    to='/contact'
-                    className='tag-link'
-                >
-                    <p>Contact</p>
-                </Link>
-            </div>}
-            <OrderPanel />
-            <Banner
-                title='Eco-Friendly'
-                subtitle="We reap what we sow. That's why we are committed to environmental sustainability."
-                to='/impact'
-                buttonText='Learn more'
-                image={coffeePlant}
-            />
-            <AppPanel />
-            <div className='card-wrapper'>
-                <Card
-                    title='Visit us'
-                    subtitle='Enjoy freshly roasted coffee and great food today.'
-                    to='/stores'
-                    buttonText='Find a store'
-                    image={chStore}
+            {loading ?
+                <div className='loading-container'>
+                    <SyncLoader
+                        color={'#b69861'}
+                        loading={loading}
+                        size={13}
+                        margin={8}
+                    />
+                </div>
+            : <>
+                <Slider slides={sliderData}/>
+                {showTag && <div className='tag-container'>
+                    <Link
+                        to='/contact'
+                        className='tag-link'
+                    >
+                        <p>Contact</p>
+                    </Link>
+                </div>}
+                <OrderPanel />
+                <Banner
+                    title='Eco-Friendly'
+                    subtitle="We reap what we sow. That's why we are committed to environmental sustainability."
+                    to='/impact'
+                    buttonText='Learn more'
+                    image={coffeePlant}
                 />
-                <Card
-                    title='Coffee Quiz'
-                    subtitle='How much do you know about this vital brew?'
-                    to='/quiz'
-                    buttonText='Take the quiz'
-                    image={coffeeQuiz}
-                />
-            </div>
-            <NewsletterSignup />
+                <AppPanel />
+                <div className='card-wrapper'>
+                    <Card
+                        title='Visit us'
+                        subtitle='Enjoy freshly roasted coffee and great food today.'
+                        to='/stores'
+                        buttonText='Find a store'
+                        image={chStore}
+                    />
+                    <Card
+                        title='Coffee Quiz'
+                        subtitle='How much do you know about this vital brew?'
+                        to='/quiz'
+                        buttonText='Take the quiz'
+                        image={coffeeQuiz}
+                    />
+                </div>
+                <NewsletterSignup />
+            </>}
         </div>
     )
 }

@@ -2,6 +2,10 @@
 
 .menu {
     margin: 4.5rem 0 0;
+
+    .loading-container {
+        @extend %loading-container;
+    }
   
     .cover {
         width: 100%;

@@ -38,9 +38,11 @@ const MenuCard = () => {
                             <div key={subsection.id}>
                                 {// filter by food | drink
                                 subsection.type === currentValue
-                                && <img className='image'
-                                    src={subsection.image}
-                                    alt={currentValue}></img>
+                                && <img
+                                        src={subsection.image}
+                                        alt={currentValue}
+                                    >                                        
+                                    </img>
                                 }
                             </div>)
                         })

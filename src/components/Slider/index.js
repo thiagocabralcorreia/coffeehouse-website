@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 import { sliderData } from '../../data/sliderData';
-import blankBanner from '../../assets/photos/blank-banner.jpg';
-import blankSquare from '../../assets/photos/blank-square.jpg';
 
 const Slider = ({ slides }) => {
     const [ current, setCurrent ] = useState(0);

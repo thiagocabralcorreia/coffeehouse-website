@@ -11,10 +11,10 @@ const Slider = ({ slides }) => {
     const length = slides.length;
 
     const previousSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1); 
+        setCurrent(current === 0 ? length - 1 : current - 1);
     }
     const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1); 
+        setCurrent(current === length - 1 ? 0 : current + 1);
     }
 
     const delay = 6000;
@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
         const timeout = setTimeout(() => {
             nextSlide();
           }, delay);
-      
+
          return () => clearTimeout(timeout);
     });
 
@@ -31,7 +31,7 @@ const Slider = ({ slides }) => {
     }
 
     return (
-        <div className='slider'>                
+        <div className='slider'>
             {sliderData.map((slide, index) => {
                 return (
                     <div
@@ -39,12 +39,12 @@ const Slider = ({ slides }) => {
                     className={index === current ? 'current slide' : 'slide'}>
                         {index === current &&
                             <div>
-                                <img 
+                                <img
                                     src={slide.landscape}
                                     className='landscape'
                                     alt='Coffee banner'
                                 />
-                                <img 
+                                <img
                                     src={slide.square}
                                     className='square'
                                     alt='Coffee banner'
@@ -66,21 +66,11 @@ const Slider = ({ slides }) => {
                         </div>
                     </div>
                 )
-            })}                
-            <img
-                src={blankBanner}                                    
-                className='blank-banner'
-                alt='Blank banner'
-            />
-            <img
-                src={blankSquare}                                    
-                className='blank-square'
-                alt='Blank square'
-            />
+            })}
             <div className='arrow-container'>
                 <button onClick={previousSlide} className='arrow-left'>
                     <i className='fas fa-chevron-left'></i>
-                </button>    
+                </button>
                 <button onClick={nextSlide} className='arrow-right'>
                     <i className='fas fa-chevron-right'></i>
                 </button>

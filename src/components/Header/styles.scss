@@ -23,11 +23,11 @@
                 padding-right: 2rem;
                 fill: $primary;
             }
-                
+
             .menu-icon {
                 display: block;
             }
-            
+
             .nav-list {
                 display: flex;
                 padding-right: 3.5rem;
@@ -43,20 +43,21 @@
                         text-decoration: none;
                         cursor: pointer;
                         transition: 0.2s;
-                    
+
                         &:hover {
                             color: $secondary;
                         }
                     }
                 }
-            }            
-        }           
-                
-        .overlay {
+            }
+        }
+
+        .overlay.inactive {
+			display: none;
             transition: 0.2s;
         }
   }
-      
+
 @media screen and (max-width: $medium-screen) {
     .navbar {
         .container {
@@ -77,11 +78,11 @@
                     transition: 0.3s;
                     border-radius: 1rem;
                 }
-            
+
                 .top {
                     margin-bottom: 0.3rem;
                 }
-            
+
                 .bottom {
                     margin-top: 0.3rem;
                 }
@@ -92,7 +93,7 @@
                     transform: rotate(-135deg);
                     margin-bottom: -0.25rem;
                 }
-            
+
                 .middle {
                     opacity: 0;
                 }
@@ -106,8 +107,8 @@
             .nav-list {
                 display: none;
             }
-            
-            .nav-list.mobile {       
+
+            .nav-list.mobile {
                 display: flex;
                 flex-direction: column;
                 position: fixed;
@@ -121,19 +122,19 @@
                 transition: 0.2s;
                 opacity: 1;
                 box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.05);
-                z-index: 90;                  
+                z-index: 90;
                 animation: slideIn 0.5s;
-                
+
                 @keyframes slideIn {
                     from {
                       margin-left: -100%;
                     }
-                  
+
                     to {
                       margin-left: 0%;
                     }
                   }
-            
+
                 .nav-item {
                     padding: 0 1rem;
 
@@ -142,7 +143,7 @@
                         color: $white;
                         transition: 0.2s;
                         padding-bottom: 2rem;
-                        
+
                         &:after {
                             margin-top: 8px;
                             left: 50%;
@@ -150,7 +151,7 @@
                             position: absolute;
                             background-color: $white;
                         }
-                        
+
                         &:hover {
                             color: $tertiary;
                         }
@@ -158,22 +159,24 @@
                 }
             }
         }
-                        
-        .overlay.active {
+
+        .overlay {
             display: flex;
             position: fixed;
             top: 4.5rem;
             bottom: 0;
-            left: 0;
-            right: 0;
+			left: 0;
+			right: 0;
             background-color: $black;
             opacity: 0.25;
             transition: 1s;
-            overflow-x: hidden;
-            overflow-y: auto;
-            transition-timing-function: ease;
+			transition-timing-function: ease;
             z-index: 80;
+        }
+
+		.overlay.inactive {
+			display: none;
+            transition: 0.2s;
         }
     }
 }
-  

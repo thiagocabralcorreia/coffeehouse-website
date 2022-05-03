@@ -12,12 +12,12 @@ const Header = () => {
 
     const onClose = () => {
         setMobileMenu(false);
-        return (document.body.style.overflow = 'unset');
+        return (document.body.style.position = 'static');
     };
 
     const onOpen = () => {
         setMobileMenu(true);
-        return (document.body.style.overflow = 'hidden');
+        return (document.body.style.position = 'fixed');
     };
 
     const handleClick = () => {
@@ -107,9 +107,9 @@ const Header = () => {
                     </ul>
                 </div>
                 <div
-                    className={mobileMenu ? 'overlay active' : 'overlay'}
+                    className={mobileMenu ? 'overlay' : 'overlay inactive'}
                     onClick={() => setMobileMenu(onClose)}
-                ></div>
+                />
             </nav>
         </>
     )

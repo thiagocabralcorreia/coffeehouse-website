@@ -144,7 +144,7 @@
 @media screen and (max-width: $smaller-screen) {
 	.slider {
 		.current.slide {
-			height: calc(100vw * 1.5 / 1);
+			height: 100vw;
 
 			.landscape {
 				display: none;

@@ -20,7 +20,7 @@ const CoffeeQuiz = () => {
         q9: '',
         q10: '',
     });
-    
+
     // save the value of each answer
     const handleChange = ({ target }) => {
         setAnswers({ ...answers, [target.id]: target.value });
